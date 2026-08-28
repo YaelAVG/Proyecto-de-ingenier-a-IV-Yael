@@ -1,5 +1,8 @@
-# 🚀 Comandos básicos de Git (primeros pasos)
+# Semana 2 :o
 
+
+
+<!--
 En este curso solo usaremos los comandos esenciales de Git para trabajar con repositorios.
 
 ---
@@ -95,3 +98,5 @@ git pull origin main
 !!! tip "Consejo"
     Piensa en este ciclo como un **loop infinito**:  
     cada vez que quieras contribuir → primero `pull`, después `add` + `commit`, y finalmente `push`.
+    -->
+    

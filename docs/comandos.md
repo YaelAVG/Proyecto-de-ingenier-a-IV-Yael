@@ -1,19 +1,19 @@
-# Encabezados
+# Sobre mi
 
-``` codigo
-# Título H1
-## Título H2
-### Título H3
-```
+## Soy Yael Alejandro Vázquez García
 
-# Título H1
-## Título H2
-### Título H3
 
 ---
 
-# Énfasis y código en línea
+![Me](recursos/imgs/medino.jpeg)
 
+Soy futuro ingeniero en mecatrónica, disfruto mucho escuchar música, aprender el emprendimiento y la comunicación.
+
+
+Actualmente tengo 20 años y me encanta la ingeniería porque fortalece mi creatividad y habilidad para la resolución de problemas.
+
+
+<!--
 ``` codigo
 **negritas**, *cursivas*, ~~tachado~~, `código en línea`
 ```
@@ -114,8 +114,10 @@
 
 ``` codigo
 ![Diagrama del sistema](recursos/imgs/ibero.jpeg)
-
+-->
 <!-- Control de tamaño usando HTML (cuando se requiera) -->
+
+<!--
 <img src="../recursos/imgs/ibero.jpeg" alt="Diagrama del sistema" width="420">
 ```
 
@@ -129,8 +131,9 @@
 
 ``` codigo
 [Descargar especificación (PDF)](recursos/archivos/Calendario.pdf)
-
+-->
 <!-- Embed (requiere navegador compatible) -->
+<!--
 <object data="recursos/archivos/Calendario.pdf" type="application/pdf" width="100%" height="600">
   <p>No se pudo mostrar el PDF. <a href="../recursos/archivos/Calendario.pdf">Descargar</a></p>
 </object>
@@ -249,3 +252,4 @@ print(medir(1))
 > [12:00:01] Conectando a I2C...
 > [12:00:02] Lectura: 523 mV
 > ```
+-->
