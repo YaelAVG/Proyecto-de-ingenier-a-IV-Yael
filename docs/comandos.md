@@ -7,11 +7,12 @@
 
 ![Me](recursos/imgs/medino.jpeg)
 
-Soy futuro ingeniero en mecatrónica, disfruto mucho escuchar música, aprender el emprendimiento y la comunicación.
+Soy Yael, tengo 20 años y me estoy formando como ingeniero en mecatrónica. Elegí esta disciplina porque me fascina cómo fortalece mi creatividad y mi habilidad para la resolución de problemas tangibles. En mi día a día, disfruto llevar ideas del papel a la realidad, integrando el diseño mecánico en SolidWorks, la programación en C y el control de hardware con Arduino para construir desde circuitos funcionales hasta sistemas automatizados. Más allá de los cables y engranajes, tengo un gran interés por el emprendimiento y la comunicación, convencido de que los mejores proyectos tecnológicos son aquellos que logran conectar con las personas y resolver necesidades reales.
 
 
-Actualmente tengo 20 años y me encanta la ingeniería porque fortalece mi creatividad y habilidad para la resolución de problemas.
-
+<iframe src="../recursos/archivos/Firma_syllabus_Yael.pdf" width="100%" height="600px">
+    Este navegador no soporta PDFs incrustados. Descarga el archivo <a href="../recursos/archivos/Firma_syllabus_Yael.pdf">aquí</a>.
+</iframe>
 
 <!--
 ``` codigo
