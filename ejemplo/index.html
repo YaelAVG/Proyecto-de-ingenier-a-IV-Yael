@@ -1,0 +1,779 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../comandos/">
+      
+      
+        <link rel="next" href="../gitcmds/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Semana 1 c: - Proyecto de Ingeniería IV Yael</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#semana-1-c" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Proyecto de Ingeniería IV Yael" class="md-header__button md-logo" aria-label="Proyecto de Ingeniería IV Yael" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proyecto de Ingeniería IV Yael
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Semana 1 c:
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Proyecto de Ingeniería IV Yael" class="md-nav__button md-logo" aria-label="Proyecto de Ingeniería IV Yael" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Proyecto de Ingeniería IV Yael
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenidos a mi Portafolio de Proyectos de Ingeniería
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comandos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre mi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 1 c:
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 1 c:
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scramper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCRAMPER
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SCRAMPER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompt-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitcmds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reporte de Oportunidad — Semana 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana%203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propiedad Intelectual, Marca y Vigilancia Tecnológica — Semana 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scramper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCRAMPER
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SCRAMPER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompt-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="semana-1-c">Semana 1 c:</h1>
+<p>En nuestra primera semana aprendimos como mejorar nuestros prompts para utilizar de forma adecuada la inteligencia artificial; Ya que este curso usa como base la inteligencia artifical </p>
+<p>Para redactar prompts efectivos tenemos que seguir una guía sencilla, donde el objetivo es dar más contexto y delimitar a la inteligencia artifical para poder obtener lo que queremos.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Tenemos que definir las siguiente condiciones:
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>El rol al igual a que se dedica.
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>ejemplo: Eres un detective de estafas en el ámbito cybernético contrar estafas financieras con 5 años de experiencia
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Para quien es el resultado.
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Ejemplo: Trabajas con personas de la tercera edad que no tienen habilidad con la tecnología.
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Restricciones.
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Ejemplo: Tienes 4 semanas y un presupuesto de 10000 para idear y planificar una aplicación
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Tarea clara.
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Ejemplo: Una lista de 10 ideas, faciles, creativas para una aplicación
+</span></code></pre></div>
+<h2 id="scramper">SCRAMPER</h2>
+<p>El método SCAMPER es una herramienta práctica de innovación que sirve para darle una "vuelta de tuerca" a un producto, servicio o proceso existente para mejorarlo. En lugar de esperar a que llegue la inspiración de la nada, te obliga a analizar tu proyecto haciéndote preguntas desde siete ángulos diferentes:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>S - Sustituir: ¿Qué piezas, materiales, o pasos del proceso puedo cambiar por otros?
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>C - Combinar: ¿Qué funciones, mecanismos o conceptos puedo fusionar en uno solo para hacerlo más eficiente?
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>A - Adaptar: ¿Qué solución técnica de otra industria o contexto puedo tomar prestada y aplicar aquí?
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>M - Modificar (o Magnificar): ¿Qué pasa si hago una parte más grande, más pequeña, más rápida o le cambio la forma?
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>P - Poner en otros usos: ¿En qué otro contexto, o para qué otro usuario, podría servir este diseño?
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>E - Eliminar: ¿Qué componente o paso puedo quitar para simplificar el sistema sin que pierda su valor o función principal?
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>R - Revertir (o Reorganizar): ¿Qué sucede si invierto el orden del proceso, la polaridad o intercambio la posición de las piezas?
+</span></code></pre></div></p>
+<p>Para prácticar nuestros nuevos cnocimientos tuvimos que realizar un ejercicio donde poniamos a prueba la inteligencia artifical que en este caso utilizamos Claude</p>
+<h3 id="prompt-1">Prompt 1</h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Actúa como un Consultor Senior en Innovación, Diseño de Servicios y Estrategia de Negocios.
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>CONTEXTO: Tengo un desafío de co-creación lúdico y disruptivo. He tirado tres dados que me han arrojado tres variables obligatorias para diseñar un proyecto:
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>1. EL QUÉ (Formato/Entregable): [Un Kit Tangible o Contenedor de Recursos (Caja de herramientas, empaque inteligente, sistema de distribución física).]
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>2. EL CÓMO (Restricción/Enfoque): [Frugal / Cero Presupuesto (Solo se pueden usar recursos que el usuario o el entorno ya tengan a la mano).]
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>3. EL PARA QUIÉN (Usuario/Contexto): [Comunidad Rural / Migración Local (Zonas con intermitencia de servicios, familias separadas o migración constante).]
+</span></code></pre></div>
+Después para le dimos otro prompt para poder tener un resultado más efectivo.</p>
+<h3 id="prompt-2">Prompt 2</h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Antes de comenzar a idear soluciones específicas, necesito que me ayudes a enmarcar y entender el problema profundamente. Haz lo siguiente de forma concisa:
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>1. CONTEXTO Y DOLOR: Define brevemente cuál es el principal punto de dolor (pain point) de este Usuario específico cuando se enfrenta a este Formato bajo esa Restricción técnica.
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>2. LA PARADOJA: Si existe una contradicción o incompatibilidad aparente entre las tres variables (por ejemplo, digital vs. brecha digital, o cero presupuesto vs. infraestructura), explica brevemente cómo podemos transformarla en una oportunidad de diseño inteligente (tecnología invisible, interfaces alternativas, etc.).
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>3. LAS 3 PREGUNTAS HMW: Genera 3 variantes del formato estricto "¿Cómo podríamos...?" (How Might We) que unan estas tres variables. Cada opción debe enfocarse en un ángulo diferente (eficiencia, impacto social o experiencia emocional).
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Termina tu respuesta preguntándome cuál de las 3 opciones de "¿Cómo podríamos...?" quiero elegir para pasar a la fase de ideación SCAMPER.
+</span></code></pre></div>
+Después ya que me dieron buenas ideas pasamos a elegir una de las ideas que no generó en este caso nos dio esta idea.</p>
+<p>LAS 3 PREGUNTAS HMW</p>
+<p>🎯 Ángulo Eficiencia</p>
+<p>¿Cómo podríamos diseñar un protocolo de kit tan simple que cualquier objeto disponible pueda convertirse en su contenedor sin perder funcionalidad ni requerir instrucción repetida?</p>
+<p>🌍 Ángulo Impacto Social</p>
+<p>¿Cómo podríamos crear un sistema de kit itinerante que fortalezca las redes de confianza ya existentes en la comunidad, en lugar de depender de un solo creador o experto que lo sostenga?</p>
+<p>❤️ Ángulo Experiencia Emocional</p>
+<p>¿Cómo podríamos lograr que el kit —hecho con materiales cotidianos y humildes— transmita una sensación de continuidad y presencia entre familiares separados, más que una sensación de improvisación o carencia?</p>
+<p>Y para elaborar más en la idea le enviamos el siguiente prompt</p>
+<h3 id="prompt-3">Prompt 3</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>He elegido la opción de HMW: [¿Cómo podríamos diseñar un protocolo de kit tan simple que cualquier objeto disponible pueda convertirse en su contenedor sin perder funcionalidad ni requerir instrucción repetida?].
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Como nuestro consultor de innovación, ahora vamos a aplicar la metodología SCAMPER para generar ideas altamente disruptivas para esta pregunta específica, teniendo muy presentes las restricciones de nuestros dados originales.
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Para no inundarme de información genérica, haz lo siguiente:
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>EL FILTRO DE AUDACIA: Genera exactamente 2 ideas innovadoras y viables para cada una de las siguientes letras de SCAMPER que son las más críticas para nuestro reto:
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>S (Sustituir): ¿Qué elemento tradicional, proceso o material del problema podemos sustituir para romper las reglas?
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>C (Combinar): ¿Con qué otro servicio, industria, hábito o tendencia actual podemos combinar nuestra solución para crear algo único?
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>M (Magnificar/Modificar): ¿Qué pasaría si exageramos al extremo el beneficio principal o modificamos radicalmente el formato?
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>E (Eliminar): ¿Qué elemento que todos dan por obligatorio en este tipo de soluciones podemos eliminar por completo para simplificar la vida del usuario?
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>FORMATO DE SALIDA: Presenta cada idea con:
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>Un título llamativo (máximo 4 palabras).
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>Una descripción de 2 frases (qué es y cómo funciona).
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>"El factor Wow": Qué la hace atractiva tanto para un emprendedor/freelancer (agilidad/negocio) como para un funcionario público (impacto social/comunidad).
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>Comienza de inmediato.
+</span></code></pre></div>
+<p>Para resumir lo dado se le dió el siguiente prompt.</p>
+<h3 id="prompt-4">Prompt 4</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Para no inundarme de información genérica, haz lo siguiente:
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>EL FILTRO DE AUDACIA: Genera exactamente 2 ideas innovadoras y viables para cada una de las siguientes letras de SCAMPER que son las más críticas para nuestro reto:
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>S (Sustituir): ¿Qué elemento tradicional, proceso o material del problema podemos sustituir para romper las reglas?
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>C (Combinar): ¿Con qué otro servicio, industria, hábito o tendencia actual podemos combinar nuestra solución para crear algo único?
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>M (Magnificar/Modificar): ¿Qué pasaría si exageramos al extremo el beneficio principal o modificamos radicalmente el formato?
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>E (Eliminar): ¿Qué elemento que todos dan por obligatorio en este tipo de soluciones podemos eliminar por completo para simplificar la vida del usuario?
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>FORMATO DE SALIDA: Presenta cada idea con:
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>Un título llamativo (máximo 4 palabras).
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>Una descripción de 2 frases (qué es y cómo funciona).
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>"El factor Wow": Qué la hace atractiva tanto para un emprendedor/freelancer (agilidad/negocio) como para un funcionario público (impacto social/comunidad).
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>Comienza de inmediato.
+</span></code></pre></div>
+<p>Las últimas ideas generadas son las buenas para terminar la actividad escogimos estás ideas y le dimos el siguiente prompt:</p>
+<p>"Ropa Que Transporta"</p>
+<p>Sustituimos el contenedor separado por prendas de vestir que ya viajan con la persona (un bolsillo cosido, un dobladillo, un pañuelo con nudo). El mensaje no se "lleva", se "porta" — no hay riesgo de olvidarlo porque es parte de lo que uno se pone.
+Factor Wow: Para el negocio, es un caso de estudio de "producto invisible integrado al hábito"; para lo público, elimina el riesgo #1 de estos sistemas: que la gente olvide o pierda el objeto.</p>
+<p>"Sin Objeto Físico"</p>
+<p>Eliminamos el kit tangible por completo en su forma más extrema: el "contenedor" se convierte en un gesto corporal o postura reconocible (cómo llevas el sombrero, en qué mano cargas la bolsa) que el receptor entrenado interpreta al ver a la persona, sin intercambio de objeto alguno.
+Factor Wow: El emprendedor ve la versión más radical de "producto sin producto" —puro protocolo—; el funcionario ve la solución con cero riesgo de intercepción, confiscación o pérdida material.</p>
+<h3 id="prompt-5">Prompt 5</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>De las 8 ideas que me diste, las que más nos llaman la atención son:  ["Ropa Que Transporta"
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>y Sin Objeto Físico].
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Actúa como nuestro facilitador de diseño. Haz lo siguiente de forma súper concisa:
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>EL REMIX: Combina esas dos ideas en un concepto único de producto o servicio. Descríbelo en 3 oraciones estrictas: qué es, para quién es y qué lo hace inusual.
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>EL FILTRO DNV (Deseo, Novedad, Viabilidad): Evalúa este nuevo concepto dándole una calificación del 1 al 5 a cada criterio y justificando brevemente por qué:
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>DESEO: ¿Por qué un usuario real o una institución querría adoptar esto con urgencia?
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>NOVEDAD: ¿Qué la aleja radicalmente de las soluciones aburridas que ya existen?
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>VIABILIDAD: ¿Cuál sería el primer paso (un prototipo de 2 horas) para empezar a hacerla real hoy mismo?
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>FORMATO DE SALIDA: Presenta la idea con:
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>Un título llamativo (máximo 4 palabras)
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>Una descripción de 2 frases (qué es y cómo funciona).
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>"El factor Wow": Qué la hace atractiva tanto para un emprendedor/freelancer (agilidad/negocio) como para un funcionario (impacto social/comunidad).
+</span></code></pre></div>
+<p>Y por último tenemos estás ideas que generaron:</p>
+<p>🧬 EL REMIX
+1. Concepto Combinado</p>
+<p>Es un sistema de comunicación silenciosa donde el propio cuerpo y la ropa que la persona ya viste funcionan como el "kit", mediante posiciones y detalles codificados (un pañuelo anudado de cierta forma, una manga enrollada, un objeto en cierto bolsillo). Es para familias rurales y migrantes que necesitan transmitir estados urgentes (salud, dinero, ubicación) sin depender de objetos que se puedan perder, confiscar o que requieran explicación verbal. Lo inusual es que elimina por completo la frontera entre "mensajero" y "mensaje" — la persona no lleva el kit, la persona ES el kit.</p>
+<ol>
+<li>Filtro DNV</li>
+</ol>
+<p>🔥 DESEO: 4/5
+Resuelve una necesidad urgente y recurrente (saber si el otro está bien) sin fricción de aprendizaje ni riesgo de pérdida — pero requiere que ambas partes ya compartan el código, lo cual limita la adopción espontánea fuera del círculo familiar entrenado.</p>
+<p>💡 NOVEDAD: 5/5
+No existe literalmente ningún objeto que diseñar, fabricar, transportar o reponer — es la idea más radical del set porque convierte el "cero presupuesto" en "cero producto". Ninguna solución de kit tangible convencional llega a este extremo.</p>
+<p>⚙️ VIABILIDAD: 4/5
+Prototipo de 2 horas: Reunir a una familia, definir con ellos (no imponerles) 4 posturas o detalles de vestimenta con significado ("bien", "necesito ayuda", "hay dinero disponible", "cambié de lugar"), y hacer que un miembro "envíe" un mensaje real cruzando una habitación o llegando a un punto de encuentro simulado — medir si el receptor lo interpreta correctamente sin explicación previa el mismo día.</p>
+<ol>
+<li>Presentación Final
+👤 "El Cuerpo Mensajero"</li>
+</ol>
+<p>El kit desaparece por completo: la comunicación vive en cómo la persona lleva su propia ropa —una manga subida, un nudo en el pañuelo, una prenda al revés— y se lee con solo verla llegar. No hay nada que fabricar, cargar, perder ni confiscar; el protocolo vive en el cuerpo, no en un objeto.</p>
+<p>Factor Wow: Para el emprendedor/freelancer, es el caso extremo de "producto sin producto" — cero costos de manufactura, distribución o inventario, puro diseño de sistema; para el funcionario público, es la solución con menor riesgo posible ante contextos de inseguridad, control fronterizo o desplazamiento forzado, porque no hay nada físico que interceptar ni infraestructura que sostener.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
