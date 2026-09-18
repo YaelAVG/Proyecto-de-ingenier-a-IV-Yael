@@ -1,126 +1,94 @@
-
-
 # Reporte de Oportunidad — Semana 2
 
-**Equipo:** José Carlos y Yael
-**Concepto elegido:** Estación Total
 
----
+**Equipo:**  José Carlos y Yael
+**Concepto elegido:** GPIO Génesis *(confirmado y afinado con datos de mercado — ver sección 8, "Lo que cambió")*
 
 ## 1. El problema
 
-**Segmento:** Padres y madres de clase media en México que trabajan fuera de casa y deben dejar a su hijo enfermo al cuidado de terceros (niñeras, abuelos, escuela).
+**Segmento específico:** estudiantes de ingeniería (mecatrónica, sistemas, electrónica) de 18–25 años en México y LATAM, jugadores activos de Minecraft y simuladores, que cursan materias que exigen integrar código C/C++ con hardware real (microcontroladores, sensores, actuadores) para proyectos y prácticas de laboratorio.
 
-**Dolor ⭐ (el más intenso):** Culpa e impotencia por estar físicamente ausentes durante la enfermedad del hijo, combinadas con la falta de datos objetivos sobre su estado — no es solo "no saber", es sentir que fallan como padres mientras trabajan y no pueden comprobarlo ni remediarlo en el momento.
+**Dolor ⭐:** en clase, aprender C/C++ se siente aburrido y desconectado de aplicaciones reales, pese a que el estudiante sabe que es clave para conseguir empleo. El código se escribe y depura en un entorno abstracto de texto plano, sin retroalimentación clara de por qué falla al ejecutarse sobre hardware real. Cuando el estudiante enfrenta un error de sintaxis o de lógica sin un entorno que le indique dónde está la falla, se generan bloqueos que en los casos más graves terminan en reprobar la materia o el proyecto — no por falta de esfuerzo, sino por falta de diagnóstico.
 
-**Workaround actual (con costo observable):** Hoy existe abundante evidencia de workarounds DIY: tutoriales en YouTube y blogs (en español e inglés) que enseñan a convertir un smartphone viejo en un monitor casero usando apps como AlfredCamera, Bibino, Annie Baby Monitor o Manything, con instrucciones de montaje y configuración de alertas de movimiento/sonido. Es una solución improvisada, propensa a falsas alarmas, que depende de dejar una cámara encendida apuntando al niño (con el problema de privacidad que eso implica) y de la disponibilidad/subjetividad del cuidador para dar reportes confiables.
-
----
+**Workaround actual (con costo observable):** los estudiantes ya gastan de su bolsillo en kits de Arduino/Elegoo ($600–8,270 MXN según el kit) y componentes adicionales, y pasan horas — a veces madrugadas — quemando placas y probando por ensayo y error. Cuando se atoran, recurren a foros (Stack Overflow, comunidades de robótica) y repositorios de GitHub con guías de aprendizaje autoconstruidas, ninguno de los cuales les dice *específicamente* por qué su código no logra el comportamiento que el hardware necesita.
 
 ## 2. Evidencia de deseabilidad
 
-*(Verificación de deseabilidad — Paso 5. Resultado: 5 de 5 señales confirmadas ✅)*
+*(Verificación cruzada con datos de fuentes primarias — Pasos 1, 2 y 5)*
 
-**Señal 1 — Pago por soluciones imperfectas:** ✅ confirmada
-Existe un mercado activo de monitores para bebé en México con precios desde $839 MXN hasta más de $10,000 MXN, y dispositivos específicos de monitoreo de respiración en el rango de $1,500–$9,500+ MXN. En Walmart y Liverpool se listan modelos Motorola, Philips Avent, Nanit y Owlet entre $959 y $10,200 MXN, con demanda sostenida en el segmento medio ($2,500–$5,500) y premium ($5,500–$9,500+), con crecimiento anual proyectado de 8–11%. Fuente: [walmart.com.mx](https://www.walmart.com.mx/c/ftp/motorola-nursery-monitores).
+- **Pago por soluciones imperfectas — ✅ confirmada.** Los kits educativos (Arduino Education Starter Kit ~$8,270 MXN, kits básicos $600–900 MXN, presupuesto de proyecto promedio $1,320–6,120 MXN) y las plataformas de cursos (Platzi ~$4,227 MXN/año, Codecademy Pro ~$370 MXN/mes) tienen mercado activo y pagado en México.
+- **Tamaño del segmento — ✅ confirmada con fuente oficial.** Según matrícula ANUIES 2024–2025, solo en 6 estados (CDMX, Edomex, Jalisco, Nuevo León, Puebla, Veracruz) hay ~459,000 estudiantes de Ingeniería, Manufactura y Construcción; a nivel nacional, ingeniería + TIC supera los 900,000 estudiantes.
+- **Costo observable — ✅ confirmada.** La deserción en carreras de tecnología en México ronda 8–20%, y estudios de cursos introductorios de programación (CS1) documentan tasas de reprobación/abandono de 28–50%, atribuidas explícitamente a la brecha entre la lógica abstracta del código y su aplicación práctica.
+- **Comunidades activas — ✅ confirmada.** Foros de hardware y programación (Stack Overflow, r/Devmexico, r/taquerosprogramadores, MexicoDev) y repositorios de GitHub de aprendizaje autodidacta (33,000+ estrellas en repos tipo *TheAlgorithms/C-Plus-Plus*) muestran volumen constante de estudiantes buscando ayuda con este problema.
+- **Competencia mapeada con brecha clara — ✅ confirmada.** Arduino Education, Elegoo y National Instruments venden kits o interfaces de bloques, pero **ninguno ofrece una capa de IA que diagnostique en tiempo real por qué el código C/C++ no produce el comportamiento esperado en el hardware** — ese es el espacio sin cubrir.
 
-**Señal 2 — Comunidades activas:** ✅ confirmada
-En Reddit hay hilos activos como *"Anyone using a baby breathing monitor that isn't the Owlet sock?"* y *"Owlet false alarms"*, donde padres reportan falsas alarmas y buscan alternativas. En México existen espacios como "Apoyo emocional madres – COMUNIDAD MDO" y "Madres cuidadoras, madres valientes" que documentan la carga emocional del cuidado. Los subreddits de padres (r/NewParents, r/Buyingforbaby, r/BabyBumps) tienen de decenas a cientos de miles de miembros. Fuente: [comunidadmdo.com](https://comunidadmdo.com/apoyo-emocional-madres/).
+## 3. Pain-Gain Map (versión final, auditada)
 
-**Señal 3 — Frecuencia del problema:** ✅ confirmada
-Un niño promedio en México experimenta entre 7 y 8 infecciones respiratorias agudas (IRA) al año, hasta 12 si asiste a guardería. Según la ENSANUT 2022, 27.6% de los menores de 5 años tuvo un episodio de IRA en las dos semanas previas a la encuesta (~2.8 millones de niños), y más del 60% de las consultas pediátricas están relacionadas con IRAs y enfermedades gastrointestinales. Periodicidad: semanal a mensual en temporada alta. Fuente: [scielo.org.mx](http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2448-60942025000100109).
-
-**Señal 4 — Costo observable:** ✅ confirmada
-El costo de no resolver el problema incluye: contratación de niñeras/cuidadores ($170–$190 MXN/hora; sueldos mensuales de $10,242–$10,948 en CDMX; hasta $12,000–$25,500 MXN por 5 semanas sin escuela), consultas privadas ($800–$2,500 MXN) y medicamentos ($200–$15,000 MXN según severidad), además de hasta 2,700 horas/año de cuidado no remunerado (mayormente asumidas por mujeres), según Oxfam — un costo de oportunidad real en ingresos y carrera. Fuente: [buscadoctormexico.mx](https://buscadoctormexico.mx/enciclopedia/articulo/infecciones-comunes-infancia-guia-padres).
-
-**Señal 5 — Workarounds en uso:** ✅ confirmada
-Hay abundante evidencia de workarounds DIY: tutoriales en YouTube y blogs (español e inglés) que enseñan a convertir smartphones viejos en monitores caseros con apps como AlfredCamera, Bibino, Annie Baby Monitor o Manything, con instrucciones de montaje y configuración de alertas. Documentado en YouTube, blogs especializados (babyradar.co, dashpadd.com, homy.camera) y guías de Alibaba. Fuente: [YouTube](https://www.youtube.com/watch?v=4pi_7HVtAQs).
-
-**Lectura estratégica:** la deseabilidad del problema está validada en las 5 señales. El reto no es si existe el dolor, sino si Estación Total (dock + radar + smartphone reciclado) resuelve mejor que lo que la gente ya paga o ya hackea, a un precio que acepten. La señal más fuerte es el workaround DIY: indica que el precio de los monitores dedicados es una barrera real, pero también que los usuarios aceptan soluciones imperfectas si son accesibles — la ventana de Estación Total está en ofrecer algo más confiable que una app sola (radar + IA), sin llegar al precio de un Owlet/Nanit.
-
----
-
-## 3. Pain-Gain Map (versión final)
-
-**Usuario / segmento:** Padres y madres de clase media en México que trabajan fuera de casa y deben dejar a su hijo enfermo al cuidado de terceros.
+**Usuario / segmento:** estudiantes de ingeniería (mecatrónica, sistemas, electrónica) en LATAM que necesitan integrar C/C++ con hardware real.
 
 ### Dolores (de mayor a menor intensidad)
 
 | # | Dolor |
 |---|-------|
-| ⭐ D1 | Culpa e impotencia por estar físicamente ausentes durante la enfermedad del hijo, combinadas con la falta de datos objetivos sobre su estado. |
-| D2 | Desconfianza silenciosa hacia el cuidador (niñera, suegra, escuela) que no se atreven a expresar por miedo al conflicto; monitorean "a escondidas" y esto genera fricción relacional. |
-| D3 | Parálisis de decisión cada mañana de un episodio de enfermedad (¿voy a trabajar o me quedo?), que a menudo implica negociar o incluso mentir al jefe sobre el motivo de la ausencia. |
-| D4 | Reportes contradictorios o vagos entre distintos cuidadores, sin una fuente única y confiable de información, obligando al padre/madre a "arbitrar" versiones sin estar presente. |
-| D5 | Desgaste acumulado y ansiedad post-episodio: interrupción del sueño, revisión constante del celular en el trabajo y temor a que el cuadro se repita — el dolor se traslada a vigilancia crónica. |
+| ⭐ D2 | Enfrentarse a errores de sintaxis o de lógica sin un entorno interactivo que señale dónde está la falla genera bloqueos que, en el peor caso, terminan en reprobar la materia o el proyecto. |
+| D1 | El código C++ tradicionalmente se compila y depura en una consola de texto plano, lo que dificulta visualizar cómo las variables y estructuras de datos se traducen en el comportamiento real del hardware. |
+| D3 | Los ejercicios teóricos estándar (calculadoras, bases de datos simples) se sienten desconectados de la motivación real: hacer que un microcontrolador o un mecanismo físico funcione. |
 
 ### Ganancias (de mayor a menor deseo)
 
 | # | Ganancia |
 |---|----------|
-| ⭐ G1 | Tranquilidad mental inmediata y verificable — sentir que recuperan el control aun estando lejos, y pueden seguir funcionando en su rol de padres sin estar físicamente presentes. |
-| G2 | Poder monitorear al instante las condiciones del niño (temperatura, estado) sin depender de la subjetividad o disponibilidad del cuidador. |
-| G3 | Recibir alertas confiables y oportunas ante situaciones que requieren acción, sin tener que preguntar constantemente ni interrumpir el trabajo. |
-| G4 | Proteger su estabilidad laboral e ingreso, decidiendo con certeza cuándo ausentarse realmente y evitando faltas innecesarias. |
-| G5 | Reducir la fricción y reconstruir la confianza con cuidadores y familiares: los datos objetivos funcionan como "árbitro neutral" y dan un historial útil para hablar con el pediatra. |
+| ⭐ G3 | Adquirir fundamentos de desarrollo de software y control de hardware directamente transferibles al mundo profesional — no ejercicios de juguete, sino habilidad certificable. |
+| G1 | La satisfacción inmediata de ver cómo una instrucción de código se traduce en el movimiento de un motor, la lectura de un sensor o la sincronización de un proceso físico real. |
+| G2 | Asimilar conceptos complejos (bucles, condicionales, punteros, funciones) de forma orgánica, como herramientas necesarias para resolver un problema físico tangible, no como temario aislado. |
 
 ### El cruce más poderoso
 
-**Dolor ⭐ D1 × Ganancia ⭐ G1** — Es un dolor identitario (sentirse "mal padre/madre"), no un dolor funcional resoluble con más comunicación humana. Solo un dato objetivo y en tiempo real puede aliviarlo: el artefacto captura el dato, la IA lo interpreta y prioriza, y el canal digital entrega la tranquilidad al celular exactamente en el momento en que la culpa e impotencia son más altas.
+**Dolor ⭐ D2 × Ganancia ⭐ G3** — el estudiante no abandona por falta de interés en programar; abandona porque no tiene forma de saber *por qué* su código no logra el resultado físico que busca, y eso le cuesta la certeza de estar construyendo una habilidad real y transferible a su carrera. Un sistema que traduzca cada error en una explicación concreta sobre el hardware — no solo un mensaje de compilador — ataca directamente ese cruce.
 
----
+Este cruce es la explicación técnica detrás de una idea sencilla: la sensación de *jugar* depende de que cada error tenga una respuesta inmediata y clara, y la confianza real en la habilidad depende de que sea genuinamente transferible — exactamente G1 y G3.
 
 ## 4. Concepto recomendado
 
-**Nombre:** Estación Total *(Remix 2 del Paso 4 — SCAMPER)*
+**Nombre:** GPIO Génesis — el núcleo del concepto es un videojuego de simulación de fábrica de drones donde el jugador escribe C++ real (no un lenguaje ficticio, a diferencia de Shenzhen I/O o TIS-100) para automatizar la línea de ensamblaje. La investigación de esta semana confirma ese núcleo y agrega una capa adicional, respaldada por evidencia de mercado.
 
-**Descripción (3–4 oraciones):** En lugar del wearable adherido al niño, el artefacto físico es un dock/base de carga de diseño propio y bajo costo que convierte el smartphone viejo que la familia ya tiene guardado en una estación de monitoreo sin contacto: el dock aloja un chip de radar/termografía económico y usa la cámara y el micrófono del teléfono reciclado para visión artificial (detecta si el niño se destapó, tose o se mueve de forma anómala). No hay wearable ni parche que el niño enfermo pueda rechazar ni que el padre tema que se caiga durante la noche — el "hardware inteligente" es, literalmente, resucitar un dispositivo que ya está en la casa. La app corre en el teléfono viejo como estación base y envía los insights al teléfono actual del padre o madre; el canal de venta web ofrece únicamente el dock a ticket bajo (<$800 MXN), porque el sensor más caro (la cámara y el micrófono del teléfono) la familia ya lo tiene sin saberlo.
+**Descripción:** el simulador de fábrica de drones sigue siendo el producto central — la capa de juego que enseña sintaxis y lógica de forma práctica y entretenida, compitiendo directamente contra juegos de programación con lenguaje ficticio (Shenzhen I/O, TIS-100, EXAPUNKS) e indirectamente contra plataformas abstractas sin narrativa (CodeCombat, Platzi, Udemy). A eso se suma, como expansión validada por la investigación de esta semana, una **estación de pruebas física** — un módulo con motores, sensores y actuadores conectado a un ESP32 — que recibe el código que el estudiante ya practicó en el simulador y lo ejecuta sobre hardware real. Una **app con IA actúa como copiloto de depuración**: en vez de un mensaje de error genérico, explica la falla en términos del hardware ("tu motor recibe señales erráticas porque tu bucle no está gestionando bien el delay, ajusta aquí").
 
-**Letras SCAMPER que lo originaron:**
-- **P1 — Poner en otro uso:** los teléfonos inteligentes viejos que las familias de clase media ya tienen arrumbados en un cajón. El negocio vende un parche/dock BLE de diseño PCB propio (<$800 MXN) que usa el teléfono viejo como puente IoT; la IA convierte su cámara y micrófono en una estación base de visión artificial.
-- **E1 — Eliminar:** el wearable físico adherido al cuerpo del niño se elimina y se sustituye por radar y termografía de bajo costo montados en la cabecera de la cama — al no haber un dispositivo que incomode, se elimina el rechazo del niño enfermo y el miedo del padre a que el sensor se caiga o lo lastime.
+**De dónde sale (trazabilidad):**
+- El simulador (núcleo del producto) resuelve bien D1 y D3 del Pain-Gain Map — la parte de "aburrido y desconectado" — pero por sí solo no resuelve el dolor más intenso (D2, la falta de diagnóstico).
+- La estación física + app de diagnóstico vienen de la arista identificada en el Paso 2 (Insight B, verificado con datos ANUIES y de gasto real en kits) y confirmada en la auditoría del Pain-Gain Map del Paso 3. Refuerzan, no reemplazan, la ventaja "Unique" del equipo: su formación en mecatrónica y sistemas embebidos.
 
-**Lo que el cruce genera que ninguna idea sola tenía:** el producto deja de ser "un dispositivo de monitoreo que compras" y pasa a ser "el propósito nuevo de algo que ya tienes tirado", lo que baja drásticamente la barrera de precio y de aceptación sin sacrificar la promesa de no-contacto.
+**Riesgo principal a vigilar (heredado del Paso 5):** la validación de deseabilidad marcó **alto riesgo de inviabilidad técnica** si se intenta construir, en seis meses, un compilador de C++ funcional embebido en el videojuego completo, más la estación física, más la app de diagnóstico, más la web — las cuatro piezas al mismo nivel de fidelidad. La lectura correcta no es descartar la estación física — es que el MVP prioriza el simulador (el componente de menor riesgo técnico) y trata la estación física como expansión de la segunda mitad del semestre, no como parte del lanzamiento inicial.
 
-**Puntaje DVN: 2 de 3** *(2 ✅, 1 ⚠️, 0 ❌ — Veredicto: llevar al Paso 5)*
-
-- 🔴 **Deseable: ✅** — Elimina el rechazo infantil hacia parches/wearables molestos y ofrece un precio de entrada agresivamente bajo (<$800 MXN), ideal para la clase media mexicana que ya posee smartphones en desuso. *Pregunta abierta: ¿el padre confía plenamente en la precisión diagnóstica de una cámara y radar sin contacto comparado con un termómetro físico tradicional?*
-- 🟣 **Novedoso: ⚠️** — Reutilizar teléfonos como cámaras de vigilancia (AlfredCamera, Manything) ya está muy extendido; la novedad real está en acoplar un dock de radar físico externo y visión artificial especializada en síntomas pediátricos. *Pregunta abierta: ¿el radar milimétrico aporta métricas suficientemente superiores a la cámara del teléfono como para justificar comprar el hardware adicional?*
-- 🟢 **Viable: ✅** — El ensamble de un dock con radar de presencia/respiración (mmWave económico vía ESP32 o directo al teléfono) y una app de visión por computadora es construible y comercializable en seis meses con el stack del equipo. *Pregunta abierta: ¿cómo resolverán la fragmentación de puertos (Lightning, micro-USB, USB-C) y la degradación de baterías hinchadas en teléfonos viejos conectados 24/7?*
-
-**Por qué se eligió sobre los otros dos conceptos evaluados** *(Concepto A "Pronóstico de Enfoque", 1/3 — riesgo clínico/legal de prometer certeza sobre salud infantil sin dataset propio; Concepto C "Red de Relevo", 1/3, descartado — inviable en 6 meses por certificación legal y operación de un marketplace de cuidadoras)*: Estación Total combina el camino más certero a un MVP comercializable en seis meses gracias a un costo de lista de materiales (BOM) muy bajo, con una propuesta no invasiva que remueve la fricción de colocarle sensores a un niño enfermo, apalancando directamente las capacidades de hardware conectado y visión artificial del equipo sin cargar con la complejidad operativa de un servicio en campo.
-
-**Riesgo principal a vigilar:** la novedad y diferenciación técnica frente a soluciones gratuitas de software (apps que ya convierten teléfonos viejos en monitores). El Paso 5 debe enfocarse en demostrar que la telemetría del radar (frecuencia respiratoria o micromovimientos) y la visión artificial del dock aportan datos de alerta temprana que ninguna app genérica puede entregar por sí sola.
-
----
+**Modelo de negocio:** venta única del videojuego/simulador en un rango objetivo de $199–299 MXN — muy por debajo de plataformas de curso como Platzi o Udemy, pero por encima de las alternativas gratuitas, siguiendo la lógica de reducción de precio del análisis Blue Ocean. Este rango queda como hipótesis a confirmar en las entrevistas de semana 3 (ver sección 7). La estación de pruebas física se vende por separado, a precio de referencia tipo Arduino Education (~$1,300–8,270 MXN), y abre además un canal institucional (B2B con laboratorios universitarios): licencias comparables del sector (CodeCombat y análogos) cotizan entre $7 y $25 USD por estudiante al año, un techo de referencia razonable para una propuesta con analítica y soporte incluidos.
 
 ## 5. La oportunidad en una oración
 
-> "Existe una oportunidad para padres y madres de clase media en México que trabajan fuera de casa y necesitan sentir que siguen presentes y en control durante la enfermedad de su hijo, sin sacrificar su estabilidad laboral ni su tranquilidad, porque hoy dependen de comunicación manual, subjetiva y fragmentada con terceros, y no existe una solución accesible que convierta el estado de salud de su hijo en información objetiva, inmediata y accionable."
-
----
+"Existe una oportunidad para estudiantes de ingeniería en LATAM, motivados por la relevancia laboral de C++ pero aburridos de las clases tradicionales, que necesitan aprender programando algo real y, eventualmente, validar ese código en hardware real — porque hoy la oferta educativa es teórica y desconectada, los juegos de programación existentes usan lenguajes ficticios, y los kits de hardware (Arduino, Elegoo) no diagnostican por qué el código falla al ejecutarse."
 
 ## 6. Por qué este equipo
 
-**Razón personal (Criterio 1):** Facilitar el cuidado de los niños y la vida de los padres.
-
-**Elemento técnico concreto (Criterio 2):** Se cuenta con las bases suficientes para aprender lo que se desconoce en cuanto a diseño, software y hardware.
-
----
+**Elemento técnico concreto (Criterio 2):** el equipo cursa actualmente sistemas embebidos y viene de formación en mecatrónica, lo que le permite diseñar la lógica de la estación de pruebas (ESP32, sensores, actuadores) y el diagnóstico de la app con conocimiento real de control de hardware — no como un estudio de videojuegos genérico que tendría que aprenderlo desde cero.
 
 ## 7. Hipótesis para Semana 3
 
-**Hipótesis 1 — sobre el dolor:**
-"Creemos que padres/madres de clase media en México con hijos de 0–3 años experimentan ansiedad significativa por no poder monitorear a su hijo enfermo cuando lo dejan con una niñera o familiar, con una frecuencia de al menos 1–2 veces por semana durante episodios de enfermedad, y ya gastan tiempo extra (llamadas, mensajes, viajes a casa) por esa ansiedad porque temen no detectar una complicación de salud a tiempo. Si esto es falso, nuestro concepto necesita redirigirse hacia otro momento de uso (ej. monitoreo nocturno de sueño en vez de monitoreo durante enfermedad activa)."
-*Cómo probarla:* "Cuéntame de la última vez que tu hijo estuvo enfermo y tú tuviste que trabajar o salir de casa. ¿Qué hiciste para saber cómo estaba?" — si la respuesta no incluye ninguna acción concreta, la hipótesis se refuta.
+**Hipótesis 1 — sobre el dolor:** "Creemos que los estudiantes de primeros semestres de ingeniería experimentan bloqueos paralizantes al integrar código con hardware con frecuencia de 2–3 veces por semana, y les cuesta horas de frustración y riesgo de reprobar, porque las herramientas actuales no explican la falla en términos del comportamiento físico. Si esto es falso, el concepto necesita volver a la programación pura, sin componente de hardware."
+*Cómo probarla:* pedir que cuenten, paso a paso, la última vez que se atoraron más de una hora integrando código con un componente físico — qué intentaban hacer, qué mensaje de error recibieron, y qué hicieron para salir de ahí.
 
-**Hipótesis 2 — sobre la solución:**
-"Creemos que estos padres preferirían un dock con radar que reutiliza su smartphone viejo, sobre seguir usando una app gratuita de cámara (AlfredCamera, Manything) en su propio teléfono, porque el radar detecta movimiento/respiración sin dejar la cámara prendida (privacidad) y reduce las falsas alarmas que ya reportan en Reddit. Si esto es falso, el radar se replantea como complemento opcional, no como diferenciador principal, y el valor se enfoca en el reciclaje/costo del smartphone."
-*Cómo probarla:* mostrar la app de cámara gratis y luego el concepto de Estación Total, y preguntar: "¿Qué de esto te haría cambiar de la app gratis a este dock? ¿Qué problema específico de la app gratis te resuelve el radar?" — si no puede nombrar un problema concreto, se refuta.
+**Hipótesis 2 — sobre la solución:** "Creemos que estos estudiantes preferirían un diagnóstico de IA que traduzca el error a comportamiento físico ('tu motor no gira porque...') sobre leer un mensaje de compilador tradicional, porque tangibiliza la causa del problema. Si esto es falso, el concepto necesita enfocarse en mejorar el simulador visual en vez del diagnóstico de hardware."
+*Cómo probarla:* mostrar dos versiones de un mismo error — el mensaje crudo de consola vs. la explicación traducida por la IA — y preguntar cuál usarían las próximas dos horas de trabajo y por qué.
 
-**Hipótesis 3 — sobre el pago:**
-"Creemos que estos padres estarían dispuestos a pagar entre $600–800 MXN por el dock (usando su propio teléfono viejo) porque es 5–10 veces más barato que un monitor premium dedicado ($3,999–$10,200 MXN). Si esto es falso, el concepto necesita bajar el precio objetivo o cambiar el modelo de ingresos (ej. suscripción a las alertas de IA en vez de venta del dock)."
-*Cómo probarla:* "Si este dock costara $700 pesos y usaras el teléfono que ya tienes guardado en un cajón, ¿lo comprarías hoy? ¿Qué tendría que pasar para que dijeras que no?" — escuchar si la objeción es de precio, confianza tecnológica, o necesidad real (esta última refuta H1, no H3).
+**Hipótesis 3 — sobre el pago:** "Creemos que estos estudiantes pagarían entre $199 y $299 MXN por el software/simulador, y que instituciones pagarían entre $7 y $25 USD por estudiante al año por acceso con analítica, porque lo perciben como herramienta de supervivencia académica, no como entretenimiento. Si esto es falso, el modelo necesita moverse a venta directa de hardware con margen, sin depender de licencias recurrentes."
+*Cómo probarla:* pedir el último recibo o gasto real que hicieron en un componente, kit o curso para resolver un proyecto de la carrera, y preguntar cuánto pagarían hoy por evitar repetir esa frustración.
+
+## 8. Lo que cambió
+
+Al arrancar esta investigación probamos el concepto original con una definición amplia de usuario ("gamers interesados en la tecnología"), sin distinguir todavía el segmento específico que resultaría más sólido.
+
+Hoy, con evidencia de tres análisis independientes (auditoría de ecosistema, comparación de insights con datos de ANUIES y del mercado, y validación de deseabilidad), descubrimos que el dolor real y verificable no está en gamers genéricos que *quieren* aprender C++ por curiosidad — está específicamente en estudiantes de ingeniería que *ya tienen* que integrarlo con hardware real para no reprobar, que además resultan ser jugadores activos de simuladores, y que ya gastan dinero y tiempo real resolviendo ese problema a ciegas.
+
+Eso no cambia el producto central — el videojuego de fábrica de drones con C++ real sigue siendo el corazón del concepto — lo hace más preciso: acota el segmento a estudiantes de ingeniería, identifica la causa exacta del aburrimiento (falta de diagnóstico cuando el código falla en hardware), y agrega una expansión concreta que el concepto original no tenía: una estación de pruebas física (ESP32 + sensores + actuadores) con una app que traduce errores de código a comportamiento físico — el diferenciador que ningún competidor mapeado, ni de juegos (Shenzhen I/O, TIS-100) ni de hardware (Arduino Education, Elegoo), ofrece hoy.
+
 <!--
 En este curso solo usaremos los comandos esenciales de Git para trabajar con repositorios.
 
