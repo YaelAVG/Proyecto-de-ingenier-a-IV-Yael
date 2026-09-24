@@ -89,6 +89,16 @@ Hoy, con evidencia de tres análisis independientes (auditoría de ecosistema, c
 
 Eso no cambia el producto central — el videojuego de fábrica de drones con C++ real sigue siendo el corazón del concepto — lo hace más preciso: acota el segmento a estudiantes de ingeniería, identifica la causa exacta del aburrimiento (falta de diagnóstico cuando el código falla en hardware), y agrega una expansión concreta que el concepto original no tenía: una estación de pruebas física (ESP32 + sensores + actuadores) con una app que traduce errores de código a comportamiento físico — el diferenciador que ningún competidor mapeado, ni de juegos (Shenzhen I/O, TIS-100) ni de hardware (Arduino Education, Elegoo), ofrece hoy.
 
+
+## Reflexión personal semana 2
+
+Honestamente, esta fue una semana muy frustrante y, por momentos, la odié. El agotamiento vino principalmente de la cantidad de veces que tuve que repetir todo el proceso iterativo casi desde cero. En particular, aplicar la metodología SCAMPER se me hizo sumamente tedioso; sentía que justo cuando por fin lograba aterrizar una idea sólida, al pasarla por la inteligencia artificial bajo este método, la IA tomaba un rumbo tan exageradamente específico o rebuscado que la propuesta perdía toda su lógica inicial.
+
+En contraste, mi parte favorita de toda esta dinámica fue trabajar con el filtro DVN (Deseabilidad, Viabilidad, Factibilidad). Fue un alivio contar con un marco de referencia tan directo y objetivo que, sin rodeos ni ambigüedades, te confronta con la realidad y te dice si tus ideas tienen el sustento necesario para sobrevivir o si son estructuralmente débiles.
+
+A pesar de los dolores de cabeza, chocar contra estos obstáculos me hizo abrir los ojos y entender de primera mano por qué no todo el mundo logra ser emprendedor. Es increíblemente difícil concebir una idea que no solo sea innovadora, sino que tenga un mercado real y sea viable de construir. Es muy fácil enamorarte de tu propio diseño y caer en la ilusión de que un proyecto será un éxito solo porque a ti te parece buena idea. Es un golpe de realidad muy necesario, sobre todo cuando buscas que un concepto de ingeniería trascienda más allá de un simple prototipo académico y tenga potencial en el mundo real.
+
+Al final del día, y superando el estrés de las repeticiones, me llevo un aprendizaje invaluable. Logré asimilar una gran cantidad de conceptos clave, entendí cómo se entrelazan las distintas metodologías de diseño y validación, y reconocí la importancia crítica de ser riguroso antes de enamorarse de una solución.
 <!--
 En este curso solo usaremos los comandos esenciales de Git para trabajar con repositorios.
 
