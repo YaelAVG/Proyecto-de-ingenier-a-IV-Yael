@@ -1,326 +1,594 @@
-# Propiedad Intelectual, Marca y Vigilancia Tecnológica — Semana 3
+# Semana 3 — Propiedad intelectual, marca y vigilancia tecnológica
 
-> 📌 **Nota de contexto:** este reporte documenta el trabajo de Semana 3 sobre el concepto *El Pulso Matutino*, cuyo nombre de marca candidato es **"Buendía"**. Cubre el Paso 3 (nombre de marca con IA), el Paso 4 (búsqueda de antecedentes marcarios) y el Paso 5 (vigilancia tecnológica de patentes). El Paso 6 (entrevistas) **aún no se ha realizado** — queda como pendiente explícito para esta semana.
+**Equipo:** José Carlos y Yael  
+**Concepto:** GPIO Génesis — videojuego de simulación de una fábrica donde se programa en C++ real, con enfoque en sistemas embebidos (ESP32 / Raspberry Pi Pico 2)  
+**Fecha de las búsquedas:** 23 de septiembre de 2026
 
-**Equipo:** José Carlos y Yael
-**Concepto:** El Pulso Matutino
-**Nombre de marca en evaluación:** Buendía (finalista sobre Wamu y Sinprisa)
+!!! abstract "De qué trata esta semana"
+    En semana 2 encontramos una oportunidad deseable. Esta semana la pregunta es si **nos la podemos apropiar**: ¿podemos registrar el nombre GPIO Génesis?, ¿alguien ya patentó lo que queremos construir?, ¿qué tan libre está el espacio tecnológico donde vamos a trabajar? Todo lo que hicimos —prompts, respuestas de la IA, búsquedas y decisiones— está en esta misma página.
 
----
+    Las entrevistas (Paso 6) se documentan en [Semana 4](canvas-mercado-semana4.md), porque ahí es donde se usaron.
 
-## 1. Paso 3 — Nombre de marca con IA
+## Learning outcomes
 
-### 1.1 Prompt A — Generación de nombres (12 candidatos)
+Al terminar esta semana podemos:
 
-```
-Eres un experto en naming y branding para startups de hardware + IA en México.
-
-Concepto: "El Pulso Matutino" — sistema de dos artefactos para hijos que sienten culpa por
-no poder llamar a sus padres todos los días. Un sensor en la tubería principal detecta la
-rutina matutina del adulto mayor (lavado de cara/dientes); esto enciende un marco digital en
-su sala con un mensaje cálido precargado por los nietos/familia vía app. Si no hay señales de
-rutina a cierta hora (ni agua, ni firma térmica en la sala), la app sugiere al hijo/a una
-llamada casual. Se posiciona como un asistente de comunicación familiar proactiva, NO como
-monitoreo médico ni vigilancia.
-
-Genera 12 nombres de marca en español, organizados en 4 categorías (3 nombres por categoría):
-1. Evocadores — evocan una emoción o imagen sin describir literalmente el producto
-2. Compuestos — combinan dos palabras o raíces
-3. Inventados — palabras nuevas sin significado previo, fáciles de registrar
-4. Disruptivos — nombres inesperados que rompen el molde de la categoría
-
-Para cada nombre incluye: significado/asociación, y por qué comunica calidez familiar y NO
-vigilancia médica. Al final, elige y justifica los 3 finalistas que más resuenen con el concepto.
-```
-
-**Insight de posicionamiento aplicado:** todo debe oler a ritual, ternura y presencia discreta — nunca a sensor, alerta o salud. Se evitaron deliberadamente palabras como "check", "monitor", "cuido", "salud", "seguridad".
-
-**Los 12 nombres generados**
-
-*Evocadores (imagen o emoción, sin describir el producto)*
-- **Buendía** — fusión de "buen día" como nombre propio cariñoso; suena a costumbre familiar, no a tecnología.
-- **Tibia** — remite a la temperatura del agua de la mañana, sensorial y doméstica, no clínica.
-- **Cariñito** — diminutivo cálido y muy latino; imposible de confundir con un producto médico.
-
-*Compuestos (combinación de dos raíces)*
-- **Buenluz** — "buenos días" + "luz" (la luz del marco digital que se enciende); sugiere buenas noticias, no alarma.
-- **Mañalazo** — "mañana" + sufijo coloquial mexicano ("-azo"); energía positiva familiar, no medición de rutina.
-- **Vozdealba** — "voz" + "alba" (amanecer); tono poético de tradición oral y cariño transmitido.
-
-*Inventados (sin significado previo, fáciles de registrar)*
-- **Abrila** — juega con "abre" + "abril"; suena a nombre propio cariñoso, sin carga clínica.
-- **Wamu** — de "buenos días" acortado + sonido tierno tipo "abu"/"wawi"; apodo cariñoso entre nietos y abuelos.
-- **Almaba** — combina "alma" con terminación tipo nombre propio ("-ba"); evoca lo espiritual/emocional sin nombrar nada técnico.
-
-*Disruptivos (rompen el molde de la categoría eldercare-tech, típicamente clínica: "SafeSenior", "CareLink")*
-- **Terquita** — alude al estereotipo cariñoso del "abuelo terco"; desarma la lectura de vigilancia con humor cómplice.
-- **La Chismosa** — juega con "la tubería que todo lo sabe" en tono de chisme familiar, no de espionaje.
-- **Sinprisa** — contradice la urgencia/alarma típica de la categoría; casi un manifiesto de marca contra el pánico y a favor de la calma.
-
-**🏆 3 finalistas y justificación**
-
-| Finalista | Por qué |
-|---|---|
-| **Buendía** | El más sólido para consumo masivo: cálido, fácil de pronunciar, universalmente entendible, con espacio para construir un mundo de marca completo (app "Buendía", "el Buendía", "te llegó tu Buendía"). |
-| **Wamu** | El mejor para diferenciación de categoría y ternura generacional: corto, moderno, registrable como marca de hardware+app (estilo "Nest", "Ring", "Aura"), con sonido de apodo cariñoso entre abuelos y nietos. |
-| **Sinprisa** | El más estratégico para diferenciarse radicalmente de la competencia de "eldercare tech": articula el pitch de "esto no es vigilancia" incluso antes de explicar el producto. |
-
-**Decisión del equipo entre los 3:** Buendía — balancea memorabilidad, calidez y claridad de propuesta, sujeto a verificar disponibilidad de dominio/registro (de ahí el Prompt C aplicado solo a este candidato, sección 1.2).
-
-### 1.2 Prompt C — Verificación digital de pertinencia de marca (aplicado a "Buendía")
-
-```
-Actúa como: Consultor Senior en Estrategia de Marca, Naming y Propiedad Intelectual Digital.
-Objetivo: Evaluar la pertinencia, viabilidad digital y disponibilidad competitiva del nombre
-de marca "Buendía" para un nuevo producto tecnológico de bienestar familiar.
-
-Contexto del Producto
-- Nombre de Marca a evaluar: Buendía
-- Concepto: El Pulso Matutino — Sistema de dos artefactos diseñado para adultos mayores y sus
-  hijos adultos que sienten culpa por la falta de contacto diario.
-- Mecanismo: Un sensor no invasivo en la tubería principal detecta el flujo de agua matutino
-  (lavado de cara/dientes) y la presencia térmica habitual en la sala. Al activarse la rutina,
-  enciende un marco digital en la sala con un mensaje cálido precargado por la familia vía app.
-  Si no detecta actividad a cierta hora, la app sugiere al hijo realizar una llamada casual.
-- Posicionamiento clave: Asistente de comunicación familiar proactiva y afectiva. NO es
-  monitoreo médico, NO es botón de pánico, NO es vigilancia tipo cámara intrusiva.
-
-Tareas de Verificación Requeridas
-1. Alineación Semántica y Emocional: ¿"Buendía" transmite calidez, rutina y conexión sin
-   connotar fragilidad, enfermedad o intrusión? ¿Resuelve la tensión emocional del hijo
-   (alivio de culpa) y del adulto mayor (acompañamiento digno)?
-2. Huella Digital y Presencia Web (SEO / Dominios): saturación del término en buscadores
-   (confusión con marcas de café, apellidos, medios, expresiones cotidianas); viabilidad de
-   extensiones de dominio (.com, .co, .care, .tech, holabuendia.com, buendiahome.com, etc.).
-3. Confusión de Marca y Registro de Clase (Niza): colisiones en Clase 9 (software/IoT),
-   Clase 38 (telecomunicaciones), y evaluación de deslinde explícito de la Clase 10
-   (dispositivos médicos); riesgo de dilución frente a marcas notorias preexistentes.
-4. Veredicto y Recomendaciones: calificación de pertinencia digital (Baja/Media/Alta) y
-   sugerencias de apellidos de marca o adaptaciones si "Buendía" presenta saturación crítica.
-```
-
-**Resultado del análisis**
-
-**Alineación semántica y emocional:** semánticamente "Buendía" es un acierto casi perfecto: el juego con "buen día" transmite calidez y rutina sin ninguna connotación médica o de fragilidad, alineado con el posicionamiento de comunicación afectiva del producto.
-
-**Huella digital y presencia web:** como marca exacta y desnuda, "Buendía" choca con una huella digital muy ocupada — el dominio `buendia.com` pertenece a **Café Buendía** (Federación Nacional de Cafeteros de Colombia, exportación a Asia), y los resultados de búsqueda del apellido están dominados por **Manuel Buendía** (periodista mexicano asesinado, documental de Netflix), **Silvia Buendía** (activista ecuatoriana, fallecida en agosto de 2026) y la **familia Buendía** de *Cien años de soledad*.
-
-**Confusión de marca y registro por clase (Niza):** la búsqueda en el registro federal de EE. UU. no encontró colisiones activas en clases 9, 10 o 38 (solo marcas muertas o de categorías ajenas, como tequila y café), pero esa búsqueda **no cubre INDECOPI (Perú), IMPI (México), SIC (Colombia) ni OMPI** — las bases realmente relevantes dado que Café Buendía opera en Colombia y Perú. Antecedente técnico relevante: **"Project Buendia"** es un sistema abierto de historiales médicos (nacido en la respuesta al Ébola), lo que refuerza excluir explícitamente la **Clase 10** al registrar.
-
-**Veredicto:** **pertinencia digital MEDIA.** No lanzar "Buendía" en solitario; usarlo dentro de una arquitectura de marca compuesta (p. ej. "Buendía Hogar", "Buendía Conecta", "Pulso Buendía", "Tu Buendía" con "El Pulso Matutino" como nombre de sistema); asegurar cuanto antes los dominios compuestos que parecen libres (`buendiahome.com`, `buendia.care`, `buendia.tech`); encargar una búsqueda formal en las oficinas de marca de México, Colombia, Perú y Ecuador antes de comprometerse.
-
-**Limitación reconocida:** no hubo acceso directo a las bases oficiales de INDECOPI/IMPI/SIC/OMPI; esa parte se apoyó en evidencia de uso comercial público y en el registro de EE. UU., no en una búsqueda registral certificada. La sección 2 (búsqueda marcaria en México) empieza a cerrar ese hueco.
-
-### 1.3 Decisión de nombre a la fecha
-
-El equipo eligió **"Buendía"** como finalista sobre Wamu y Sinprisa por su fuerza semántica y memorabilidad, pero **no como marca desnuda**: la línea de trabajo es "Buendía" + descriptor ("Buendía Hogar", "Pulso Buendía", "Tu Buendía") o "El Pulso Matutino" como nombre de sistema con "Buendía" como sub-marca/tono de voz — decisión reforzada por los antecedentes marcarios activos en México encontrados en la sección 2.
-
-### 1.4 Pendiente de este paso
-
-- Wamu y Sinprisa no pasaron por la misma verificación digital profunda (Prompt C) que Buendía — si se quiere dejar constancia formal de por qué se descartaron frente a Buendía (y no solo la justificación cualitativa del Prompt A), conviene correr el mismo Prompt C sobre ellos.
+- Distinguir los instrumentos de propiedad intelectual (marca, patente, modelo de utilidad, diseño industrial, derechos de autor y secreto industrial) y decidir **cuál proteger primero** en GPIO Génesis.
+- Diseñar prompts propios para generar, evaluar y verificar un nombre de marca a partir de las indicaciones del profesor, y comparar nuestro resultado con lo que se pedía.
+- Hacer e interpretar una **búsqueda fonética en el IMPI** por clase de Niza, y leer qué significa cada antecedente para nuestra marca.
+- Seguir un protocolo de **vigilancia tecnológica** (términos + códigos IPC → México → LATAM → global → familias y citas → reclamos → conclusión FTO).
+- Leer los **reclamos** de una patente y decidir si nuestro concepto cae dentro o fuera de lo protegido.
+- **Auditar** lo que dice la IA con fuentes primarias en vez de copiarlo tal cual.
 
 ---
 
-## 2. Paso 4 — Búsqueda de antecedentes marcarios ("Buendía")
+## Paso 2 — ¿Qué propiedad intelectual le aplica a GPIO Génesis?
 
-### 2.1 Captura de la búsqueda
+Del panorama de PI que vimos en clase, así queda cada instrumento aplicado a nuestro proyecto:
 
-| # | Número de expediente | Marca | Tipo de solicitud | Titular | Estatus |
-|---|---|---|---|---|---|
-| 1 | 736647 | BUENDÍA | Registro de marca | Federación Nacional de Cafeteros de Colombia | 🟢 Registrada |
-| 2 | 736648 | BUENDÍA (logo) | Registro de marca | Federación Nacional de Cafeteros de Colombia | 🟢 Registrada |
-| 3 | 736649 | BUENDÍA (logo) | Registro de marca | Federación Nacional de Cafeteros de Colombia | 🟢 Registrada |
-| 4 | 736650 | BUENDÍA (logo) | Registro de marca | Federación Nacional de Cafeteros de Colombia | 🟢 Registrada |
-| 5 | 1230532 | BUENDÍA | Registro de marca | Juan Carlos Barajas Plascencia | 🟠 En trámite |
-| 6 | 1565842 | BUENDÍA | Registro de marca | Quiero Media, S.A. de C.V. | 🟢 Registrada |
-| 7 | 1655663 | BUENDÍA | Registro de marca | Federación Nacional de Cafeteros de Colombia | 🟢 Registrada |
-| 8 | 2833941 | BUENDÍA | Registro de marca | Capital Golden Point, S.A. de C.V. | 🟢 Registrada |
-| 9 | 831920 | BUENDÍA! BY JUAN VALDEZ | Registro de marca | Federación Nacional de Cafeteros de Colombia | 🟠 En trámite |
-
-### 2.2 Lectura de resultados
-
-Confirma lo que ya advertía el análisis digital: **"Buendía" no está libre incluso como palabra desnuda** — hay 9 expedientes activos o en trámite, y no todos son de Café Buendía/Colombia. **Quiero Media, S.A. de C.V.** y **Capital Golden Point, S.A. de C.V.** (ambas mexicanas) ya tienen la marca **registrada**, y **Juan Carlos Barajas Plascencia** tiene una solicitud **en trámite** — hay titulares mexicanos activos con la palabra exacta, no solo el antecedente colombiano del café. Esto refuerza la recomendación de usar "Buendía" solo dentro de una marca compuesta, nunca como palabra suelta.
-
-### 2.3 Pendiente de este paso
-
-- La captura no incluye la **Clase de Niza** de cada expediente ni confirma si el motor usado hace **búsqueda fonética** (variantes que "suenan similar") o solo coincidencia exacta.
-- Falta repetir la búsqueda (exacta + fonética, con clase) sobre el **nombre compuesto final** que se elija (p. ej. "Buendía Hogar", "Pulso Buendía"), ya que la búsqueda actual solo cubre la palabra sola.
-
----
-
-## 3. Paso 5 — Vigilancia tecnológica (patentes)
-
-**Limitación técnica declarada:** IMPI/SIGA, LATIPAT y Lens.org son buscadores interactivos (JavaScript) que no se pudieron operar como un formulario web real. Para México y LATAM se usó el proxy más cercano posible (búsqueda global cruzada filtrando por México/LATAM), dejando los enlaces exactos para hacer la verificación en vivo con los mismos términos.
-
-### 3.1 Paso 1 — Términos y códigos IPC (preparación)
-
-| ES | EN |
-|---|---|
-| Sensor de flujo de agua / tubería principal | Water flow sensor / main pipe sensor |
-| Detección de rutina matutina | Morning routine detection |
-| Firma térmica / sensor de presencia | Thermal signature / occupancy (PIR) sensor |
-| Marco digital / pantalla familiar | Digital photo frame / smart display |
-| Notificación proactiva a hijo/a | Proactive caregiver notification / nudge |
-| Comunicación familiar a distancia | Remote family communication / eldercare |
-| Detección de inactividad | Inactivity / anomaly detection |
-
-**Códigos IPC relevantes:** G08B21/22 (alarmas por presencia/ausencia de personas) · G08B21/24 (recordatorios) · G08B25/00 (señalización a estación central) · G01F1/00 (medición de flujo de fluidos) · G06Q50/22 (TIC para bienestar social/salud).
-
-### 3.2 Paso 2 — México (IMPI/SIGA) — verificación en vivo ✅
-
-**Búsqueda realizada:** [siga.impi.gob.mx](https://siga.impi.gob.mx) → Búsqueda especializada → Área: Patentes → Gaceta: "Solicitudes de Patente, de Registros de Modelo de Utilidad y de Diseños Industriales" → Columna: **Clasificación CIP** = `G08B21/22` (alarmas por presencia/ausencia de personas) → **9 resultados encontrados**.
-
-| # | Solicitud | Título | Relevancia |
+| Instrumento | ¿Aplica a GPIO Génesis? | Qué protegería | Prioridad |
 |---|---|---|---|
-| 1 | MX/a/2015/015300 (Ford) | Alarma para bicicleta basada en proximidad | Ninguna |
-| 2 | PCT/IB2014/059477 | Sistemas para reducir impacto de sonidos de alarma en pacientes (hospital) | Baja — detecta presencia de personal médico, no rutina doméstica |
-| 3 | PCT/CA2013/050285 | Geolocalización de individuo respecto a un perímetro (wearable GPS) | Baja-media — vigilancia de personas, pero por GPS/perímetro, no sensor de agua |
-| 4 | MX/a/2014/013040 (Ford) | Transmisión de foto tras evento de impacto vehicular | Ninguna |
-| 5 y 6 | MX/a/2009/003685 (duplicado, con fe de erratas) | Métodos RFID para mejorar seguridad personal | Ninguna — RFID en zonas de peligro laboral |
-| 7 | PCT/US2005/037526 | Monitorear personas con medios inalámbricos (zonas geográficas) | Baja — geocercas, no sensores domésticos |
-| 8 | PCT/US2005/037882 | Configuración de zonas geográficas para monitorear entidades móviles | Baja — mismo mecanismo que el 7, probablemente misma familia |
-| 9 | PA/a/2001/007202 (Armstrong World Industries) | Sistema de ubicación e identificación de aparato (paneles de construcción con RFID/luz) | Ninguna |
+| **Marca registrada** | Sí | El nombre "GPIO Génesis" y su logo en clases 9 (software/videojuegos) y 41 (educación/entretenimiento) | **1 — ya** |
+| **Derechos de autor** | Sí | El código fuente del juego, el arte, la música, los niveles y el texto. En México se registra en INDAUTOR | **1 — ya** |
+| **Secreto industrial** | Sí | El modelo de diagnóstico que traduce errores de C++ a comportamiento del hardware, y los datos con que se entrene | **1 — NDA desde el día 1** |
+| **Modelo de utilidad** | Tal vez, después | La estación de pruebas física (ESP32/Pico 2 + sensores + actuadores) si llega a tener una mejora de forma o función | 2 — con tracción |
+| **Diseño industrial** | Tal vez, después | La forma del gabinete de la estación de pruebas | 2 — con tracción |
+| **Patente de invención** | Difícil | El software por sí mismo no es patentable en México, y en el Paso 5 encontramos antecedentes que le quitan novedad al diagnóstico con IA | 3 — solo con asesoría |
 
-**Lectura:** ninguno de los 9 resultados cubre el mecanismo específico del proyecto (sensor de tubería de agua → detección de rutina matutina → marco digital con mensaje familiar precargado). Los más cercanos conceptualmente (3, 7 y 8) vigilan personas por **GPS/geocercas**, no por flujo de agua ni firma térmica doméstica — mecanismo distinto. Esto es evidencia **directa de IMPI**, no un proxy global, y refuerza la conclusión de FTO alta.
+**Respuesta al checklist de salida — ¿qué PI proteger primero?** La **marca**, junto con el registro de derechos de autor del juego. Es lo más barato, lo más rápido y, según lo que vimos en clase, lo que más duele no tener: si otro registra "GPIO Génesis" antes que nosotros, el nombre es legalmente suyo.
 
-**Segunda búsqueda — `G08B21/24`** (recordatorios) → **11 resultados encontrados**:
+### Licencias open source que tocan nuestro stack
 
-| # | Solicitud | Título | Relevancia |
-|---|---|---|---|
-| 1 | PCT/US2015/012550 | Notificaciones como recordatorio enlazadas con una entidad (activadas por llamada/SMS/email) | Baja — recordatorio por comunicación entrante, no por sensor ambiental |
-| 2 | PCT/US2014/065269 | Reducción de infecciones por higiene de manos (monitoreo hospitalario) | Ninguna |
-| 3 | PCT/CN2014/084462 | Método y dispositivo para incitar al usuario (detección de terminales en un área) | Ninguna |
-| 4 | PCT/US2013/024995 | Anticuerpos CD47 (biotecnología/farma) | Ninguna |
-| 5 | PCT/US2012/068094 | Dispositivo de venta al por menor con emisión de señal (antirrobo) | Ninguna |
-| 6 | PCT/US2012/055117 | Monitor de cumplimiento de higiene para recipiente dispensador | Ninguna |
-| 7 | MX/a/2012/009405 (inventores mexicanos) | Dispositivo electrónico que emite alarma y/o mensajes escritos/voz (recordatorio de "hoy no circula" vehicular) | Baja-media — mismo concepto general de "dispositivo que emite mensajes de recordatorio", pero aplicación y mecanismo distintos (no hay sensor ambiental, es un recordatorio calendarizado) |
-| 8 | PCT/US2012/034227 | Dispensador de cumplimiento portátil (higiene) | Ninguna |
-| 9 | PCT/US2012/025642 | Dispensador habilitado con red (jabón) | Ninguna |
-| 10 | PCT/KR2011/001644 | Prevención de pérdida de artículos vía RFID | Ninguna |
-| 11 | PCT/US2005/033792 | Dispositivo para alentar la obediencia del lavado de manos (sensor de luz ambiental + audio en baño) | Baja-media — mismo espíritu de "sensor ambiental en baño → mensaje audible", pero usa luz (no agua) y es para cumplimiento de higiene institucional, no comunicación familiar |
+Como el juego va a compilar C++ y a simular microcontroladores, revisamos qué licencias podríamos "heredar" sin darnos cuenta (la trampa del `#include` que vimos en clase):
 
-**Lectura de esta segunda búsqueda:** los resultados 7 y 11 son los conceptualmente más cercanos por compartir la idea general de "detectar algo en el entorno y disparar un mensaje", pero ninguno usa un **sensor de flujo de agua** ni tiene el propósito de **comunicación familiar afectiva** — el 7 es un recordatorio calendarizado (no sensor) y el 11 usa luz ambiental para cumplimiento de higiene institucional. Sin colisión con el mecanismo del proyecto.
-
-**Tercera búsqueda — `G08B25/00`** (transmisión de alarma a estación central) → **18 resultados encontrados**:
-
-| # | Solicitud | Título | Relevancia |
-|---|---|---|---|
-| 1 | PCT/SG2013/000439 | Unidad de control móvil para administración de instalaciones | Ninguna |
-| 2 | PCT/CN2015/077882 | Monitoreo por video que se detiene si detecta un dispositivo portátil enlazado (protección de privacidad en casa) | Baja-media — protege privacidad del ocupante en casa, pero es video (no agua) y el fin es pausar vigilancia, no enviar mensaje cálido |
-| 3 | PCT/CA2013/000923 | Verificación de dispositivo con múltiples servidores | Ninguna |
-| 4 | MX/a/2012/009405 (duplicado, ya visto en la búsqueda anterior) | Dispositivo de alarma/mensajes para recordatorio de "hoy no circula" | Baja-media (ver búsqueda de `G08B21/24`) |
-| 5 | PCT/US2012/026783 | Motor de políticas personalizable para alertas por severidad de riesgo | Baja — motor de alertas genérico, sin sensor específico |
-| 6 | PCT/US2010/037680 | Sistema de videovigilancia con detección de explosivos/NBC | Ninguna — vigilancia encubierta, opuesto en espíritu al posicionamiento del proyecto |
-| 7 | PCT/US2011/045286 | Envío de mensajes de emergencia vía red de medidores de servicios públicos | Baja — usa infraestructura de medidores, pero para emergencias reportadas por la red, no rutina detectada por sensor doméstico |
-| 8 | PCT/US2011/056866 | Detección de condiciones ambientales (tornados, sismos) vía red de medidores de servicios públicos | Baja-media — comparte la idea de "aprovechar infraestructura de servicios ya existente para sensar", pero aplicado a alertas climáticas, no a rutina de un adulto mayor |
-| 9 | PCT/US2010/030337 | Sistema de detección multipunto con sensores de movimiento auto-energizados | Baja — red de sensores de movimiento genérica, sin agua ni mensaje familiar |
-| 10 | PCT/ES2009/070577 | Identificación de incidencias en red de telecomunicaciones | Ninguna |
-| 11 | MX/a/2009/009308 (inventores mexicanos, Monterrey) | Detección de accidentes automovilísticos vía GPS/acelerómetro | Ninguna |
-| 12 y 15 | PCT/US2007/020022 (duplicado, con fe de erratas) | Protocolo RF LAN para medición y celda/nodo (redes de medidores eléctricos) | Ninguna — protocolo de red, no producto de cuidado familiar |
-| 13 | PCT/NL2008/050274 | Intercambio de datos entre sistemas mediante red pública | Ninguna |
-| 14 | PCT/US2008/066322 | Sistema de seguridad antirrobo para comercios | Ninguna |
-| 16 | PCT/US2006/032680 | Sistema de monitoreo portátil con umbral ajustable (edificios) | Baja — monitoreo de condiciones peligrosas en edificios, no doméstico/familiar |
-| 17 | PCT/IB2004/003953 | Ubicación y recuperación de vehículos vía GPS/VHF | Ninguna |
-| 18 | PCT/US2005/014112 | Sistema de seguridad de "sensor estigmérgico" (red de sensores que se alertan entre sí) | Baja — red de sensores para seguridad/intrusión, no para rutina familiar |
-
-**Lectura de esta tercera búsqueda:** de los 18 resultados, ninguno usa un sensor de flujo de agua ni tiene como fin un mensaje familiar cálido. Los dos casos más cercanos en espíritu son el 2 (pausar vigilancia por video al detectar un dispositivo cercano — protección de privacidad doméstica, pero con cámara) y el 8 (usar la red de medidores de servicios públicos ya instalada para sensar algo — pero para clima, no para rutina de un adulto mayor). Ambos refuerzan que la idea de "aprovechar infraestructura existente para detectar algo sin instalar cámaras" ya aparece en la literatura de patentes en general, pero **no** en la combinación específica agua+rutina+mensaje familiar del proyecto.
-
-**Cuarta búsqueda — `G01F1/00`** (medición del caudal/volumen de fluidos) → **41 resultados encontrados**. Este código es mucho más genérico que los anteriores (cubre cualquier medición de flujo de fluidos), así que en vez de una tabla de 41 filas, el resumen es:
-
-- **40 de los 41** son patentes puramente de **ingeniería de instrumentación de flujo industrial**, sin relación con adultos mayores ni comunicación familiar: medidores de flujo másico Coriolis, medidores de turbina, sensores de biorreactores/bioprocesamiento, caracterización de fluidos de pozos petroleros, medición de gas por sonar en procesamiento industrial, flujo en hornos metalúrgicos, microfluídica, sistemas de dosificación industrial, protocolos de medidor de agua para telemetría de servicios públicos, etc. Aplicaciones: industrial, petrolera, biotecnológica, metalúrgica — ninguna doméstica ni de cuidado familiar.
-- **El único resultado con temática doméstica real — y el más cercano encontrado en toda la vigilancia tecnológica —** es:
-
-  **MX/a/2013/004934** — *"Medidor electrónico inalámbrico de flujo de agua domiciliario"*, solicitado por la Dirección General de Educación Superior Tecnológica de la SEP (inventores de un instituto tecnológico de Tuxtla Gutiérrez, Chiapas). Resumen: *"Medidor inalámbrico de flujo de agua domiciliario, que mediante un sensor detecta las variaciones de flujo de agua, enviando la información registrada a una tarjeta de circuitos electrónicos que cuantifica y visualiza los parámetros calculados en una pantalla; mediante una conexión inalámbrica es posible realizar una medición a distancia de los valores registrados por el sensor."*
-
-  **Por qué no colisiona:** este medidor solo **cuantifica y muestra** el volumen/flujo de agua a distancia (como un medidor doméstico inteligente para consumo) — no infiere rutina, no detecta ausencia de actividad, no dispara ningún mensaje ni notificación a terceros, y no tiene componente de comunicación familiar. Es un antecedente de novedad a tener en cuenta (mismo dominio técnico: sensor de flujo de agua domiciliario mexicano), pero fuera del mecanismo específico del proyecto — igual que se concluyó con US11,112,132 en la búsqueda global (sección 3.4): la parte de "sensor de agua" existe como antecedente técnico, pero no combinada con inferencia de rutina + mensaje familiar.
-
-**Quinta y última búsqueda — `G06Q50/22`** (TIC para bienestar social / atención médica) → **33 resultados encontrados**. Este código es el más cercano temáticamente a "bienestar" de los cinco, pero la mayoría son sistemas de **gestión hospitalaria/administrativa**: dispensación automatizada de medicamentos, triage de urgencias, expedientes clínicos, higiene hospitalaria, programas de tarjetas de pago para pacientes, monitoreo nutricional por internet, etc. — nada de esto usa un sensor de agua ni está dirigido a comunicación familiar afectiva. Los 4 casos con algo más de cercanía conceptual:
-
-| Solicitud | Título | Por qué se acerca / por qué no colisiona |
+| Componente que podríamos usar | Licencia | Riesgo para nosotros |
 |---|---|---|
-| PCT/US2014/039282 y PCT/US2014/039286 (mismo solicitante, mismo día) | "Métodos y sistemas para ayudar a personas..." / "Método y sistema para mantener o mejorar el bienestar" | Predicen el estado emocional/bienestar de una persona y **alteran su ambiente de vida** o dan consejos — pero midiendo **biomarcadores en una muestra biológica** (ej. sangre/saliva), no con sensores pasivos de infraestructura. Mecanismo completamente distinto. |
-| PCT/US2012/020542 | Sistema, método y artículo para inducir un cambio de conducta | Sistema genérico de cambio de comportamiento basado en datos de promoción de la salud — sin sensor específico ni componente familiar. |
-| PCT/US2012/038466 | Sistema de aprendizaje dirigido por niños (CEIL) — integra comunicación celular, educación, entretenimiento, alerta y monitoreo entre menor y padres | El más cercano en **espíritu** (comunicación + monitoreo entre familiares a distancia), pero está dirigido a **niños** (no adultos mayores), usa apps/comunicación celular activa (no sensores pasivos de agua/térmicos), y el fin es supervisión parental, no alivio de culpa del hijo adulto. |
-| PCT/US2013/021530 | Sistemas y métodos de monitorización remota para dispositivos médicos (en centro de salud o en casa) | Relé de datos de **dispositivos médicos** ya existentes hacia un servidor/páginas web — no genera ni infiere nada por sí mismo, y es explícitamente para dispositivos médicos (justo el ángulo que el proyecto busca evitar). |
+| ESP-IDF (SDK de Espressif para ESP32) | Apache 2.0 | ✅ Uso comercial libre |
+| Pico SDK (Raspberry Pi) | BSD-3-Clause | ✅ Uso comercial libre |
+| Clang / LLVM (para compilar el C++ del jugador) | Apache 2.0 con excepción LLVM | ✅ Se puede embeber en el juego |
+| Arduino core para ESP32 | LGPL 2.1 | ✅ Se puede enlazar sin contaminar nuestro código |
+| GCC como compilador embebido | GPL v3 | ⚠️ Distribuirlo obliga a entregar su código fuente; no hay que enlazar nuestro código a él |
+| QEMU (fork de Espressif para emular ESP32) | GPL v2 | ⚠️ Si lo metemos dentro del juego, todo lo que se enlace tendría que publicarse |
 
-**Lectura:** ninguno de los 33 resultados cubre el mecanismo del proyecto. El caso más parecido en *intención* (comunicación afectiva a distancia entre familiares con alertas) es el sistema CEIL para niños — útil como referencia de que la idea de "comunicación + monitoreo familiar" ya se ha patentado para otro segmento (menores), lo cual **no bloquea** el concepto pero sí es una pieza de literatura de patentes relevante para citar en un futuro trámite propio (para argumentar novedad frente al segmento de adultos mayores).
-
-Con esto se completaron los 5 códigos IPC de la vigilancia tecnológica en IMPI (`G08B21/22`, `G08B21/24`, `G08B25/00`, `G01F1/00`, `G06Q50/22`) — sección 3.2 queda cerrada. Solo falta la verificación en **LATIPAT** (sección 3.3).
-
-### 3.3 Paso 3 — LATAM (LATIPAT)
-
-Mismo resultado: sin evidencia de solicitudes en Brasil, Colombia, Argentina o Chile sobre este mecanismo específico. **Pendiente de verificación en vivo:** [latipat.epo.org](https://latipat.epo.org) — espacio aparentemente libre en la región.
-
-### 3.4 Paso 4 — Global (proxy vía Google Patents / USPTO / Espacenet)
-
-| Patente | Titular | Estado | Relevancia |
-|---|---|---|---|
-| **US11,112,132 B2** — "Systems and methods for monitoring water in a building" | Inventor individual (Bao Tran) | 🔴→🟢 Expirada por falta de pago de tarifas ("Expired – Fee Related"); prioridad 2018, otorgada 2021, vencimiento natural ajustado a 2040 | **Alta similitud conceptual** |
-| **US11,647,964 B2** — "Remote watching system" | Paramount Bed Co. (Japón) | 🟢 Vigente, prioridad 2020 | Media (mecanismo distinto) |
-| **US7,792,708 B2** — "Digital frame having wireless communication capability" | T-Mobile / Deutsche Telekom | 🟢 Vigente, expira 2028 | Baja |
-
-**Hallazgo más relevante — US11,112,132:** describe explícitamente detectar la hora en que la persona se levanta identificando actividad de agua en el grifo o el inodoro del baño por la mañana, e infiere hábitos diarios a partir del patrón de uso de agua. Sus reivindicaciones dependientes cubren un centro de llamadas que monitorea "actividades de vida" a partir del sensor de agua y solicita asistencia, o llama para pedir ayuda si es necesario. Está **expirada** por falta de pago de mantenimiento.
-
-**US11,647,964 (Paramount Bed, vigente):** sensor colocado en la **cama** que capta información biológica del usuario, la envía a un servidor y este emite una notificación a un terminal móvil, mostrando solo notificaciones previamente configuradas — pensado para familias donde padres mayores viven separados de sus hijos.
-
-**Otras señales relevantes (literatura no-patente y competencia):** un estudio académico describe un sistema donde el adulto mayor coloca fotos familiares en la pared para activar una notificación con imagen hacia sus parientes vía LINE (dirección inversa: inicia el adulto mayor, no el sensor, pero mismo espíritu "conexión, no vigilancia"). **CarePredict** (competidor comercial activo) tiene patentes en EE. UU., Corea, Francia y Canadá para su sensor portátil y balizas de habitación, sin filings en México/LATAM.
-
-### 3.5 Paso 5 — Familias y referencias cruzadas (2 patentes de mayor riesgo)
-
-- **US11,112,132:** familia limitada a EE. UU. (inventor individual, sin extensión PCT visible), sin miembros en México. Al estar expirada no genera riesgo de infracción activo, pero sí es **antecedente de novedad** contra cualquier intento propio de patentar "inferir rutina desde sensor de agua".
-- **US11,647,964:** prioridad japonesa (Paramount Bed), con al menos una continuación en EE. UU. (US 18/296,767). Sin evidencia de familia en México o LATAM.
-
-### 3.6 Paso 6 — Interpretación de reclamos (Prompt 2)
-
-**US11,112,132 (agua + rutina + llamada)**
-1. *Qué protege:* el reclamo independiente exige válvula de agua motorizada + módulo de cifrado/blockchain + transceptor — un sistema de corte automático de agua con seguridad blockchain, no la mera detección de rutina.
-2. *Qué NO protege:* la inferencia de rutina y notificación familiar solo aparecen como reivindicaciones dependientes, que heredan los elementos de válvula/blockchain del reclamo base.
-3. *¿El concepto propio cae dentro o fuera?* **Fuera** de las reivindicaciones (no hay válvula ni blockchain), pero **dentro del "prior art"** descrito en la memoria — riesgo de patentabilidad (novedad), no de infracción.
-4. **Veredicto: fuera ✅ (como riesgo de infracción) / usar como guía (para patentabilidad).**
-
-**US11,647,964 (Paramount Bed, vigente)**
-1. *Qué protege:* sensor físicamente acoplado a una cama que capta datos biológicos y filtra qué notificaciones llegan al móvil familiar.
-2. *Qué NO protege:* no reivindica sensores de tubería de agua ni firma térmica ambiental; el "sensor en cama" es central a la reivindicación.
-3. *¿El concepto propio cae dentro o fuera?* **Fuera** — el sensor propio está en la tubería/ambiente, no en la cama.
-4. **Veredicto: fuera ✅ / ignorar para efectos de infracción, pero vigilar a Paramount Bed como actor tecnológico activo.**
-
-### 3.7 Paso 7 — Conclusión FTO
-
-🟢 **Alta libertad para operar.** No hay patentes vigentes (en México, LATAM ni globalmente) cuyas reivindicaciones cubran literalmente la combinación específica: sensor de tubería → detección de rutina de higiene matutina → marco digital con mensaje familiar precargado → sugerencia de llamada casual (no alarma médica). La patente más cercana en concepto (US11,112,132) está expirada y exige elementos que el proyecto no usa (válvula + blockchain); la otra activa (Paramount Bed) usa un sensor completamente distinto (cama, no tubería). La búsqueda directa en IMPI con los 5 códigos IPC planeados (`G08B21/22`: 9, `G08B21/24`: 11, `G08B25/00`: 18, `G01F1/00`: 41, `G06Q50/22`: 33 — 112 resultados en total) — sección 3.2, ya completa — confirma lo mismo con evidencia mexicana oficial: ninguno cubre el mecanismo específico del proyecto (sensor de agua + rutina + marco digital familiar). Los dos antecedentes más cercanos en todo el ejercicio son un medidor mexicano de flujo de agua domiciliario inalámbrico (MX/a/2013/004934, que solo cuantifica consumo, no infiere rutina) y un sistema de comunicación/monitoreo familiar para niños (CEIL, PCT/US2012/038466, que usa apps activas en vez de sensores pasivos y está dirigido a otro segmento).
-
-**Recomendación práctica:**
-- Aprovechar que US11,112,132 quedó fuera de vigencia: puede citarse como antecedente si más adelante se busca un modelo de utilidad, diferenciando la invención en el **marco digital + mensaje cálido precargado**, que no aparece protegido en ninguna de las patentes encontradas — probablemente el elemento más defendible.
-- Seguir evitando el lenguaje de "monitoreo médico" / "llamar al 911" en la documentación de producto: es justo lo que hace US11,112,132, y alejarse de esa narrativa también aleja del terreno técnico de esa patente.
-- Cerrar el hueco metodológico haciendo la verificación en vivo en IMPI/SIGA y LATIPAT con los enlaces y términos de 3.2 y 3.3, para tener las capturas oficiales que pide la tarea (el análisis actual es un proxy global, no una consulta directa a esas bases).
+!!! warning "Por verificar"
+    Esta tabla la armamos con lo que conocemos de cada proyecto. Antes de usar cualquiera de estos componentes hay que leer el archivo `LICENSE` de la versión exacta que se descargue.
 
 ---
 
-## 4. Justificación del uso de IA (Claude) en cada paso
+## Paso 3 — Nombre de marca con IA
 
-Los tres prompts de esta semana (naming, verificación digital de marca, vigilancia tecnológica) se corrieron con Claude. Razones concretas por tipo de tarea:
+El profesor pidió tres prompts: **(1)** generar nombres y elegir 3, **(2)** evaluar a los 3 finalistas y **(3)** hacer una verificación digital de la marca, justificando qué IA usamos en cada uno.
 
-**Prompt A — generación de 12 nombres:** el ejercicio no pedía solo "nombres bonitos", sino nombres que evitaran connotaciones clínicas/de vigilancia en **español**, con matices culturales finos (diminutivos afectivos tipo "Cariñito", sufijos coloquiales mexicanos tipo "-azo", apodos generacionales tipo "abu"/"wawi"). Esto exige manejo nativo del registro emocional del español latinoamericano, no una traducción literal de convenciones de naming en inglés — es el tipo de tarea donde un modelo con fuerte comprensión de matices lingüísticos y culturales en español rinde mejor que uno optimizado principalmente para inglés. Además, el resultado vino ya organizado en las 4 categorías pedidas con la justificación emocional de cada nombre, sin necesitar reformatear nada a mano.
+### Qué IA usamos en cada prompt y por qué
 
-**Prompt C — verificación digital de pertinencia de marca:** esta tarea combina varios dominios a la vez (semántica de marca, SEO/dominios, clasificación de Niza, riesgo de dilución) y exige **sintetizar** esa información en un veredicto accionable. Lo más valioso aquí no fue solo la respuesta, sino que Claude **reconoció explícitamente sus propios límites**: aclaró que no tuvo acceso directo a INDECOPI/IMPI/SIC/OMPI y que la conclusión se apoyaba en evidencia pública y en el registro de EE. UU., no en una búsqueda registral certificada. Para un entregable de propiedad intelectual, esa honestidad epistémica (decir "esto no lo pude verificar" en vez de inventar una respuesta segura) importa tanto como el análisis mismo.
+| Prompt | IA | Por qué |
+|---|---|---|
+| 1 — Generación | **Claude** | Es la IA que indicó el profesor para esta parte. Sigue bien instrucciones de formato (categorías, tablas, justificación por nombre) y entiende el contexto técnico de C++ y embebidos, así que los juegos de palabras salen con sentido y no genéricos. |
+| 2 — Evaluación | **Claude** | Aquí lo que importa es el razonamiento con criterios explícitos (una rúbrica), no buscar en internet. Usar la misma IA que generó los nombres mantiene el contexto del juego. |
+| 3 — Verificación digital | **Claude con búsqueda web + verificación manual** | Esta parte necesita datos reales y actuales (dominios, otros productos con el mismo nombre, marcas en el IMPI). Por eso la IA solo guía la búsqueda, y nosotros comprobamos cada dato con fuentes primarias (DNS de los dominios y la búsqueda fonética del Paso 4). |
 
-**Vigilancia tecnológica (patentes, 7 pasos):** interpretar reivindicaciones de patentes en lenguaje no legal (Prompt 2) es exactamente el tipo de tarea donde conviene un modelo que razone paso a paso y distinga con precisión entre "qué protege el reclamo independiente" y "qué son solo reivindicaciones dependientes" — el error típico (y el más caro) en este ejercicio es confundir ambas cosas y asumir que un concepto está "dentro" de una patente cuando en realidad el reclamo base exige elementos que el proyecto no usa (como pasó con la válvula + blockchain de US11,112,132). Igual de importante: cuando las bases interactivas (IMPI/SIGA, LATIPAT, Lens.org) no se pudieron operar como formulario web, Claude lo señaló como limitación en vez de simular resultados, y en su lugar dejó los términos y enlaces exactos para que el equipo hiciera la verificación en vivo — así el entregable final no depende de una respuesta no verificable.
+### 3.1 Prompt 1 — Generación de nombres
 
-**En resumen:** se eligió Claude para estos tres pasos por su fortaleza en (1) matices de español latinoamericano para naming emocional, (2) síntesis estructurada de análisis multi-dominio (marca + digital + legal) con veredictos accionables, y (3) lectura cuidadosa de lenguaje técnico-legal (reclamos de patentes) combinada con honestidad explícita sobre lo que no pudo verificar directamente — algo especialmente valioso en un ejercicio de debida diligencia donde una respuesta demasiado confiada es peor que ninguna respuesta.
+**Nuestro prompt:**
 
-## 5. Checklist de salida — Semana 3
+```text
+Rol: Actúa como un director creativo de videojuegos y experto en "naming".
+Tarea: Genera una lista de nombres atractivos, originales y memorables para un nuevo
+videojuego de puzzle, simulación y automatización.
+Contexto del juego: El jugador asume el rol de un ingeniero que debe construir, gestionar
+y optimizar una fábrica inteligente. La mecánica principal consiste en programar las
+máquinas, brazos robóticos y procesos industriales escribiendo código real en C++. El
+juego tiene un fuerte enfoque en sistemas embebidos, control de hardware a bajo nivel
+(similar a programar microcontroladores como la serie ESP32 o Pico), gestión de memoria,
+lectura de sensores y optimización de rutinas.
+Instrucciones de formato: Divide tus propuestas en las siguientes 4 categorías,
+entregando 5 ejemplos por cada una junto con una breve justificación (1 línea) de por qué
+el nombre funciona y captura la esencia del juego:
 
-- [x] ¿Qué tipo de PI proteger primero? → **Marca registrada** (clases 9 y 38 principalmente; excluir Clase 10 a propósito).
-- [x] ¿Tienes 2 nombres candidatos evaluados? → Sí: 3 finalistas generados y justificados (Buendía, Wamu, Sinprisa); Buendía además recibió verificación digital profunda (Prompt C).
-- [ ] ¿Sabes aplicar el protocolo de entrevista (80/20 + comportamiento pasado)? → Pendiente, aún no se han hecho entrevistas.
-- [ ] ¿Tienes 3 personas identificadas para entrevistar esta semana? → Pendiente.
+- Estilo "Tycoon" Industrial: Nombres que evoquen eficiencia, cadenas de montaje y
+  manufactura a gran escala (al estilo de Factorio o Satisfactory).
+- Sintaxis y Hardware (Geek): Nombres que hagan juegos de palabras inteligentes con la
+  sintaxis de C++ (#include, void, ++, punteros, clases) o con términos de
+  electrónica/embebidos (GPIO, RTOS, registros, I2C).
+- Minimalistas (De Marca): Nombres cortos (una o dos palabras máximo), contundentes,
+  modernos y que funcionen bien como un logotipo comercial.
+- Narrativos / Corporativos: Nombres que suenen a la megacorporación tecnológica que te
+  contrató o al nombre del proyecto industrial confidencial que debes sacar adelante.
+```
 
-## 6. Qué falta antes de cerrar la Semana 3
+**Resultado (20 nombres):**
 
-1. **Entrevistas (Paso 6):** hacer las 3 entrevistas reales (protocolo de 20 minutos, regla 80/20, preguntar comportamiento pasado, no intención futura) y correr el Prompt de síntesis contra las 3 hipótesis de la Semana 2.
-2. La verificación en vivo en **IMPI/SIGA** ya está completa (los 5 códigos IPC, sección 3.2, sin colisiones). Solo falta la de **LATIPAT** (sección 3.3), que sigue pendiente.
-3. Repetir la búsqueda marcaria (exacta + fonética, con Clase de Niza) sobre el nombre compuesto final ("Buendía Hogar", "Pulso Buendía", etc.), no solo sobre "Buendía" sola.
-4. Preparar los 90 segundos / 2 minutos de defensa con la oportunidad + hipótesis principal de esta semana, y el resumen de FTO (🟢 Alta) + nombre elegido (Buendía, en arquitectura compuesta) para el cierre de clase.
+=== "Tycoon industrial"
 
+    | Nombre | Por qué funciona (según la IA) |
+    |---|---|
+    | Fundición Lógica | Une la imagen de una fundición de metal con "lógica" de programación: fabricación + razonamiento. |
+    | Cadena Crítica | Doble lectura: "cadena de montaje" industrial y "ruta crítica" de gestión de procesos. |
+    | Autómata Total | Suena a escala masiva (estilo Factorio) y remite directamente a la automatización. |
+    | Forja de Procesos | "Forja" da peso industrial/artesanal; "procesos" ancla el juego en la optimización de rutinas. |
+    | Línea Cero | Evoca la línea de producción desde su origen ("build 0"): arrancar un imperio desde nada. |
+
+=== "Sintaxis y hardware (geek)"
+
+    | Nombre | Por qué funciona (según la IA) |
+    |---|---|
+    | Factory++ | Fusiona "Factory" con el operador de incremento de C++; comunica género y lenguaje al instante. |
+    | Void Main() | Juega con la función de entrada de C++ y con el "vacío" que el jugador debe llenar de industria. |
+    | Puntero Maestro | "Puntero" remite a memoria en C++, pero también suena a "maestro guía". |
+    | **GPIO Génesis** | **Combina el acrónimo real de control de pines embebidos con "génesis", el nacimiento de tu fábrica.** |
+    | Overflow Industries | "Buffer overflow" reinterpretado como nombre corporativo: una producción que desborda sus límites. |
+
+=== "Minimalistas (de marca)"
+
+    | Nombre | Por qué funciona (según la IA) |
+    |---|---|
+    | Nexus | Corto, abstracto y tecnológico; sugiere la red de conexiones entre máquinas. |
+    | Ferrum | Latín para "hierro": robusto, industrial y funciona como wordmark internacional. |
+    | Loom | "Telar" en inglés: metáfora clásica de la automatización textil. |
+    | Axioma | Remite a las reglas fundamentales de la lógica, con sonoridad premium. |
+    | Vertex | Término geométrico/técnico; transmite precisión en una sola palabra. |
+
+=== "Narrativos / corporativos"
+
+    | Nombre | Por qué funciona (según la IA) |
+    |---|---|
+    | Omnicore Industries | Megacorporación omnipresente y algo inquietante, típica del "empleador". |
+    | Proyecto Prometeo | Codename mitológico (el fuego robado = tecnología prohibida). |
+    | Meridian Dynamics | Nombre corporativo de ciencia ficción para el logo de tu terminal. |
+    | Directiva Ónix | Suena a operación clasificada de alto nivel. |
+    | Helios Automation Corp. | Grandiosidad (dios del sol) + la función literal de la empresa. |
+
+La recomendación de la IA fue **Ferrum** o **Axioma**, "cortas, pronunciables en cualquier idioma". Nosotros no la seguimos (ver 3.5).
+
+**Los 3 finalistas que elegimos:** GPIO Génesis, Factory++ y Ferrum. Tomamos uno de cada estilo que nos convencía: el más geek y específico (GPIO Génesis), el más fácil de entender a la primera (Factory++) y el mejor calificado por la propia IA como marca (Ferrum).
+
+### 3.2 Nuestro prompt vs. las indicaciones del profesor
+
+Para este paso el profesor **no dio un prompt ya hecho**: dio indicaciones para que cada equipo armara el suyo. La indicación para el primer prompt fue *"Obtén 12 nombres de marca (Evocadores, Compuestos, Inventados y Disruptivos) y elige los 3 que más resuenen"*, junto con la tabla de criterios de un buen nombre vista en clase. Aquí comparamos qué pedía esa indicación y cómo la resolvimos en nuestro prompt.
+
+| Aspecto | Lo que pedía la indicación | Cómo lo hicimos | Qué efecto tuvo |
+|---|---|---|---|
+| Cantidad | 12 nombres (3 por categoría) | Pedimos 20 (5 por categoría) | Más opciones, pero más trabajo para filtrar. Con 12 habría bastado. |
+| Categorías | Por **forma** del nombre: evocadores, compuestos, inventados, disruptivos | Las cambiamos por **estilo del juego**: tycoon, geek, minimalista, corporativo | Salieron nombres más pegados al género, pero casi ningún nombre **inventado**, que son los más fáciles de registrar. Nos faltó esa categoría. |
+| Contexto | No especifica cuánto contexto dar | Dimos mucho: C++, ESP32/Pico, sensores, memoria | Gracias a eso salió "GPIO Génesis": sin mencionar embebidos, la IA no habría llegado a GPIO. |
+| Rol | No especifica | "Director creativo de videojuegos y experto en naming" | Las justificaciones salieron en lenguaje de videojuegos (Factorio, Satisfactory), no de marca en general. |
+| Elegir 3 finalistas | Elegir los 3 que más resuenen | No se lo pedimos a la IA; los elegimos nosotros | La IA solo recomendó Ferrum/Axioma y nosotros nos fuimos por otro. |
+| Criterios de un buen nombre | Tabla de clase: pronunciable, corto, sin significado negativo, registrable, dominio, emoción | No los metimos en este prompt | La IA no revisó registrabilidad ni dominio aquí. Eso lo cubrimos con los prompts 2 y 3. |
+
+**Conclusión de la comparación:** al cambiar las categorías y dar tanto contexto técnico conseguimos un nombre con **identidad**, pero nos alejamos de lo que ayuda a que sea **registrable** (la categoría de inventados y los criterios de marca). Si lo hiciéramos otra vez, mantendríamos nuestro rol y contexto y usaríamos las 4 categorías que pedía el profesor.
+
+### 3.3 Prompt 2 — Evaluación de los 3 finalistas
+
+**Nuestro prompt:**
+
+```text
+Rol: Actúa como consultor de branding y propiedad intelectual para estudios indie de
+videojuegos en México.
+Contexto: Estamos nombrando un videojuego de simulación de una fábrica donde el jugador
+programa las máquinas escribiendo C++ real, con enfoque en microcontroladores (ESP32,
+Raspberry Pi Pico 2). Público: estudiantes de ingeniería de 18 a 25 años en México y
+LATAM que juegan Minecraft y simuladores. Se venderá en Steam a 199–299 MXN.
+Finalistas: GPIO Génesis, Factory++, Ferrum.
+Tarea: Evalúa cada finalista del 1 al 5 con estos 6 criterios:
+1. Pronunciable en español e inglés
+2. Corto (2–3 sílabas)
+3. Sin significado negativo o confuso
+4. Registrable ante el IMPI (no genérico ni descriptivo)
+5. Probabilidad de tener dominio .com o .mx disponible
+6. Coherencia con la emoción de usarlo (cómo se siente, no qué hace)
+Entrega una tabla con la calificación y una línea de justificación por celda, el total,
+el riesgo principal de cada nombre y tu recomendación final. Marca como "hipótesis"
+todo lo que no puedas comprobar.
+```
+
+**Resultado:**
+
+| Criterio | GPIO Génesis | Factory++ | Ferrum |
+|---|:---:|:---:|:---:|
+| Pronunciable ES/EN | **3** — "GPIO" se deletrea (ge-pe-i-o / gee-pee-eye-oh), pero el público técnico ya lo dice así | **4** — "factory plus plus" se entiende en ambos idiomas | **5** — dos sílabas limpias |
+| Corto | **2** — 7 sílabas; se va a acortar solo, probablemente a "GPIO" | **3** — 5 sílabas | **5** — 2 sílabas |
+| Sin significado negativo | **4** — nada negativo; "Génesis" tiene carga religiosa y recuerda a la consola SEGA Genesis | **5** — nada negativo | **4** — neutral; puede sonar a marca de acero o de herramientas |
+| Registrable ante el IMPI | **4** — la combinación es distintiva; "GPIO" es técnico pero no describe un videojuego *(hipótesis, se comprueba en el Paso 4)* | **2** — "Factory" es genérico para un juego de fábricas y el "++" no se pronuncia, así que la parte registrable es casi solo la palabra genérica | **3** — palabra común en latín, probablemente ya usada en varias clases *(hipótesis, no buscada en IMPI)* |
+| Dominio disponible | **4** — combinación rara, alta probabilidad de estar libre *(hipótesis, se comprueba en 3.4)* | **2** — "factoryplusplus" o similares probablemente ocupados o incómodos *(hipótesis)* | **1** — ferrum.com casi seguro está ocupado *(hipótesis)* |
+| Coherencia emocional | **5** — "tu fábrica nace de tus pines": suena a crear algo desde cero con hardware real | **4** — divertido e ingenioso, pero se siente más broma que marca | **2** — robusto, pero frío y sin relación con programar |
+| **Total (de 30)** | **22** | **20** | **20** |
+
+**Riesgo principal de cada uno:**
+
+- **GPIO Génesis:** la longitud y la palabra "Génesis", muy saturada (y asociada a SEGA en videojuegos).
+- **Factory++:** difícil de registrar por ser casi descriptivo; además, los buscadores ignoran el "++".
+- **Ferrum:** no comunica nada del juego; habría que invertir mucho en construir significado.
+
+**Recomendación de la IA:** GPIO Génesis, con dos condiciones: registrarlo siempre como marca **compuesta** (nunca "Génesis" solo) y usar "GPIO" como el elemento distintivo del logotipo.
+
+### 3.4 Prompt 3 — Verificación digital de pertinencia
+
+**Nuestro prompt:**
+
+```text
+Rol: Actúa como consultor senior de estrategia de marca y propiedad intelectual digital.
+Objetivo: Verificar la pertinencia y viabilidad digital del nombre "GPIO Génesis" para un
+videojuego de simulación de fábrica que enseña C++ real con microcontroladores (ESP32 /
+Raspberry Pi Pico 2), dirigido a estudiantes de ingeniería en México y LATAM.
+Tareas:
+1. Huella digital: ¿qué aparece hoy al buscar "GPIO Genesis", "GPIO Génesis" y
+   "Genesis" + juego de fábrica/programación? ¿Hay productos, juegos o empresas con el
+   mismo nombre o uno muy parecido?
+2. Dominios: revisa si .com, .mx, .com.mx, .io, .dev, .games y .net están libres, además
+   de variantes como gpio-genesis.com y playgpiogenesis.com.
+3. Confusión de marca: ¿con qué marcas famosas se podría confundir en las clases de
+   Niza 9 (software, videojuegos) y 41 (educación, entretenimiento)?
+4. Veredicto: pertinencia digital baja / media / alta y qué ajustes recomiendas.
+Separa lo que comprobaste con una fuente de lo que es suposición.
+```
+
+**Resultado (comprobado):**
+
+| Verificación | Hallazgo | Fuente |
+|---|---|---|
+| Búsqueda exacta "GPIO Genesis" | **No existe ningún producto, juego ni empresa con ese nombre.** Los resultados son proyectos para conectar controles de **SEGA Genesis** a los pines GPIO de una Raspberry Pi (foros de RetroPie, repositorios de GitHub). | Búsqueda web, 23-sep-2026 |
+| "Genesis" + juego de fábrica | Existe **"Genesis Factory"**, un demo de juego de fábrica en itch.io. Es una colisión directa con la palabra "Genesis" sola, en el mismo género. | itch.io (qm-mofan.itch.io/genesis-factory) |
+| Dominios | `gpiogenesis.com`, `.mx`, `.com.mx`, `.io`, `.dev`, `.games`, `.net`, `gpio-genesis.com` y `playgpiogenesis.com`: **ninguno existe en el DNS** (respuesta NXDOMAIN). Es muy probable que todos estén disponibles. | Consulta DNS (Google Public DNS), 23-sep-2026 |
+| Confusión en clase 9 | SEGA tiene registradas en México marcas con GENESIS para videojuegos: *SEGA GENESIS COLLECTION*, *SONIC'S ULTIMATE GENESIS COLLECTION*, *PHANTASY STAR ONLINE NEW GENESIS*. Nintendo tiene una solicitud de *XENOBLADE GENESIS*. | Búsqueda fonética IMPI (Paso 4) |
+| Confusión en clase 41 | 6 registros de "GENESIS" solo y una solicitud de *GENESIS STUDIOS*. Ninguno con "GPIO". | Búsqueda fonética IMPI (Paso 4) |
+
+**Veredicto: pertinencia digital MEDIA-ALTA.** "GPIO Génesis" completo está libre en buscadores, dominios e IMPI; lo saturado es "Génesis" solo. La asociación con SEGA Genesis + Raspberry Pi no es negativa para nuestro público (es justo la cultura *maker* y retro de los estudiantes de ingeniería), pero nos obliga a que **GPIO** sea la parte que se vea y se diga primero.
+
+### 3.5 Auditoría de lo que nos dijo la IA
+
+| Lo que dijo la IA | ¿Lo comprobamos? | Resultado |
+|---|---|---|
+| "GPIO es el acrónimo real de control de pines embebidos" | Sí | Correcto: *General-Purpose Input/Output*, es lo primero que se programa en un ESP32 o un Pico. |
+| Recomendó Ferrum o Axioma como la mejor marca | Lo evaluamos con el Prompt 2 | No lo seguimos: son cortas, pero no comunican nada del juego y probablemente estén saturadas. La IA optimizó "sonar a marca" y no "conectar con el público". |
+| En el Prompt 2, "GPIO Génesis" probablemente es registrable | Sí, con el IMPI (Paso 4) | Se confirma: no hay ninguna marca con GPIO ni parecida fonéticamente en las clases 9 y 41. |
+| En el Prompt 2, "Génesis" está saturado | Sí, con el IMPI (Paso 4) | Se confirma, y es más grave de lo que dijo: SEGA tiene "Genesis" en videojuegos. |
+| Dominios probablemente disponibles | Sí, por DNS | Se confirma para las 9 variantes revisadas. Falta confirmar en un registrador antes de comprar. |
+
+### 3.6 Decisión del nombre
+
+**Nos quedamos con GPIO Génesis** como marca compuesta, con estas reglas:
+
+1. Se registra como **"GPIO GÉNESIS"** completo (denominación + logo), nunca "Génesis" solo.
+2. En el logo, **"GPIO"** es el elemento principal y "Génesis" el secundario.
+3. Hay que comprar ya `gpiogenesis.com` y `gpiogenesis.mx` (cuestan poco y hoy están libres).
+4. El segundo candidato evaluado queda como respaldo: **Factory++**, aunque sabemos que es más difícil de registrar.
+
+Esto responde también al checklist de salida: **sí tenemos 2 nombres candidatos evaluados** (GPIO Génesis y Factory++, más Ferrum como tercero).
+
+---
+
+## Paso 4 — Búsqueda fonética en el IMPI
+
+### Cómo la hicimos
+
+Buscamos en **Marcanet** (búsqueda fonética del IMPI) tres denominaciones en dos clases de Niza, en total **6 búsquedas**:
+
+- **Clase 9:** software, videojuegos descargables, aparatos electrónicos. Es donde vive el juego como producto.
+- **Clase 41:** educación, formación y entretenimiento. Es donde vive el juego como servicio educativo.
+
+Buscamos "GPIO" y "Genesis" por separado, además del nombre completo, para saber cuál de las dos palabras genera el riesgo.
+
+### Resumen de resultados
+
+| Búsqueda | Clase | Resultados fonéticos | Marcas con "GPIO" | "GENESIS" exacto (con número de registro) | Antecedente más relevante |
+|---|:---:|:---:|:---:|:---:|---|
+| GPIO | 9 | 274 | **0** | — | GPI (GPI S.p.A.) y GP (**Gameplanet**, tienda de videojuegos), ambas registradas |
+| GPIO | 41 | 268 | **0** | — | GP (Gameplanet) y varias GPI, registradas |
+| Genesis | 9 | 279 | 0 | 10 (4) | **SEGA GENESIS COLLECTION** y SUPER GENESIS 32 (SEGA); XENOBLADE GENESIS (Nintendo, solicitud) |
+| Genesis | 41 | 278 | 0 | 6 (6) | GENESIS (varios titulares), GENESIS STUDIOS (solicitud), PHANTASY STAR ONLINE NEW GENESIS (SEGA) |
+| GPIO Genesis | 9 | 268 | **0** | 10 (4) | Los mismos de "Genesis" en clase 9 |
+| GPIO Genesis | 41 | 276 | **0** | 6 (6) | Los mismos de "Genesis" en clase 41 |
+
+<small>Cómo leer la tabla: en el reporte de búsqueda fonética, un número en la columna "Registro" significa que la marca **está registrada**. Si esa columna está vacía, es una **solicitud** que puede estar en trámite, abandonada o negada; el reporte no dice cuál. Para las que nos preocupan habría que abrir el expediente en Marcanet.</small>
+
+### Capturas de la búsqueda
+
+Primera página de cada reporte (consulta del 23-09-2026). Los PDF completos se pueden descargar debajo de cada captura.
+
+
+
+
+### Antecedentes que nos importan
+
+| Expediente | Marca | Titular | Clase(s) | Estado en el reporte | Por qué importa |
+|---|---|---|---|---|---|
+| 1173729 | SEGA GENESIS COLLECTION | SEGA Corporation | 9 y otras | Registrada (1237529) | "Genesis" en videojuegos es de SEGA; es una marca muy conocida en el mismo giro. |
+| 200177 | SUPER GENESIS 32 | Kabushiki Kaisha Sega Enterprises | 9, 28 | Registrada (473509) | Mismo titular y mismo giro. |
+| 2493693 / 2493694 | PHANTASY STAR ONLINE NEW GENESIS | SEGA Corporation | 9 / 41 | Registradas | SEGA protege "Genesis" dentro de nombres compuestos, igual que haríamos nosotros. |
+| 3705962 | XENOBLADE GENESIS | Nintendo Co., Ltd. | 9 | Solicitud | Otra empresa grande de videojuegos usando "Genesis" en un compuesto. |
+| 3582729 | GENESIS STUDIOS | Oscar Eduardo Medellín Castañeda | 41 | Solicitud | Un estudio en la clase de educación/entretenimiento. |
+| 1936325 / 1936330 | GP | Gameplanet, S.A. de C.V. | 9 / 41 | Registradas | Es lo más parecido fonéticamente a "GPIO", y es del sector videojuegos. Riesgo bajo: "GP" y "GPIO" suenan distinto. |
+
+### Lectura y decisión
+
+- **"GPIO" está limpio.** En ninguna de las dos clases hay una marca con GPIO; lo más cercano son siglas de dos o tres letras (GP, GPI, GPE) que suenan distinto. **GPIO es lo que hace registrable a la marca.**
+- **"Genesis" está saturado**, y en videojuegos es de SEGA. Si registramos solo "Génesis" nos lo negarían o nos harían oposición. Que SEGA y Nintendo tengan marcas **compuestas** con Genesis (PHANTASY STAR ONLINE NEW GENESIS, XENOBLADE GENESIS) indica que un compuesto distintivo sí puede convivir.
+- **Decisión:** el nombre se confirma como **GPIO GÉNESIS**, solicitado como marca **mixta** (palabra + logo) en las clases **9 y 41**. Si después ofrecemos la plataforma en línea o la app de diagnóstico como servicio, conviene agregar la **clase 42** (servicios tecnológicos), que no buscamos.
+
+!!! note "Limitación"
+    La búsqueda fonética no es una opinión legal ni garantiza el registro (el propio reporte lo aclara). Tampoco incluye marcas internacionales que designan a México por el Protocolo de Madrid; para eso habría que revisar la base de la OMPI.
+
+---
+
+## Paso 5 — Vigilancia tecnológica
+
+**Qué queremos saber:** si alguien ya protegió (1) un **videojuego/simulador** donde se programa código real para controlar una fábrica o un hardware, (2) la **conexión entre un simulador y un microcontrolador físico** (ESP32 / Pi Pico 2) que ejecuta el mismo código, o (3) un **diagnóstico con IA** que explica un error de código en términos de lo que hace el hardware.
+
+### Paso 5.1 — Preparación: Prompt 1 (términos y códigos IPC)
+
+**Prompt del profesor (plantilla):**
+
+```text
+Actúa como especialista en vigilancia tecnológica para startups
+de hardware + software en mercados emergentes.
+Concepto: [nombre + descripción]
+Mecanismo técnico: [sensores, procesamiento, comunicación]
+Componente de IA: [qué hace y dónde corre]
+Entrega:
+- Términos en ES y EN (principales + sinónimos + combinaciones AND)
+- Códigos IPC relevantes (3–5 con descripción)
+- Secuencia: IMPI → LATIPAT → Lens.org
+```
+
+**Nuestro prompt:**
+
+```text
+Actúa como especialista en vigilancia tecnológica para startups de hardware + software
+educativo en México y LATAM.
+Concepto: GPIO Génesis — videojuego de simulación de una fábrica donde el jugador
+programa máquinas y brazos robóticos escribiendo C++ real. Público: estudiantes de
+ingeniería de 18–25 años.
+Mecanismo técnico: (a) simulador en PC que compila y ejecuta el C++ del jugador sobre un
+modelo virtual de microcontrolador (GPIO, PWM, ADC, I2C, temporizadores); (b) a futuro,
+una estación de pruebas física con ESP32 o Raspberry Pi Pico 2, sensores y actuadores,
+que recibe el mismo código ya probado en el simulador y lo ejecuta en hardware real.
+Componente de IA: un copiloto de depuración que compara lo que el código debería hacer
+con lo que hizo el hardware (virtual o real) y explica el error en lenguaje natural y
+en términos físicos ("el motor recibe pulsos irregulares porque tu delay bloquea el
+bucle"). Corre en la nube o en la PC, no en el microcontrolador.
+Entrega:
+- Términos en ES y EN para cada una de las 3 partes (a, b y el copiloto), con
+  sinónimos y combinaciones AND listas para usar en Google Patents
+- 5–7 códigos IPC/CPC con descripción y a cuál de las 3 partes corresponde cada uno
+- Qué base usar en cada capa (México → LATAM → global) y qué filtros aplicar
+- Qué NO debería considerarse riesgo (por ejemplo, patentes de microcontroladores en sí)
+```
+
+**En qué se diferencia del prompt del profesor:** separamos el concepto en **tres partes que se pueden proteger por separado** (juego, estación física, copiloto IA). Con un solo bloque de términos, las búsquedas regresaban miles de patentes de videojuegos que no tenían nada que ver (la primera búsqueda amplia dio 119,676 resultados). También pedimos que la IA dijera **qué no es riesgo**, para no perder tiempo con patentes del propio ESP32. Y pedimos términos listos para Google Patents, porque ahí es donde podemos filtrar por país.
+
+**Resultado — términos de búsqueda:**
+
+| Parte | Español | Inglés | Combinaciones AND usadas |
+|---|---|---|---|
+| (a) Juego/simulador | videojuego educativo, enseñanza de programación, simulador, código fuente, juego serio | programming game, educational game, teaching programming, source code, serious game | `programming AND game AND learn*` · `video game AND code AND learn*` |
+| (b) Virtual ↔ físico | microcontrolador, robot educativo, gemelo virtual, kit didáctico, emulador | microcontroller, educational robot, virtual robot, physical toy, emulator, development board | `microcontroller AND simulat* AND education*` · `virtual AND physical AND program*` |
+| (c) Copiloto IA | diagnóstico de errores, retroalimentación de código, modelo de lenguaje, depuración | error feedback, debugging, compiler error, large language model, explanation | `error AND source code AND explanation AND language model` · `compiler error AND student*` |
+
+**Resultado — códigos IPC/CPC:**
+
+| Código | Qué cubre | Parte |
+|---|---|---|
+| **G09B 19/0053** | Enseñanza de computación, p. ej. programación | (a) y (c) |
+| **G09B 23/18**, **23/183**, **23/186** | Modelos didácticos de electricidad y electrónica; circuitos; electrónica digital y microprocesadores | (b) |
+| **G09B 5/06** | Aparatos educativos audiovisuales/electrónicos con presentación simultánea | (a) |
+| **A63F 13/00** | Videojuegos | (a) |
+| **A63H 13/00, 33/00** | Juguetes/robots programables | (b) |
+| **G06F 11/36** | Prevención de errores por prueba o depuración de software | (c) |
+| **G05B 19/042** | Control por programa con procesadores digitales (controladores programables) | (b) |
+
+**Qué NO consideramos riesgo:** patentes de los microcontroladores en sí (Espressif, Raspberry Pi), de compiladores en general y de motores de videojuego. Las usamos como clientes, no competimos con ellas.
+
+### Pasos 5.2 a 5.4 — Búsqueda por capas
+
+| Capa | Base | Qué hicimos | Resultado |
+|---|---|---|---|
+| México | **IMPI/SIGA** | Intentamos buscar en SIGA 3.1 (siga.impi.gob.mx). SIGA busca **dentro de las gacetas**: pide elegir área, gaceta y fecha, y no acepta una consulta de texto libre en todas las patentes a la vez. | No pudimos hacer ahí una búsqueda útil. Cubrimos México con Google Patents filtrando `country=MX`, que indexa las publicaciones del IMPI. |
+| México | Google Patents, `country=MX` | 4 búsquedas: programación + educación (91 resultados), videojuego + programación (24), microcontrolador (545), programación + enseñanza (18) | **Ninguna patente mexicana cubre un juego de programación ni un diagnóstico de código.** Lo más cercano: un robot educativo programable (MX2014015820A) y un sistema didáctico de control automático del CINVESTAV-IPN (MX337633B). |
+| LATAM | Google Patents, `country=BR,AR,CO,CL,PE` (en lugar de LATIPAT) | Programación + juego + aprendizaje (3 resultados); microcontrolador + enseñanza (10 en MX/AR/CO/CL/PE); programación + microcontrolador + enseñanza (20 en BR) | Brasil es el más activo: kits y robots para enseñar programación y microelectrónica (UNEB, IF Farroupilha, SENAI-SP). Nada sobre videojuegos con código real ni sobre diagnóstico con IA. |
+| Global | Google Patents con filtros CPC (en lugar de Lens.org) | G09B19/0053 + juego (44; 26 concedidas desde 2015), CPC G09B + microcontrolador (26), diagnóstico de código con LLM (14–96) | Corea del Sur concentra patentes de "educación de coding con juego/robot". China tiene la patente más cercana al copiloto IA (CN121583173B). EE. UU. tiene la familia de Wonder Workshop, activa. |
+
+!!! note "Por qué no usamos LATIPAT y Lens.org directamente"
+    Las dos son buscadores interactivos. Usamos Google Patents porque permite hacer lo mismo que pide el protocolo (filtrar por país, por código CPC y por estado legal) y además muestra familias y citas. Lo dejamos escrito para que se vea qué base se usó en cada capa; la verificación directa en LATIPAT y en SIGA queda como pendiente.
+
+### Paso 5.5 — Familias y referencias cruzadas
+
+Para las patentes de mayor riesgo revisamos en qué países existen (familia) y quién las cita:
+
+- **Wonder Workshop (US9370862B2 y familia):** 7 documentos en EE. UU., más EP, CN, SG y WO. **No tiene miembro en México.** Vigente en EE. UU. hasta 2035.
+- **Robot virtual de Kam Ming Lau (JP2017215577A):** familia en JP, US, CN, HK y WO. La de EE. UU. está **abandonada** y la PCT **caducó**. **No tiene miembro en México.** Tiene 12 citas posteriores, entre ellas Amazon, Apple y Robotify Labs: es una patente "semilla" del tema virtual ↔ físico.
+- **Hunan Huijiu (CN121583173B):** solo existe en China (concedida en abril de 2026). Cita tecnologías chinas de enseñanza con IA y realidad virtual. **No tiene miembro en México.**
+- **Robotify Labs (WO2020141200A1):** la PCT caducó; siguen **pendientes** en EE. UU. (US20220076587A1) y en Europa (EP3906542A1). **No tiene miembro en México.**
+
+### Paso 5.6 — Interpretación de reclamos: Prompt 2
+
+**Prompt del profesor (plantilla):**
+
+```text
+Actúa como analista de PI para equipos de ingeniería sin formación legal.
+Concepto: [descripción técnica]
+Patente: Título / Número / Titular / Estado en MX / Año
+Reclamos: [pega reivindicaciones 1–5]
+Responde:
+1. Qué protege (sin jerga legal)
+2. Qué NO protege
+3. ¿Nuestro concepto cae dentro o fuera?
+   Veredicto: dentro ⚠️ / fuera ✅ / zona gris ❌
+4. Recomendación: ignorar / ajustar / asesoría legal / usar como guía
+```
+
+**Nuestro prompt:** usamos la estructura del profesor casi igual porque funciona bien. Le agregamos dos cosas:
+
+```text
+[...misma estructura del profesor...]
+Además:
+5. ¿La patente tiene efecto en México? Revisa si existe un miembro
+   de la familia en MX y si está vigente. Si no existe, dilo explícitamente.
+6. Aunque no nos bloquee, ¿nos quita novedad para patentar algo
+   nuestro después?
+```
+
+**Por qué lo cambiamos:** la mayoría de las patentes que encontramos **no tienen efecto en México**. Sin la pregunta 5 la IA las calificaba "zona gris" solo por la similitud técnica. La pregunta 6 separa dos riesgos distintos: que nos **demanden** (FTO) y que **no podamos patentar** lo nuestro (novedad).
+
+**Resultados — las 5 patentes analizadas:**
+
+??? danger "1. CN121583173B — Sistema de control de programación de robots con IA para escenarios educativos"
+    **Titular:** Hunan Huijiu Intelligent Technology Co., Ltd. · **Prioridad:** 23-ene-2026 · **Estado:** concedida en China (17-abr-2026), vigente hasta 2046 · **Familia en MX:** no existe.
+
+    **Reclamo 1 (resumen):** un sistema que (i) analiza el código del estudiante como árbol sintáctico, (ii) lo ejecuta **al mismo tiempo en una simulación virtual y en un robot físico**, (iii) compara lo esperado contra lo medido para obtener una "matriz de desviación", (iv) **regresa esa desviación a las líneas del código** para encontrar la causa raíz, y (v) genera una sugerencia de corrección para el estudiante.
+
+    1. **Qué protege:** ese método específico de encontrar qué instrucción del estudiante causó que el robot se moviera distinto a lo esperado, calculando la "contribución causal" de cada nodo del código.
+    2. **Qué NO protege:** explicar errores con un modelo de lenguaje en general; simuladores de microcontroladores; videojuegos de programación; nada fuera de China.
+    3. **Veredicto:** **fuera ✅ en México** (no tiene efecto aquí). **Zona gris ❌ si algún día vendiéramos la estación física en China**, porque la idea de fondo de nuestro copiloto IA (comparar lo simulado con lo físico y señalar la línea culpable) es muy parecida.
+    4. **Recomendación:** **usar como guía** para el diseño del copiloto, e implementarlo distinto (con explicación en lenguaje natural, no con gradientes sobre el árbol sintáctico).
+    5. **Efecto en MX:** ninguno.
+    6. **¿Nos quita novedad?** **Sí.** Es la patente más importante de esta búsqueda: demuestra que "diagnosticar el error del estudiante comparando ejecución virtual y física" ya está publicado. Patentar nuestro copiloto con esa idea sería muy difícil.
+
+??? warning "2. US9370862B2 (familia) — Sistema y método para reforzar la educación en programación mediante retroalimentación robótica"
+    **Titular:** Wonder Workshop, Inc. (antes Play-i) · **Prioridad:** 2014 · **Estado:** vigente en EE. UU. hasta 2035 · **Familia en MX:** no existe.
+
+    **Reclamo 1 (resumen):** un método en el que un dispositivo (tablet) recibe instrucciones de programación del usuario, recibe las lecturas de los sensores del robot de juguete, genera instrucciones de control a partir de ambas, se las envía al robot y repite el ciclo.
+
+    1. **Qué protege:** el control remoto de un robot de juguete **desde la tablet**, donde el programa corre en la tablet y el robot solo ejecuta órdenes y manda lecturas.
+    2. **Qué NO protege:** que el código se compile y se **cargue en el microcontrolador** para correr ahí mismo, que es lo que haría nuestra estación con el ESP32/Pico 2.
+    3. **Veredicto:** **fuera ✅**, por arquitectura (en nuestro caso el código corre en el micro) y por territorio.
+    4. **Recomendación:** **ajustar/cuidar el diseño**: la estación no debe funcionar como "robot controlado en vivo desde la PC" si algún día se vende en EE. UU.
+    5. **Efecto en MX:** ninguno.
+    6. **¿Nos quita novedad?** En parte: la retroalimentación con sensores para enseñar programación ya es conocida.
+
+??? warning "3. US20220076587A1 / EP3906542A1 — Producto de programa para enseñar programación"
+    **Titular:** Robotify Labs Ltd. · **Prioridad:** 2019 (GB) · **Estado:** pendiente en EE. UU. y Europa; la PCT (WO2020141200A1) caducó · **Familia en MX:** no existe.
+
+    **Reclamo 1 (resumen):** un programa con una interfaz que tiene un panel de programación, un **compilador** que compila los comandos del usuario y un panel de "video" con un **emulador de robot** sobre un fondo, para que parezca que se controla un robot real sin comprarlo.
+
+    1. **Qué protege** (si se concede): la combinación de editor + compilador + emulador de robot mostrado como video para enseñar programación.
+    2. **Qué NO protege:** simulaciones de fábricas o de microcontroladores con sus pines; nada en México.
+    3. **Veredicto:** **fuera ✅ en México; zona gris ❌ en EE. UU./Europa**, porque nuestro juego también tiene editor + compilador + algo que se mueve en pantalla. La diferencia es que simulamos una fábrica y un microcontrolador, no un robot sobre un video.
+    4. **Recomendación:** **vigilar**; revisar qué reclamos se conceden antes de lanzar en Steam a EE. UU. y Europa.
+    5. **Efecto en MX:** ninguno.
+    6. **¿Nos quita novedad?** Sí, para la parte "simulador que compila código real para enseñar".
+
+??? success "4. JP2017215577A (familia US20170316714A1, WO2017186001A1) — Sistema educativo con robot virtual"
+    **Titular:** Kam Ming Lau (particular) · **Prioridad:** 2016 (HK) · **Estado:** JP pendiente; **US abandonada; WO caducada** · **Familia en MX:** no existe.
+
+    **Reclamo 1 (US, resumen):** un sistema educativo con un dispositivo de control, un juguete físico y un **gemelo virtual** del juguete dentro de un mundo virtual; los dos se programan desde el dispositivo.
+
+    1. **Qué protege** (solo si se concede en Japón): la pareja robot físico ↔ robot virtual programable.
+    2. **Qué NO protege:** nada en EE. UU. ni en México (abandonada/caducada).
+    3. **Veredicto:** **fuera ✅**.
+    4. **Recomendación:** **usar como guía**: es justo nuestro concepto de estación física + gemelo en el simulador, y como está libre fuera de Japón, se puede usar.
+    5. **Efecto en MX:** ninguno.
+    6. **¿Nos quita novedad?** Sí: "gemelo virtual + físico programable" ya es conocido desde 2016.
+
+??? success "5. MX2014015820A — Dispositivo robótico para enseñanza educativa"
+    **Titular:** Corporativo STR Asesoría en Desarrollo Tecnológico e Innovación, S.A. de C.V. (México) · **Prioridad:** 10-dic-2014 · **Estado:** solicitud publicada en 2016; en Google Patents no aparece concesión · **Familia:** solo MX.
+
+    **Resumen:** un robot móvil programable que detecta objetos y los manipula con un montacargas y una pinza, para enseñar rutinas de movimiento en robótica educativa.
+
+    1. **Qué protege** (si se concedió): ese robot con esa mecánica de montacargas + pinza.
+    2. **Qué NO protege:** software, simuladores ni diagnóstico de errores.
+    3. **Veredicto:** **fuera ✅**. Es la única patente mexicana cercana y es de hardware, en otro ámbito.
+    4. **Recomendación:** **ignorar** para FTO; es útil para saber que en México sí hay empresas en robótica educativa.
+    5. **Efecto en MX:** potencial solo si se concedió, y aun así sobre otro objeto.
+    6. **¿Nos quita novedad?** No, para lo nuestro.
+
+**Otras patentes revisadas (sin análisis de reclamos):**
+
+| Número | Título | Titular | País / estado | Relación con GPIO Génesis |
+|---|---|---|---|---|
+| US20130084999A1 | Game centered on building nontrivial computer programs | Jason Churchill Costa | US, **abandonada** | Juego donde se arma un programa real. Libre para usar. |
+| KR101847620B1 | System for education using integrated micro controller board | 주식회사 코더블 (antes Kim Ki-man) | KR, vigente a 2037 | Placa Arduino + sensores Scratch para educación. Solo Corea. |
+| KR102547351B1 | Coding source education platform system through DIY electronic kits | 주식회사 비피 | KR, vigente a 2040 | Plataforma de coding con kits electrónicos. Solo Corea. |
+| KR102107846B1 | Coding game progress system using coding robot | 주식회사 로보그램 인공지능 로봇연구소 | KR, vigente a 2039 | Juego de coding con robot. Solo Corea. |
+| CN122072607A | Code error feedback method combining static and dynamic analysis | Universidad de Nanjing | CN, pendiente | Retroalimentación de errores de código para jueces en línea (sin IA generativa). |
+| MX337633B | Sistema didáctico para la enseñanza de la teoría de control automático | CINVESTAV-IPN | MX, concedida | Servomotor + encoder + Simulink para enseñar control. Otro campo. |
+| BR102024011267A2 | Dispositivo robótico cúbico para enseñanza de programación y microelectrónica | Universidade do Estado da Bahia | BR, solicitud | Robot con microcontrolador para enseñar. Hardware, otro formato. |
+| BR102021003222A2 | Kit didáctico de enseñanza a distancia de programación por bloques | Fernando José Morse Alves | BR, solicitud | Programación por bloques, no C++. |
+
+### Paso 5.7 — Actores tecnológicos en LATAM: Prompt 3
+
+**Prompt del profesor (plantilla):**
+
+```text
+Actúa como analista de inteligencia tecnológica en LATAM.
+Busca primero en MX y LATAM, luego global.
+Concepto: [descripción + sector]
+Entrega:
+- Actores en México: nombre, tipo, qué hace, nivel de actividad
+- Actores en LATAM (BR, CO, AR, CL, PE)
+- Actores globales con presencia en LATAM
+- 2–3 papers relevantes últimos 3 años
+- Conclusión: densidad MX/LATAM + implicación para el equipo
+```
+
+**Nuestro prompt:**
+
+```text
+[...misma estructura del profesor...]
+Concepto: GPIO Génesis — videojuego/simulador para aprender C++ real sobre
+microcontroladores (ESP32, Raspberry Pi Pico 2), con estación física opcional y un
+copiloto de IA que explica errores en términos del hardware. Sector: edtech + gaming +
+electrónica educativa.
+Usa como punto de partida a los titulares de las patentes que ya encontramos en MX y
+BR, e incluye simuladores de microcontroladores en línea aunque no tengan patentes.
+```
+
+**IA usada:** el profesor sugiere Perplexity para este prompt. Nosotros usamos **Claude con búsqueda web**, y le dimos como insumo los titulares de patentes que ya teníamos. Así no empezaba desde cero y podíamos revisar cada fuente.
+
+**Resultado:**
+
+| Capa | Actor | Tipo | Qué hace | Actividad |
+|---|---|---|---|---|
+| México | **UNIT Electronics** | Empresa | Diseña y vende tarjetas ESP32 y RP2040 (p. ej. DualMCU ESP32 + RP2040, Pulsar ESP32-C6) y publica tutoriales | Alta. Posible **aliado** para la estación física. |
+| México | **CINVESTAV-IPN** | Centro de investigación | Patente de sistema didáctico de control automático (MX337633B) | Media |
+| México | **Corporativo STR** | Empresa | Robot educativo programable (MX2014015820A) | Baja (solicitud de 2014) |
+| México | **UPAEP** | Universidad | Sistema de simulación electrónica (MX2015017704A) | Baja |
+| LATAM (AR) | **Fundación Sadosky – Program.AR** | Fundación | Iniciativa nacional para llevar la enseñanza de computación a las escuelas | Alta, pero enfocada en primaria/secundaria |
+| LATAM (BR) | **UNEB, IF Farroupilha, SENAI-SP** | Universidades y formación técnica | Patentes de kits y robots para enseñar programación y microelectrónica | Media. Brasil es el país más activo de la región. |
+| LATAM (CO) | **Platzi** | Empresa edtech | Cursos en línea de programación, incluido C++ | Alta. Competidor indirecto (ver semana 4). |
+| Global | **Wokwi** | Empresa | Simulador en línea de ESP32, Raspberry Pi Pico y Arduino | Alta. **El actor más cercano a nuestro simulador**: simula justo los mismos micros, aunque no es un juego. |
+| Global | **Zachtronics** (Shenzhen I/O, TIS-100) | Estudio de videojuegos | Juegos de programación con lenguajes ficticios | Competidor directo (ver semana 4) |
+| Global | **Wonder Workshop** | Empresa | Robots educativos programables; patentes vigentes en EE. UU. | Alta en EE. UU. |
+| Global | **Arduino Education, Espressif, Raspberry Pi** | Fabricantes | Hardware y material educativo | Alta, con presencia en LATAM por distribuidores |
+
+**Papers relevantes (últimos 3 años):**
+
+1. Leinonen, J. et al. (2023). *Using Large Language Models to Enhance Programming Error Messages*. SIGCSE 2023, ACM. Muestra que un LLM puede explicar errores de programación mejor que el mensaje original del compilador, y también cuándo se equivoca. Es la base académica de nuestro copiloto.
+2. *Exploring Students' Perception of Virtual Laboratory Adoption on an IoT Course*. TEM Journal, mayo 2025. Estudia a estudiantes usando un laboratorio virtual (Wokwi) en un curso de IoT.
+3. *Using WOKWI Simulator to Support Engineering Student Learning in Microcontrollers and Sensors* (2024). Uso del simulador para enseñar microcontroladores y sensores en ingeniería.
+
+**Conclusión:** la **densidad en México es baja**: no hay patentes ni empresas haciendo un juego de programación con microcontroladores reales. En LATAM la actividad es de **hardware didáctico** (sobre todo en Brasil), no de software ni de IA. Lo global está en EE. UU., Corea y China. **Implicación para nosotros:** hay espacio para ser los primeros en la región con esta combinación. El riesgo real no son las patentes sino **Wokwi**: si agrega una capa de juego, nos alcanza rápido. Nuestra ventaja tiene que venir de la narrativa de fábrica, del copiloto en español y de la velocidad de ejecución.
+
+### Paso 5.8 — Conclusión FTO (libertad de operación)
+
+| Parte del concepto | Nivel FTO en México | Situación | Acción |
+|---|:---:|---|---|
+| (a) Videojuego / simulador con C++ real | 🟢 **Alta** | No hay patentes con efecto en México. Las más cercanas están abandonadas (US20130084999A1) o solo pendientes fuera (Robotify Labs). | Continuar y documentar. Revisar los reclamos de Robotify antes de vender en EE. UU./Europa. |
+| (b) Estación física ESP32 / Pico 2 | 🟢 **Alta** | Las patentes vigentes (Wonder Workshop, patentes coreanas) no tienen familia en México, y su arquitectura es distinta (control remoto desde la tablet). | Continuar. Mantener el diseño de "el código corre en el micro". |
+| (c) Copiloto IA de diagnóstico | 🟡 **Media** | En México está libre, pero CN121583173B (vigente en China) protege un método muy parecido y le quita novedad a la idea. | Ajustar el concepto: diagnóstico por **explicación en lenguaje natural**, no por el método de gradientes sobre el árbol sintáctico. Protegerlo como **secreto industrial**, no como patente. |
+
+**Conclusión general: 🟢 FTO alta en México para lanzar GPIO Génesis.** Ninguna de las patentes encontradas tiene efecto en el país. Lo que sí cambia es nuestra estrategia de PI: como el diagnóstico con IA y el gemelo virtual-físico **ya tienen antecedentes publicados**, patentar sería caro y débil. Nos protegemos con **marca + derechos de autor + secreto industrial + velocidad**, que coincide con la "estrategia pragmática" vista en clase.
+
+!!! warning "Pendientes de esta vigilancia"
+    - Repetir las búsquedas de México directamente en SIGA y las de LATAM en LATIPAT para confirmar que no falta nada.
+    - Confirmar en el expediente del IMPI si MX2014015820A llegó a concederse.
+    - Revisar los reclamos que finalmente se concedan a Robotify Labs en EE. UU. y Europa.
+
+---
+
+## Lo que cambió esta semana
+
+- **El nombre dejó de ser una ocurrencia y ya está validado:** salió de un prompt nuestro, lo evaluamos contra otros dos finalistas con criterios de marca, verificamos su huella digital y lo buscamos en el IMPI. La conclusión es que **"GPIO" es lo que lo hace registrable** y "Génesis" solo sería un problema (por SEGA).
+- **El copiloto IA ya no es "algo que nadie tiene":** en semana 2 dijimos que ningún competidor diagnosticaba el código en términos de hardware. Eso sigue siendo cierto para **productos en el mercado**, pero ya existe una **patente en China** (2026) con esa idea. Nuestro diferenciador tiene que ser la ejecución y el idioma, no la idea.
+- **Apareció un actor que no teníamos en el mapa competitivo:** Wokwi, que simula exactamente los micros que queremos usar.
+
+## Checklist de salida
+
+- [x] ¿Qué tipo de PI proteger primero? → **Marca** (clases 9 y 41) + **derechos de autor** del juego; **secreto industrial** para el copiloto IA.
+- [x] ¿Tienes 2 nombres candidatos evaluados? → **GPIO Génesis** (elegido) y **Factory++** (respaldo), más Ferrum.
+- [x] ¿Sabes aplicar el protocolo de entrevista? → Sí; aplicado en las entrevistas de [Semana 4](canvas-mercado-semana4.md).
+- [x] ¿Tienes 3 personas identificadas para entrevistar? → Sí; hicimos 4 entrevistas (ver Semana 4).
+
+---
 ## Reflexión personal semana 3 
 Esta tercera semana de trabajo me abrió los ojos a un lado del desarrollo tecnológico que, como estudiantes de ingeniería, solemos ignorar por completo: la protección legal y la propiedad intelectual. Entendí que de nada sirve tener un diseño mecánico impecable o un código perfectamente optimizado si terminas usando una librería de código abierto con licencia GPL que te obliga a hacer público todo tu trabajo, o si pasas meses desarrollando un producto para que luego te llegue una carta de cese porque alguien más ya había patentado ese mecanismo. Fue un golpe de realidad comprender que registrar una marca o firmar un acuerdo de confidencialidad no son trámites burocráticos aburridos, sino el escudo fundamental que protege todo nuestro esfuerzo técnico y comercial.
 
