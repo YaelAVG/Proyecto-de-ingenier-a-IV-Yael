@@ -1,13 +1,13 @@
 # Proyecto final: GPIO Génesis
 
-**Equipo:** José Carlos y Yael · **Curso:** Proyectos de Ingeniería 4 · **Última actualización:** 24 de noviembre de 2026
+**Equipo:** José Carlos y Yael · **Curso:** Proyectos de Ingeniería 4 · **Última actualización:** 25 de noviembre de 2026
 
 Esta es la memoria del proyecto: la guía que llenamos semana a semana, el plan de negocio que puede leer alguien que no nos conoce y el registro contra el que se califica. Cada sección empieza con una ficha (versión y fecha, decisión, evidencia, qué cambió y qué queda abierto). Los detalles largos están en bloques que se abren con un clic y en los anexos.
 
 !!! info "Cómo leer esta página"
     - **Ruta del evaluador (10 min):** [§0](#s0) (1 min) → [§5](#s5) (1) → [§13](#s13) (2) → [§17](#s17) (2) → [§18](#s18) (2) → [§21](#s21) (1) → [§20](#s20) (1).
     - **Para un inversionista:** resumen [§0](#s0) · problema [§2](#s2), [§3](#s3) · solución [§5](#s5), [§9](#s9) · mercado [§4](#s4) · modelo de negocio [§13](#s13) · operación [§11](#s11) · finanzas y economía unitaria [§14](#s14), [§15](#s15) · legal [§16](#s16) · tracción [§18](#s18), [§19](#s19) · equipo [§1](#s1) · riesgos y siguientes pasos [§22](#s22).
-    - **Etiquetas:** **VERIFICADO** = tiene fuente o prueba enlazada · **HIPÓTESIS** = afirmación sin evidencia todavía · **SUPUESTO** = número que pusimos nosotros · **POR VERIFICAR** = falta confirmarlo con una fuente oficial · **PENDIENTE** = no se ha hecho.
+    - **Etiquetas:** **VERIFICADO** = tiene fuente o prueba enlazada · **HIPÓTESIS** = afirmación sin evidencia todavía · **SUPUESTO** = número que pusimos nosotros · **POR VERIFICAR** = falta confirmarlo con una fuente oficial · **ESTIMADO** = precio aproximado que falta cotizar · **PENDIENTE** = no se ha hecho.
     - En los requerimientos: ✅ cumple · ⚠️ parcial · ❌ no cumple · ⏳ pendiente de probar.
 
 ??? note "Rúbrica del curso y dónde está cada criterio"
@@ -18,7 +18,7 @@ Esta es la memoria del proyecto: la guía que llenamos semana a semana, el plan 
     | Landing page de lanzamiento | 15% | Demo (tramo de compra) | [19](#s19) | Publicada, con pre-registro (Google Forms) y GoatCounter; faltan visitas y registros. |
     | Pitch | 15% | Pitch de 3 min y retroalimentación | [0](#s0), [2](#s2), [5](#s5), [13](#s13), [15](#s15), [20](#s20) | Guion listo en [§20](#s20); falta el video. |
     | Documentación técnica y BOM | 10% | Solo la página | [3](#s3), [4](#s4), [6](#s6), [7](#s7), [8](#s8), [11](#s11), [13](#s13)–[16](#s16), [18](#s18) | Esta página y sus anexos. |
-    | Entregables semanales y proceso | 5% | Página y repositorio | [1](#s1), [10](#s10), [21](#s21), [22](#s22), [Anexo B](#anexo-b) | Semanas 1–7 publicadas; el código del juego falta subirlo con commits. |
+    | Entregables semanales y proceso | 5% | Página y repositorio | [1](#s1), [10](#s10), [21](#s21), [22](#s22), [Anexo B](#anexo-b) | Semanas 1–9 publicadas. El código del juego no se publica (decisión del equipo); la demo está en un Release de GitHub. |
 
     La evaluación final dura 15 minutos: 3 de pitch, 7 de demo y 5 de retroalimentación.
 
@@ -30,7 +30,7 @@ Esta es la memoria del proyecto: la guía que llenamos semana a semana, el plan 
     - **Decisión:** presentamos GPIO Génesis como un juego para PC de $249 MXN, con el bloque 1 del curso (GPIO) completo y un copiloto que guía sin resolver.
     - **Evidencia:** el juego (9 niveles + 2 demos + el proyecto del copiloto, 834 pruebas automáticas al 24-nov), los Excel de la semana 7 y la landing ([§12](#s12), [§14](#s14), [§19](#s19)).
     - **Qué cambió:** primera versión del resumen.
-    - **Queda abierto:** pruebas con usuarios, video del pitch, video de respaldo de la demo y publicar el `.exe`.
+    - **Queda abierto:** pruebas con usuarios, medir el tiempo de respuesta de la IA (los tokens ya se midieron, [§14](#s14)) y las visitas de la landing, video del pitch y video de respaldo de la demo.
 
 ![Ícono de GPIO Génesis](https://jc3468.github.io/Proyecto_ing_4/gpio-genesis/assets/img/icono.svg){ width="64" align=left } **GPIO GÉNESIS** — juego de PC para aprender a programar microcontroladores.
 
@@ -42,11 +42,11 @@ Esta es la memoria del proyecto: la guía que llenamos semana a semana, el plan 
 |---|---|---|
 | Mercado alcanzable | **1,100 copias al año** (SOM de 2,200 en 2 años) de un SAM de 219,000 estudiantes de ingeniería que juegan simuladores | [§4](#s4) · HIPÓTESIS (cálculo de la semana 4) |
 | Precio | **$249 MXN**, pago único en PC; Copiloto Pro opcional a $49 MXN/mes | [§14](#s14) |
-| Economía unitaria | **$173.44 de contribución por copia** (después del 30% de Steam y $0.86 de IA); equilibrio con **322 copias** contando nuestras horas o **49** contando solo el dinero que sale del bolsillo | [§14](#s14), [§15](#s15) · SUPUESTOS del modelo |
+| Economía unitaria | **$173.44 de contribución por copia** (después del 30% de Steam y $0.86 de IA); equilibrio con **322 copias** contando nuestras horas o **49** contando solo el dinero que sale del bolsillo (con el margen del 10% que toma Pro; solo con el juego serían 343 y 52) | [§14](#s14), [§15](#s15) · SUPUESTOS del modelo |
 
-**Enlaces:** [repositorio](https://github.com/JC3468/Proyecto_ing_4) · [landing page](https://jc3468.github.io/Proyecto_ing_4/gpio-genesis/) · video del pitch (**PENDIENTE**) · video de respaldo de la demo (**PENDIENTE**) · descarga del `.exe` en [Releases](https://github.com/JC3468/Proyecto_ing_4/releases) (**PENDIENTE**: subirlo).
+**Enlaces:** [repositorio](https://github.com/JC3468/Proyecto_ing_4) · [landing page](https://jc3468.github.io/Proyecto_ing_4/gpio-genesis/) · video del pitch (**PENDIENTE**) · video de respaldo de la demo (**PENDIENTE**) · [demo descargable](https://github.com/JC3468/Proyecto_ing_4/releases) (Release de GitHub).
 
-**Estado, en una oración:** el juego ya funciona en PC con los 9 niveles del bloque 1 y la demo del copiloto, pero todavía no tenemos pruebas documentadas con usuarios, y de la IA en la nube solo sabemos que ya responde con una clave real (falta medir tokens y tiempo). La landing ya está publicada, pero todavía sin visitas medidas.
+**Estado, en una oración:** el juego ya funciona en PC con los 9 niveles del bloque 1 y la demo del copiloto, pero con usuarios solo tenemos una prueba informal de la versión sin tutorial (4 de 5 terminaron el nivel 1), y de la IA en la nube ya sabemos que responde con una clave real y cuánto cuesta (≈ US$0.00032 por consulta, promedio de 10); falta medir el tiempo de respuesta. La landing y la demo ya están publicadas, pero todavía sin visitas medidas.
 
 ---
 
@@ -54,18 +54,18 @@ Esta es la memoria del proyecto: la guía que llenamos semana a semana, el plan 
 
 ## 1. Equipo { #s1 }
 
-!!! abstract "v1 · 24-nov-2026"
-    - **Decisión:** somos dos personas; la página del curso y el repositorio los llevamos entre los dos; José Carlos, el desarrollo del juego; Yael, el modelo financiero y las entrevistas; las sesiones de trabajo con IA y las decisiones de producto, juntos.
-    - **Evidencia:** [About me](https://jc3468.github.io/Proyecto_ing_4/about/), los commits del [repositorio](https://github.com/JC3468/Proyecto_ing_4/commits/main) y las decisiones firmadas por los dos en la [semana 6](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-06/).
-    - **Qué cambió:** primera versión de esta sección.
-    - **Queda abierto:** el acuerdo de colaboración firmado (**PENDIENTE**).
+!!! abstract "v2 · 25-nov-2026 (v1: 24-nov)"
+    - **Decisión:** somos dos personas; la página del curso y el repositorio los llevamos entre los dos; José Carlos, el desarrollo del juego; Yael, el modelo financiero, las entrevistas y las pruebas con usuarios; las sesiones de trabajo con IA y las decisiones de producto, juntos.
+    - **Evidencia:** [About me](https://jc3468.github.io/Proyecto_ing_4/about/), los commits del [repositorio](https://github.com/JC3468/Proyecto_ing_4/commits/main), las decisiones firmadas por los dos en la [semana 6](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-06/) y el acuerdo de colaboración que firmamos los dos (abajo).
+    - **Qué cambió:** (24-nov) primera versión de esta sección. Después firmamos el acuerdo de colaboración; en él Yael queda a cargo de las pruebas con usuarios ([§18](#s18)).
+    - **Queda abierto:** nada en esta sección.
 
 | Integrante | Formación | Intereses | Rol en el proyecto |
 |---|---|---|---|
 | **José Carlos** | Ingeniería Mecatrónica, 5º semestre; cursa Sistemas Embebidos | Tecnología, física, videojuegos; le gustaría trabajar en control o robótica | Parte de la página del curso y del repositorio, desarrollo del juego con Claude Code y parte de las sesiones de trabajo con IA |
-| **Yael** | Ingeniería Mecatrónica, 5º semestre (20 años); no ha llevado Sistemas Embebidos | Llevar ideas del papel a la realidad: diseño mecánico en SolidWorks, programación en C y control de hardware con Arduino. Le interesan el emprendimiento y la comunicación: proyectos que conecten con las personas y resuelvan necesidades reales | Parte de la página del curso y del repositorio, modelo financiero (semana 7), entrevistas de la semana 4 y parte de las sesiones de trabajo con IA |
+| **Yael** | Ingeniería Mecatrónica, 5º semestre (20 años); no ha llevado Sistemas Embebidos | Llevar ideas del papel a la realidad: diseño mecánico en SolidWorks, programación en C y control de hardware con Arduino. Le interesan el emprendimiento y la comunicación: proyectos que conecten con las personas y resuelvan necesidades reales | Parte de la página del curso y del repositorio, modelo financiero (semana 7), entrevistas de la semana 4, parte de las sesiones de trabajo con IA y las pruebas con usuarios ([§18](#s18)) |
 
-**Acuerdo de colaboración (PROPUESTA para firmar o cambiar):** (1) una reunión fija a la semana para revisar avance y decidir; (2) las decisiones de producto se toman entre los dos y se anotan en esta página con su evidencia; (3) cada sesión de trabajo termina en un commit con mensaje claro; (4) si alguno no puede cumplir una tarea, avisa con 48 horas; (5) esta página dice quién hizo qué.
+**Acuerdo de colaboración (firmado por los dos):** (1) una reunión fija a la semana para revisar avance y decidir; (2) las decisiones de producto se toman entre los dos y se anotan en esta página con su evidencia; (3) cada sesión de trabajo termina en un commit con mensaje claro; (4) si alguno no puede cumplir una tarea, avisa con 48 horas; (5) esta página dice quién hizo qué. Además fija las responsabilidades de cada uno; que lo que produce la IA se revisa antes de entregarse y que cada quien escribe su propia reflexión; la autoría y propiedad a partes iguales (50/50) del juego, la marca y la documentación, sin que ninguno lo venda, licencie ni registre por su cuenta; la confidencialidad de claves y código; la salida del proyecto (aviso por escrito con 7 días), y que los desacuerdos se hablan primero en la reunión semanal.
 
 ??? note "¿Quién hizo qué? (con lo que hay en el repositorio)"
     | Parte | Quién | Evidencia |
@@ -245,10 +245,10 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 !!! abstract "v2 · 24-nov-2026 (v1.0: semana 5, 24-sep · RI-07: semana 6)"
     - **Decisión:** mantenemos los 26 requerimientos y agregamos la columna de estado con su prueba.
     - **Evidencia:** [PDS v1.0](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-05/) y las pruebas automáticas del juego (834 al 24-nov-2026, resumidas en [Anexo B](#anexo-b)).
-    - **Qué cambió:** RI-04 pasó de la API de Arduino-ESP32 a la del Pico SDK; RF-01 se cumple con un intérprete propio en lugar de clang; RI-07 se agregó desde la semana 6; RF-07 (24-nov): la descarga de la demo aparece en la landing solo después del pre-registro, para que la página siga con una sola acción (apartar una copia); el `.exe` está en el Release de GitHub.
-    - **Queda abierto:** **6 cumplen, 10 parcialmente, 1 no cumple y 9 están sin probar**: casi todos los pendientes necesitan usuarios o una PC mínima.
+    - **Qué cambió:** RI-04 pasó de la API de Arduino-ESP32 a la del Pico SDK; RF-01 se cumple con un intérprete propio en lugar de clang; RI-07 se agregó desde la semana 6; RF-07 (24-nov): la descarga de la demo aparece en la landing solo después del pre-registro, para que la página siga con una sola acción (apartar una copia); la demo (`GPIO_Genesis_demo.exe`) está en el Release de GitHub desde el 25-nov; RD-05 se cumple con el costo medido el 25-nov ([§14](#s14)).
+    - **Queda abierto:** **7 cumplen, 11 parcialmente, 1 no cumple y 7 están sin probar**: casi todos los pendientes necesitan usuarios o una PC mínima.
 
-**Producto de primera iteración (definición vigente):** un solo `.exe` de 110 MB para Windows que se descarga del Release de GitHub (la landing da el enlace de la demo después del pre-registro), con los 9 niveles del bloque 1 y 2 demos, el compilador incluido, el copiloto (4 pistas locales + Claude con la clave del jugador) y guardado local, sin cuenta. Criterio de éxito (RI-01): 4 de 5 estudiantes del segmento terminan el nivel 1 sin ayuda en 20 minutos o menos.
+**Producto de primera iteración (definición vigente):** un solo `.exe` de 110 MB para Windows, con los 9 niveles del bloque 1 y 2 demos, el compilador incluido, el copiloto (4 pistas locales + Claude con la clave del jugador) y guardado local, sin cuenta. La demo gratis (nivel 1, demo del copiloto, proyecto del copiloto y demo avanzada) es otro `.exe` que se descarga del Release de GitHub; la landing da el enlace después del pre-registro. La versión completa no se publica. Criterio de éxito (RI-01): 4 de 5 estudiantes del segmento terminan el nivel 1 sin ayuda en 20 minutos o menos.
 
 ??? note "Tabla completa de requerimientos con estado"
     | ID | Requerimiento | Verificación | Estado | Prueba / evidencia |
@@ -259,21 +259,21 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
     | RF-04 | El copiloto explica en español la causa física, marca la línea y no da la solución completa | Set de 40 errores con rúbrica | ⚠️ | Las 4 pistas locales lo hacen; la respuesta de Claude no se ha evaluado (RD-04) |
     | RF-05 | Sin internet: pista local para ≥ 25 patrones; jugar y guardar | 25/25 sin red | ✅ | 79 tipos de problema distintos con 4 pistas cada uno (155 en los 9 niveles y 2 demos del Pico SDK, en los archivos de nivel del juego); el guardado es local |
     | RF-06 | Sincronizar con la cuenta y exportar las soluciones | 2 niveles en otra PC; exportado compila | ⚠️ | Exportar: sí (`main.c`/`main.cpp` + `CMakeLists.txt` por turno). Cuenta y sincronización: no hay backend |
-    | RF-07 | La landing permite apuntarse y, ya apuntado, descargar la demo | 10 registros de prueba en la hoja en < 5 s; la descarga funciona en Chrome, Edge y Firefox | ⚠️ | Pre-registro conectado a Google Forms; faltan los 10 registros de prueba. El botón «Descargar la demo gratis» sale solo después del pre-registro (un solo CTA) y apunta a `GPIO_Genesis_demo.exe` del Release más reciente: falta crear el Release |
+    | RF-07 | La landing permite apuntarse y, ya apuntado, descargar la demo | 10 registros de prueba en la hoja en < 5 s; la descarga funciona en Chrome, Edge y Firefox | ⚠️ | Pre-registro conectado a Google Forms; faltan los 10 registros de prueba. El botón «Descargar la demo gratis» sale solo después del pre-registro (un solo CTA) y apunta a `GPIO_Genesis_demo.exe` del Release (publicado el 25-nov). La descarga desde la landing ya funciona (la probamos el 25-nov) |
     | RD-01 | Compilar y arrancar: P95 ≤ 3 s (300 líneas, PC mínima) | 50 corridas | ⏳ | No medido |
     | RD-02 | ≥ 30 fps promedio en la PC mínima | Nivel más grande | ⏳ | No medido |
     | RD-03 | Pista local ≤ 200 ms; nube ≤ 8 s | p90 con 5 Mbps | ⚠️ | Local: inmediata (sin red). Nube: sin medir; no hay streaming |
     | RD-04 | ≥ 80% de respuestas correctas y 0 soluciones completas | Set de 40 errores | ⏳ | Pendiente; el filtro de la demo bloquea respuestas con código |
-    | RD-05 | ≤ US$0.006 por consulta e IA ≤ 10% del ingreso neto | Logs de tokens del piloto | ⏳ | Estimado: US$0.0005 y 0.5% (cumpliría); tokens sin medir ([§14](#s14)) |
+    | RD-05 | ≤ US$0.006 por consulta e IA ≤ 10% del ingreso neto | Logs de tokens del piloto | ✅ | Medido (25-nov, promedio de 10 consultas): ≈ US$0.00032 por consulta, unas 19 veces menos que el límite; puede variar según el nivel: repetirlo en los niveles grandes y con los logs del piloto ([§14](#s14)) |
     | RD-06 | 0 cierres con 20 programas defectuosos | Bucle infinito, división entre cero, fuera de arreglo, recursión | ⚠️ | El MCU detiene accesos fuera de arreglo e ISR que se repiten; el set formal de 20 no se ha corrido |
-    | RI-01 | 4 de 5 usuarios terminan el tutorial y el nivel 1 sin ayuda | 5 usuarios, ≤ 20 min | ⏳ | [§18](#s18) |
+    | RI-01 | 4 de 5 usuarios terminan el tutorial y el nivel 1 sin ayuda | 5 usuarios, ≤ 20 min | ⚠️ | Sin tutorial (P8, 25-nov): 4 de 5 terminaron el nivel 1 en 12 min o menos y 1 lo abandonó, pero no quedó registrado si recibieron ayuda; falta repetirlo con la guía ([§10](#p8), [§18](#s18)) |
     | RI-02 | Resaltado, números de línea y línea del error marcada | 15 programas con error | ✅ | Capturas de [§12](#s12) y prueba de niveles |
     | RI-03 | Todo en español de México, sin traducir las palabras de C | Revisión de cadenas | ⚠️ | Interfaz en español; falta revisar 40 respuestas de Claude |
     | RI-04 v2 | API del Pico SDK para la Pico 2 (RP2350); el nivel 1 también con Arduino | Las plantillas y soluciones compilan | ⚠️ | Las 28 plantillas y soluciones pasan `gcc -Wall -fsyntax-only` con las cabeceras reales del Pico SDK 2.2.0; falta compilar con arm-none-eabi-gcc y probar en una placa |
     | RI-05 | Backend HTTPS/JSON con JWT y respuesta por SSE | curl sin token → 401 | ❌ | No hay backend: el juego llama directo a la API de Anthropic, sin streaming ([§8](#s8)) |
     | RI-06 | Instalar sin compilador, SDK ni cuenta; ≤ 500 MB | VM limpia de Windows 10 | ⚠️ | Un `.exe` de 110 MB sin instalador; falta probarlo en una Windows limpia |
     | RI-07 | En 1366×768 y 1280×720: código ≥ 14 px con ≥ 20 líneas | Greybox en 4 resoluciones | ⏳ | Existe el ajuste de letra (14–36 px); falta la prueba documentada |
-    | RR-01 | Primera iteración publicada en itch.io antes de la semana 13 | Build publicado | ⏳ | No publicado |
+    | RR-01 | Primera iteración publicada en itch.io antes de la semana 13 | Build publicado | ⏳ | En itch.io todavía no; la demo está en un Release de GitHub (25-nov) |
     | RR-02 | Sin dependencias GPL | Inventario de licencias | ✅ | Godot (MIT), fuentes (OFL), arte y sonidos propios; falta el SBOM formal |
     | RR-03 | Costo del piloto ≤ $600 MXN | Facturación | ⏳ | Sin piloto |
     | RR-04 | Windows 10/11 en la PC mínima | 2 PCs de estudiantes | ⏳ | No probado fuera de nuestras PCs |
@@ -286,7 +286,7 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
     - **Decisión:** híbrido **local primero**: todo corre en la PC del jugador y Claude solo entra cuando las 4 pistas locales no alcanzaron.
     - **Evidencia:** el `.exe`, las capturas de [§12](#s12) y el diagrama de abajo. Versión anterior: [diagrama de la semana 5](recursos/imgs/semana5/arquitectura-gpio-genesis.svg).
     - **Qué cambió:** intérprete propio en lugar de clang → WebAssembly; Pico SDK en lugar de Arduino-ESP32; 4 pistas locales (antes 2 locales y 2 en la nube); sin backend (Supabase, Edge Function y SSE quedaron en el plan); modelo Claude Haiku 5.5 (antes Haiku 4.5).
-    - **Queda abierto:** un backend con cuota antes de vender y medir tokens y tiempo del camino a la nube (ya responde con una clave real, 25-nov-2026).
+    - **Queda abierto:** un backend con cuota antes de vender y medir el tiempo de respuesta del camino a la nube (ya responde con una clave real y los tokens se midieron el 25-nov-2026, [§14](#s14)).
 
 [![Arquitectura final de GPIO Génesis](recursos/imgs/proyecto-final/arquitectura-final.svg)](recursos/imgs/proyecto-final/arquitectura-final.svg)
 
@@ -295,10 +295,10 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 **¿Por qué local primero? (antes "cloud-first")**
 
 1. **Funciona sin internet y sin clave.** El segmento estudia con la red del campus, que falla. Las pistas escalonadas (79 tipos de problema, 4 pistas cada uno) cubren los errores típicos de cada nivel sin llamar a nadie.
-2. **El costo de la IA deja de depender de cuánto pregunta cada jugador.** Con 4 pistas locales, solo los atorados de verdad llegan a la nube: estimamos $0.86 MXN de IA por jugador en todo el MVP ([§14](#s14)).
+2. **El costo de la IA deja de depender de cuánto pregunta cada jugador.** Con 4 pistas locales, solo los atorados de verdad llegan a la nube: estimamos $0.86 MXN de IA por jugador en todo el MVP, y con el costo medido el 25-nov saldría en ≈ $0.61 ([§14](#s14)).
 3. **Respeta la regla de no resolver.** Las pistas locales las escribimos y probamos nosotros; la nube da "otro ángulo" y, en la demo, pasa por un filtro que no deja pasar código.
 
-*Consecuencias:* el `.exe` pesa 110 MB porque lleva el intérprete; cada pista hay que escribirla a mano en el JSON del nivel; y, mientras no haya backend, cada jugador pone su propia clave de API, lo que sirve para la demo pero no para vender.
+*Consecuencias:* el `.exe` pesa 110 MB porque lleva adentro el motor de Godot (así no hace falta instalar nada); cada pista hay que escribirla a mano en el JSON del nivel; y, mientras no haya backend, cada jugador pone su propia clave de API, lo que sirve para la demo pero no para vender.
 
 ??? note "Por qué cada protocolo"
     | Conexión | Protocolo y formato | Por qué este | Por qué no otro |
@@ -340,11 +340,11 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 
 ## 10. Prototipos y evidencia { #s10 }
 
-!!! abstract "v1 · 24-nov-2026"
+!!! abstract "v2 · 25-nov-2026 (v1: 24-nov)"
     - **Decisión:** cada prototipo respondió una pregunta técnica o de experiencia; el siguiente ciclo tiene que ser con usuarios.
-    - **Evidencia:** semanas 6–7 y las capturas fechadas de [§12](#s12) y de la [semana 8](semana%208.md).
-    - **Qué cambió:** primera versión de esta sección.
-    - **Queda abierto:** **ningún prototipo tiene todavía evidencia de usuarios** (el curso pide mínimo 3). Es lo primero de [§18](#s18).
+    - **Evidencia:** semanas 6–7 y las capturas fechadas de [§12](#s12) y de la [semana 8](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-08/).
+    - **Qué cambió:** (24-nov) primera versión de esta sección. (25-nov) se agregó P8: la primera vez que cinco personas (cuatro estudiantes de Ingeniería Mecatrónica y un profesor) probaron la versión sin tutorial se perdían mucho, y por eso se agregó la guía para quien empieza.
+    - **Queda abierto:** P8 es el único prototipo probado con usuarios: cinco personas y su tiempo en el nivel 1, pero con la versión sin tutorial y sin el protocolo de [§18](#s18) (no quedó registrado si alguien recibió ayuda). Repetirla con la guía es lo primero de [§18](#s18).
 
 | # | Fecha | Pregunta | Tipo · resolución | Qué se construyó | Evidencia | Aprendizaje → cambio de diseño |
 |---|---|---|---|---|---|---|
@@ -355,6 +355,24 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 | P5 | 21–22 nov | ¿El simulador reproduce tiempos como el chip (rebote, latencia, prioridades)? | Función · alta | Niveles 2–9, registros del RP2350 y NVIC | 41 programas = gcc; 28 plantillas con las cabeceras reales del SDK | MCU con tiempo exacto por evento y osciloscopio en la pared |
 | P6 | 22–23 nov | ¿El copiloto puede guiar sin escribir el código? | Experiencia · alta | Demo del copiloto (cabina de pintura) | Prueba que revisa que ninguno de los ~100 textos lleve código; resumen «líneas que escribió el copiloto: 0» | 4 pistas locales y Claude al final; una sola fila para preguntar |
 | P7 | 23–24 nov | ¿Alguien aparta una copia de $249? | Negocio · alta | Landing con pre-registro | Publicada; **PENDIENTE** medir ([§19](#s19)) | — |
+| P8 | 25-nov | ¿Quien no conoce el juego se orienta sin que se lo expliquen? | Experiencia · media | La versión completa **sin** tutorial ni explicaciones, probada de manera informal | Cinco personas (cuatro estudiantes de Ingeniería Mecatrónica y un profesor) probaron la versión sin tutorial: cuatro terminaron el nivel 1 en 4, 8, 10 y 12 min (8.5 en promedio) y uno se aburrió y lo abandonó. Nos dijeron que se perdían mucho | Guía para quien empieza: recorrido de la pantalla, consejos la primera vez que aparece algo, botón «?» y «Cómo se juega» ([detalle abajo](#p8)) |
+
+<span id="p8"></span>
+
+??? note "P8 · Lo que nos dijeron del juego sin tutorial, y por qué agregamos la guía"
+    Probamos la versión que no traía tutorial ni explicaciones con **cinco personas: cuatro estudiantes de Ingeniería Mecatrónica y un profesor**. Cuatro terminaron el nivel 1 (en 4, 8, 10 y 12 minutos) y uno se aburrió y lo abandonó; aun así, nos dijeron que se perdían mucho: no es amigable para quien empieza. Mecatrónica es una de las carreras de nuestro cliente número uno ([§15](#s15)), así que el problema apareció justo con quien queremos venderle. Esto fue lo que nos dijeron y qué hicimos con cada punto (la etiqueta es de nuestro propio estado al 25-nov):
+
+    | Lo que nos dijeron | Por qué importa | Qué hicimos | Estado |
+    |---|---|---|---|
+    | «No es beginner friendly» | Es la hipótesis de RI-01 (terminar el nivel 1 sin ayuda): sin orientación no se cumple | Recorrido guiado de la pantalla (qué hace cada parte y cada botón), consejos que salen una sola vez la primera vez que aparece algo (primera alerta, primer error, el tablero de cada fábrica), botón **«?»** para repetirlo y **Menú → Cómo se juega** | ✅ Hecho (25-nov); falta probarlo con alguien que no conozca el juego |
+    | Más contexto sobre las funciones y las variables: comentar qué hace cada línea de código nueva y cada variable | Quien empieza no sabe qué hace `gpio_init` ni por qué un pin es una constante | Las plantillas ya traen comentarios de qué falta y los consejos explican el código de la fábrica | ⚠️ Parcial · **Consideración futura:** comentar línea por línea el código nuevo de cada nivel y cada variable |
+    | No esconder la Referencia: tenerla en la pantalla principal como guía | La Referencia es donde está la sintaxis de cada función; hoy se abre en un panel que tapa la planta | Recordatorio de la Referencia al pedir la pista 2 («Insertar en mi código» y luego modificarlo) | ⚠️ Parcial · **Consideración futura:** dejarla visible en la pantalla principal junto a la planta y el editor |
+    | Sección introductoria tipo Duolingo que presente los conceptos | Los conceptos (pin, entrada, salida, 1 y 0) se explican hoy dentro del nivel, ya jugando | — | ⏳ **Consideración futura** |
+    | Resaltar el error en el editor de código al pedir ayuda o una pista | Hoy la pista dice «línea N» y el jugador tiene que buscarla | La línea de la pista ya se tiñe de color en el editor, pero el fondo es tenue | ⚠️ Parcial · **Consideración futura:** hacerlo más visible |
+
+    Las cuatro mejoras marcadas como **consideración futura** no entran antes de la entrega: quedan para una siguiente versión, después de ver si la guía basta.
+
+    **Qué falta para cerrar P8:** repetir la prueba con la guía y con el protocolo de [§18](#s18), y compararla con estos tiempos (4–12 min; 1 de 5 abandonó): registrar quiénes son, cuánto tardan en la primera compilación y dónde se atoran. Esa medición es la tarea 1 y 2 de [§18](#s18).
 
 ??? note "Ciclo de aprendizaje en imágenes"
 
@@ -394,7 +412,7 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
     | Dominio | gpiogenesis.com | ~US$12 al año (**ESTIMADO**) | Registrador | Inmediato |
     | Página, pre-registro y métricas | GitHub Pages, Google Forms, GoatCounter | $0 | GitHub, Google, GoatCounter | Inmediato |
 
-**Volumen y proceso:** piloto de 20 jugadores (descarga gratis desde un Release de GitHub) y lanzamiento de 400 copias en el año 1 (escenario base) en Steam. El proceso es el mismo para 1 o 1,000 copias: exportar con Godot (preset "Windows Desktop", el paquete va dentro del `.exe`), subir y distribuir. Una versión nueva toma minutos.
+**Volumen y proceso:** piloto de 20 jugadores (se les pasa el `.exe` completo; el Release público solo trae la demo) y lanzamiento de 400 copias en el año 1 (escenario base) en Steam. El proceso es el mismo para 1 o 1,000 copias: exportar con Godot (preset "Windows Desktop", el paquete va dentro del `.exe`), subir y distribuir. Una versión nueva toma minutos.
 
 | Revisión DFM | Antes (semana 5) | Después (24-nov) |
 |---|---|---|
@@ -418,8 +436,8 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
     1. Instalar [Godot 4.7.2](https://godotengine.org/download) (versión estándar, no .NET) y sus plantillas de exportación oficiales.
     2. Correr las 5 suites de pruebas automáticas ([Anexo B](#anexo-b)). Todas deben pasar.
     3. Exportar con el preset **Windows Desktop** a `GPIO_Genesis.exe` (un solo archivo, ~110 MB).
-    4. Abrir el `.exe` en una PC sin Godot y revisar que salgan los 9 niveles, las dos demos y la Estación de empaque.
-    5. Subirlo a un Release de GitHub; para quien lo descarga, reproducir una unidad es bajar ese archivo.
+    4. Abrir el `.exe` en una PC sin Godot y revisar que salgan los 9 niveles, las dos demos y el proyecto del copiloto (Estación de empaque).
+    5. La demo se sube a un Release de GitHub; para quien la descarga, reproducir una unidad es bajar ese archivo. La versión completa no se publica.
 
 ## 12. Aplicación conectada { #s12 }
 
@@ -427,7 +445,7 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
     - **Decisión:** la "aplicación" es el juego: fábrica + editor + copiloto en una sola pantalla.
     - **Evidencia:** el `.exe` (Godot 4.7.2) y las capturas de abajo.
     - **Qué cambió:** el modelo por defecto pasó a `claude-haiku-5-5` (24-nov), el que se usó para costear la semana 7. El `.exe` ya se volvió a exportar con este modelo (24-nov).
-    - **Queda abierto:** publicar el `.exe` en un Release (el código del juego no se publica).
+    - **Queda abierto:** cómo distribuir la versión completa sin publicarla; el Release trae solo la demo y el código del juego no se publica.
 
 **Flujo del usuario:** abrir el `.exe` → la primera vez entra directo al nivel 1 con el código al 90% ("2 de 3 sistemas en línea") → escribe una línea → **Compilar y ejecutar** (Ctrl+Enter) → la banda arranca → ventana «Turno 1 completado» → **Exportar turno 1** o **Ir al turno 2** → al terminar los turnos, **Siguiente nivel**. Wireframes del menú, la alerta y la primera vez en la [semana 6](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-06/), sección 8.
 
@@ -451,7 +469,7 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 
     ![Respuesta de Claude a una pregunta libre](recursos/imgs/proyecto-final/pf-copiloto-claude-simulado.jpg)
 
-    **Captura de una prueba automática con respuesta simulada.** Falta probar con la API real.
+    **Captura de una prueba automática con respuesta simulada.** Con una clave real Claude ya respondió (25-nov), pero falta capturar esa respuesta.
 
 === "Turno completado"
 
@@ -481,7 +499,7 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
     ```
     Va por HTTPS a `https://api.anthropic.com/v1/messages` con las cabeceras `x-api-key` (la clave del jugador) y `anthropic-version: 2023-06-01`. No lleva nombre, correo ni ningún dato del jugador.
 
-**Cómo correrlo:** descargar `GPIO_Genesis.exe` del [Release](https://github.com/JC3468/Proyecto_ing_4/releases) (**PENDIENTE**) y abrirlo con doble clic. Para la IA: **Menú → Opciones → Copiloto en la nube**, pegar una clave de Anthropic, **Guardar** y **Probar conexión**.
+**Cómo correrlo:** descargar `GPIO_Genesis_demo.exe` del [Release](https://github.com/JC3468/Proyecto_ing_4/releases) y abrirlo con doble clic (si Windows avisa, «Más información» → «Ejecutar de todos modos»). La demo trae el nivel 1, la demo del copiloto, el proyecto del copiloto y la demo avanzada; los 9 niveles se ven en la demo en vivo. Para la IA: **Menú → Opciones → Copiloto en la nube**, pegar una clave de Anthropic, **Guardar** y **Probar conexión**.
 
 ??? note "Limitaciones conocidas"
     - El código lo ejecuta un intérprete: no es el compilador de ARM. Falta comprobar en una placa que los `main.c` exportados compilan y corren igual.
@@ -509,7 +527,7 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 | **Propuesta de valor** | Aprende C/C++ para microcontroladores arrancando una fábrica de drones: si falla, ves por qué; si funciona, va a tu portafolio | [§5](#s5) |
 | **Oferta** | Juego para PC (bloque 1: 9 niveles + 2 demos) con copiloto y exportación al portafolio | [§5](#s5), [§12](#s12) |
 | **Modelo de ingresos y precio** | $249 MXN pago único (Steam) + Copiloto Pro $49 MXN/mes (Stripe), opcional | [§14](#s14) |
-| **Canales** | Demos en salones con QR → landing; GitHub, YouTube y TikTok orgánicos; Release/itch.io para el piloto y Steam para el lanzamiento | [§15](#s15), [§19](#s19) |
+| **Canales** | Demos en salones con QR → landing; GitHub, YouTube y TikTok orgánicos; la demo en el Release de GitHub, el `.exe` completo directo a los 20 del piloto y Steam para el lanzamiento | [§15](#s15), [§19](#s19) |
 | **Costos** | Horas del equipo ($50,597 MXN el MVP, contando horas), comisión de Steam (30%), IA ($0.86 por jugador), lanzamiento y nube del año 1 ($8,943 MXN: cuota de Steam, firma, dominio y Supabase Pro) | [§14](#s14) |
 | **Socios** | Anthropic (IA), Godot (motor), Raspberry Pi (Pico SDK, solo como referencia de la API), Valve (Steam); posibles: profesores de Sistemas Embebidos | [§11](#s11), [§16](#s16) |
 | **Equipo y recursos** | 2 estudiantes de mecatrónica (uno lleva Sistemas Embebidos); Claude Code para programar; 834 pruebas automáticas | [§1](#s1), [§21](#s21) |
@@ -531,7 +549,7 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
     - **Decisión:** precio de $249 MXN y alcance de lanzamiento = MVP (los bloques 2 y 3 como actualizaciones).
     - **Evidencia:** [modelo financiero](recursos/archivos/semana7/modelo-financiero-gpio-genesis-semana7.xlsx), [costos](recursos/archivos/semana7/costos-gpio-genesis-semana7.xlsx) y [alcance y niveles](recursos/archivos/semana7/alcance-niveles-costos-gpio-genesis.xlsx), con fórmulas visibles.
     - **Qué cambió (24-nov):** los tres Excel quedaron conciliados: 423 h del MVP en 5 ciclos (84.6 h por ciclo), 220 consultas por jugador y plan gratuito de Supabase en el escenario pesimista ([semana 7](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-07/), nota del 24-nov).
-    - **Queda abierto:** **los tokens no están medidos**; cotizar firma y dominio; consultar impuestos con un contador.
+    - **Queda abierto:** los tokens ya se midieron en 10 consultas (promedio, varía según el nivel; falta repetir en niveles grandes); comparar las 423 h estimadas con las que de verdad tomó el juego; cotizar firma y dominio; consultar impuestos con un contador.
 
 ??? note "Costos CREAR y DISTRIBUIR clasificados D / F / S"
     | Partida | Tipo | MVP | 3 bloques | Por copia |
@@ -551,7 +569,10 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 
     Montos de desarrollo con 15% de indirectos y 30% de contingencia. Regla del curso: si no cierra, se recortan primero los F; los que no cierran son los niveles de los bloques 2 y 3, que son F.
 
-**Costo de la IA (estimado, no medido):** 3,000 tokens de entrada + 400 de salida por consulta con Haiku 5.5 = US$0.0005 por consulta → **$1.31 MXN al mes por usuario activo** (5 consultas al día × 30 días) y **$0.86 MXN por jugador en todo el MVP**. La petición real del juego ([§12](#s12)) lleva las reglas, el código y el diagnóstico del nivel: no sabemos si pesa más o menos que 3,000 tokens hasta medirla. **Cómo lo vamos a medir:** con la clave del equipo, hacer 10 consultas en la demo del copiloto y leer los tokens de entrada y salida en el panel de uso de la consola de Anthropic (o con el endpoint `count_tokens`); poner el promedio en `Supuestos!B11:B12` del Excel de costos.
+**Costo de la IA (medido, 25-nov):** con la clave del equipo hicimos 10 consultas en la demo del copiloto y el contador de la demo registró **21,275 tokens de entrada y 2,047 de salida, US$0.0032 en total** (Haiku 5.5). Eso da un **promedio de ≈ 2,130 tokens de entrada y ≈ 205 de salida por consulta, ≈ US$0.00032 por consulta**, por debajo de la estimación de 3,000 + 400 (US$0.0005). Con ese costo, un usuario activo (5 consultas al día × 30 días) gasta **≈ US$0.05 ≈ $0.83 MXN al mes**, y un jugador que usara las 220 consultas del MVP, todas en la nube, **≈ US$0.07 ≈ $1.21 MXN** (con la mitad en pistas locales, ≈ $0.61 MXN).
+
+!!! warning "Es un promedio, no un valor fijo"
+    Esta medición es un **promedio de 10 consultas**. El gasto real puede ser **mayor o menor según el nivel**: un nivel con más código, más periféricos o un error más largo manda más tokens de entrada, y una pista más detallada genera más tokens de salida. Por eso se toma como referencia, y la cuota de consultas (RR-06) sigue protegiendo el margen aunque el costo suba. **Pendiente:** repetir la medición en los niveles más grandes del bloque 1. El promedio ya está en `Supuestos!B11:B12` del Excel de costos (2,128 y 205 tokens); el $0.86 por jugador de la tabla DFM y del resumen del Excel sigue siendo la cifra más alta, calculada por nivel (2,500–4,000 tokens), y queda como cota conservadora.
 
 | Indicador | MVP (5 niveles) | 3 bloques (22 niveles) | Fuente |
 |---|---|---|---|
@@ -561,6 +582,10 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 | Precio recomendado | **$249** (debajo del piso: cubre costos, no el 40% de margen) | $249 (no cubre costos) | [semana 7](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-07/) §4.2 |
 | Equilibrio contando horas / solo efectivo | **322 / 49 copias** | 697 / 50 copias | Modelo, Equilibrio |
 | Mes en que el acumulado se vuelve positivo (base) | 9 | no en 12 meses | Modelo, Flujo 12 meses |
+
+El equilibrio cuenta el margen de Pro: 10% de los compradores × 2.9 meses × $40.85 = $11.67 más por copia ([semana 7](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-07/) §4.3). Solo con el juego ($173.44 por copia) serían **343** copias contando horas y **52** en efectivo.
+
+**Alcance costeado y alcance construido:** el modelo costea un MVP de 5 niveles (los niveles 1–5). El juego ya tiene los 9 del bloque 1: los niveles 6–9 (antirrebote e interrupciones) completan el bloque. Las 423 h del MVP son estimadas; no las hemos comparado con lo que de verdad tomó.
 
 **¿Por qué $249 si el piso es $299?** Entra en lo que dijo el segmento ($100–400 MXN), queda entre SHENZHEN I/O ($262) y Turing Complete ($350), y en efectivo se recupera con 49 copias. Lo que no recuperaríamos con menos de 322 copias son nuestras horas.
 
@@ -588,11 +613,11 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 |---|---|---|---|
 | Demo de 10 min en un salón + QR a la landing | Ahora: el segmento está concentrado y el profesor da credibilidad | Conversión visita → pre-registro por grupo (`?ref=salon`) | Depende de que un profesor nos preste la clase |
 | GitHub, YouTube y TikTok orgánicos | Desde el pre-registro; cuesta horas, no dinero | Qué mensaje atrae (problema contra demo) | Lento; compite con contenido gratis |
-| Release de GitHub / itch.io (piloto) | Piloto de 20 jugadores, gratis a cambio de 30 min de prueba | Si terminan el nivel 1 solos y si pagarían | Sin firma de código, SmartScreen asusta |
-| Steam | Lanzamiento, con la demo gratis del nivel 1 | Ventas reales y reseñas | 30% de comisión; revisión y divulgación de IA |
+| Demo en el Release de GitHub; `.exe` completo para el piloto | Piloto de 20 jugadores, gratis a cambio de 30 min de prueba | Si terminan el nivel 1 solos y si pagarían | Sin firma de código, SmartScreen asusta |
+| Steam | Lanzamiento, con la demo gratis | Ventas reales y reseñas | 30% de comisión; revisión y divulgación de IA |
 | Licencia escolar (venta directa) | Cuando un profesor lo quiera usar con su grupo | Si las universidades pagan (hipótesis de la semana 2) | Ciclos de venta lentos; facturación |
 
-**Plan de preventa y piloto:** (1) difundir la landing (ya publicada) y medir visitas, clics y pre-registros; (2) a quienes se registren, invitarlos al piloto de 20 jugadores con el `.exe` del Release; (3) al final del piloto, preguntar con compromiso (dejar tarjeta para la compra anticipada o pagar Pro un mes), no con opiniones.
+**Plan de preventa y piloto:** (1) difundir la landing (ya publicada) y medir visitas, clics y pre-registros; (2) a quienes se registren, invitarlos al piloto de 20 jugadores con el `.exe` completo (se les pasa directo; el Release público solo trae la demo); (3) al final del piloto, preguntar con compromiso (dejar tarjeta para la compra anticipada o pagar Pro un mes), no con opiniones.
 
 | Métrica | Valor | ¿Medido o supuesto? |
 |---|---|---|
@@ -617,7 +642,7 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 | Tema | ¿Aplica? | Qué exige | Documento o trámite | Quién lo emite | Costo y tiempo | Estatus |
 |---|---|---|---|---|---|---|
 | Radio y homologación | No | — | — | IFT | — | VERIFICADO: no hay hardware |
-| Datos personales | Sí: la landing pide nombre, correo y carrera | Aviso de privacidad desde que se recaban los datos y respetar los derechos del titular | [LFPDPPP](https://www.diputados.gob.mx/LeyesBiblio/ref/lfpdppp.htm) (DOF 20-03-2025, en vigor el 21-03-2025) | Secretaría Anticorrupción y Buen Gobierno (antes INAI) | $0; redactarlo | POR VERIFICAR: el aviso actual es simplificado y le falta el correo de contacto |
+| Datos personales | Sí: la landing pide nombre, correo y carrera | Aviso de privacidad desde que se recaban los datos y respetar los derechos del titular | [LFPDPPP](https://www.diputados.gob.mx/LeyesBiblio/ref/lfpdppp.htm) (DOF 20-03-2025, en vigor el 21-03-2025) | Secretaría Anticorrupción y Buen Gobierno (antes INAI) | $0; redactarlo | POR VERIFICAR: el aviso de la landing es simplificado (ya tiene correo de contacto); falta el integral, con domicilio |
 | Seguridad y etiquetado | Probablemente: clasificación de contenido | Mostrar la clasificación del videojuego | [Lineamientos Generales del Sistema Mexicano de Equivalencias de Clasificación de Contenidos de Videojuegos](https://dof.gob.mx/nota_detalle_popup.php?codigo=5606047) (DOF 27-11-2020, en vigor desde el 27-05-2021) | SEGOB | Probablemente "A, todo público" | POR VERIFICAR si aplica a una tienda digital |
 | Baterías | No | — | — | — | — | VERIFICADO |
 | Licencias de software e IA | Sí | Avisos de licencia (Godot MIT, fuentes OFL); términos comerciales y política de uso de Anthropic | Leer los términos vigentes; SBOM | Cada proyecto / Anthropic | $0 | POR VERIFICAR |
@@ -628,13 +653,13 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 | Marca | Sí | Solicitud de marca mixta, clases 9 y 41 | Marca en Línea | IMPI | ~$2,814 MXN por clase; meses | POR VERIFICAR |
 
 ??? note "Borrador de aviso de privacidad integral y términos básicos (revisar antes de usarlo)"
-    **Aviso de privacidad.** José Carlos y Yael, equipo de GPIO Génesis (proyecto escolar), son responsables de los datos que dejas en el pre-registro: nombre, correo, carrera y la página de la que llegaste. Los usamos para avisarte del lanzamiento, invitarte al piloto y medir cuánto interés hay. No los vendemos ni los compartimos; se guardan en una hoja de Google Forms a la que solo tenemos acceso nosotros. Puedes pedir que los corrijamos o los borremos escribiendo a **[correo de contacto, PENDIENTE]**; respondemos en un máximo de 20 días hábiles. Si cambiamos este aviso, lo publicaremos en esta misma página. *Domicilio para notificaciones: PENDIENTE.*
+    **Aviso de privacidad.** José Carlos y Yael, equipo de GPIO Génesis, son responsables de los datos que dejas en el pre-registro: nombre, correo, carrera y la página de la que llegaste. Los usamos para avisarte del lanzamiento, invitarte al piloto y medir cuánto interés hay. No los vendemos ni los compartimos; se guardan en una hoja de Google Forms a la que solo tenemos acceso nosotros. Puedes pedir que los corrijamos o los borremos escribiendo al correo de contacto de esta página; respondemos en un máximo de 20 días hábiles. Si cambiamos este aviso, lo publicaremos en esta misma página. *Domicilio para notificaciones: PENDIENTE.*
 
     **El juego** no pide cuenta ni datos personales. Tu progreso y tu código se guardan en tu computadora. Si pones tu clave de Anthropic y pides ayuda a la IA, el juego envía a Anthropic tu código, el estado del nivel y tu pregunta (nunca tu nombre ni tu correo). La clave se guarda cifrada solo en tu PC.
 
     **Términos básicos.** El juego es una versión de prueba y puede tener errores. El copiloto puede equivocarse: verifica lo que te diga. El código que escribes y exportas es tuyo. Raspberry Pi, Pico y Arduino son marcas de sus dueños; GPIO Génesis no tiene relación con esas empresas.
 
-**Qué falta antes de venderle a alguien de fuera:** (1) aviso de privacidad integral con correo y domicilio; (2) un backend con nuestra clave, límite de gasto y cuota (no pedirle su clave al jugador); (3) la declaración de IA en Steam; (4) términos de venta y de cancelación de Pro; (5) la solicitud de marca; (6) el alta en el SAT.
+**Qué falta antes de venderle a alguien de fuera:** (1) aviso de privacidad integral con domicilio; (2) un backend con nuestra clave, límite de gasto y cuota (no pedirle su clave al jugador); (3) la declaración de IA en Steam; (4) términos de venta y de cancelación de Pro; (5) la solicitud de marca; (6) el alta en el SAT.
 
 ---
 
@@ -646,18 +671,18 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
     - **Decisión:** adaptamos las cuatro fronteras y las pruebas T1–T6 del curso a un juego sin hardware.
     - **Evidencia:** las 5 suites de pruebas automáticas (834 al 24-nov-2026: 52 + 92 + 143 + 364 + 183; qué revisa cada una en [Anexo B](#anexo-b)).
     - **Qué cambió:** primera versión; durante esta revisión encontramos que el juego usaba Haiku 4.5 y el costeo Haiku 5.5 (corregido en el código).
-    - **Queda abierto:** **ninguna de las T1–T6 se ha corrido completa con una persona**; con una clave real solo probamos que Claude responde (25-nov-2026).
+    - **Queda abierto:** **ninguna de las T1–T6 se ha corrido completa con una persona**; con una clave real probamos que Claude responde y medimos los tokens de 10 consultas (25-nov-2026).
 
 **Las cuatro fronteras, traducidas:**
 
 1. **F1 · código del jugador → MCU virtual.** ¿El programa se comporta como en el chip? 41 programas de C dan la misma salida que gcc y 14 de C++ la misma que g++; las 28 plantillas y soluciones compilan con las cabeceras reales del Pico SDK. Los tiempos (rebote, latencia) no se han comparado con una Pico real.
-2. **F2 · juego → internet.** ¿La petición sale y llega a Anthropic? La petición se arma y se revisa en las pruebas (`solo_armar_peticion`), y el 25-nov-2026 la mandamos con una clave real y Claude respondió. **Falta medir** tokens y tiempo de respuesta.
+2. **F2 · juego → internet.** ¿La petición sale y llega a Anthropic? La petición se arma y se revisa en las pruebas (`solo_armar_peticion`), y el 25-nov-2026 la mandamos con una clave real y Claude respondió. En 10 consultas medimos ≈ 2,130 tokens de entrada y ≈ 205 de salida por consulta ([§14](#s14)). **Falta medir** el tiempo de respuesta (T2).
 3. **F3 · Claude → respuesta utilizable.** ¿Contesta en español, sin código y sin Markdown? Hay filtro de código (demo) y convertidor de Markdown; falta el set de 40 errores (RD-04).
 4. **F4 · juego y landing → lo que ve el usuario.** ¿Ve lo correcto a tiempo? Historial, botón e indicadores probados en la prueba de niveles; la landing ya está publicada (falta medir visitas y registros).
 
 | # | Prueba del curso | Versión GPIO Génesis | Criterio | Resultado |
 |---|---|---|---|---|
-| T1 | Instalación sin ayuda | Descargar el `.exe` y llegar al nivel 1 | < 5 min sin intervención | ⏳ PENDIENTE (falta el Release y una persona) |
+| T1 | Instalación sin ayuda | Descargar el `.exe` y llegar al nivel 1 | < 5 min sin intervención | ⏳ PENDIENTE (el Release ya está; falta una persona) |
 | T2 | Latencia de punta a punta | Compilar → la planta reacciona; pedir ayuda a la IA → respuesta | ≤ 3 s y ≤ 8 s (RD-01, RD-03) | ⏳ PENDIENTE |
 | T3 | Desconexión y recuperación | Cortar el internet 10 min mientras se juega | Sigue con pistas locales, avisa y no pierde progreso | ⚠️ Probado con red simulada en las pruebas; falta en vivo |
 | T4 | Autonomía de batería | No aplica (sin batería). Equivalente: rendimiento en la PC mínima | ≥ 30 fps (RD-02) | ⏳ PENDIENTE |
@@ -679,22 +704,22 @@ Con el TAM directo (229,000) el SAM bajaría a ~132,000 y el SOM sería 1.7% del
 **Checklist de "listo" (traducido):**
 
 - [ ] El juego corre en una PC que no es nuestra, sin Godot (hoy solo en nuestras PCs).
-- [ ] El `.exe` se puede descargar de un Release público (falta crearlo).
+- [x] La demo (`GPIO_Genesis_demo.exe`) se puede descargar de un Release público (25-nov).
 - [x] La landing está publicada en internet, con el Google Form y GoatCounter.
 - [ ] El flujo descargar → jugar el nivel 1 → pedir ayuda → exportar sale sin que intervengamos (falta T1 con una persona).
 
 ## 18. Pruebas con usuarios { #s18 }
 
-!!! abstract "v0 · 24-nov-2026 — PENDIENTE"
-    - **Decisión:** hacer 5 sesiones de 30 min: 3 del segmento y 2 de otros equipos.
-    - **Evidencia:** todavía ninguna.
-    - **Qué cambió:** adaptamos el protocolo del curso al juego.
+!!! abstract "v0.1 · 25-nov-2026 — PENDIENTE"
+    - **Decisión:** hacer 5 sesiones de 30 min: 3 del segmento y 2 de otros equipos. Las lleva Yael (acuerdo de colaboración, [§1](#s1)).
+    - **Evidencia:** todavía ninguna sesión con este protocolo. Hay una prueba informal del 25-nov con la versión sin tutorial: cinco personas (cuatro estudiantes de Ingeniería Mecatrónica y un profesor); cuatro terminaron el nivel 1 en 4, 8, 10 y 12 min, uno lo abandonó y nos dijeron que se perdían mucho ([§10, P8](#p8)).
+    - **Qué cambió:** adaptamos el protocolo del curso al juego. (25-nov) Después de esa observación el juego trae una guía para quien empieza, así que las sesiones prueban **si la guía resuelve el problema**: si alguien se pierde, anotar en qué pantalla y en qué minuto.
     - **Queda abierto:** **las 5 sesiones**. Es lo más urgente: sostiene RI-01, H2 y la señal de compra.
 
 | Min | Qué pasa | Qué se observa |
 |---|---|---|
 | 0–3 | Guion fijo: «Es un juego para PC. Te voy a pedir tres cosas; piensa en voz alta. Yo no puedo ayudarte.» | Nada del producto se explica |
-| 3–10 | **Tarea 1:** descargar el juego del Release de GitHub y abrir el nivel 1 | Si lo logra solo, tiempo, dudas (incluida la advertencia de Windows) |
+| 3–10 | **Tarea 1:** descargar la demo del Release de GitHub y abrir el nivel 1 | Si lo logra solo, tiempo, dudas (incluida la advertencia de Windows) |
 | 10–20 | **Tarea 2:** completar el turno 1 del nivel 1 y decir qué le está pidiendo el copiloto cuando algo falla | Si entiende la alerta y la pista, y qué hace después |
 | 20–25 | **Tarea 3:** encontrar el precio y apartar una copia | Si encuentra el CTA y completa el pre-registro |
 | 25–30 | Cierre: ¿cuándo fue la última vez que te atoraste con un programa y qué hiciste? ¿Cuánto pagaste por tu último juego o curso? ¿Te apunto para el piloto? | Compromisos, no opiniones |
@@ -714,13 +739,13 @@ Reglas del observador: no ayudar, no explicar, no defender el diseño; si se ato
 
 ## 19. Landing page { #s19 }
 
-!!! abstract "v1 · 23–24-nov-2026"
+!!! abstract "v2 · 25-nov-2026 (v1: 23–24-nov)"
     - **Decisión:** una sola página con un solo CTA, «Apartar mi copia», que lleva a un pre-registro sin pago.
     - **Evidencia:** [landing](https://jc3468.github.io/Proyecto_ing_4/gpio-genesis/) (`docs/gpio-genesis/`).
-    - **Qué cambió (24-nov):** el beneficio del copiloto ya no promete que «se niega a darte la solución» en todo el juego: eso solo pasa en la demo del copiloto.
-    - **Queda abierto:** **publicarla** (push), crear el Google Form, la cuenta de GoatCounter y el correo de contacto; reemplazar el video armado con capturas por una grabación real.
+    - **Qué cambió:** (24-nov) el beneficio del copiloto ya no promete que «se niega a darte la solución» en todo el juego: eso solo pasa en la demo del copiloto. (25-nov) Publicada con el Google Form, GoatCounter y el correo de contacto; después del pre-registro aparece el botón para descargar la demo del Release. (25-nov, tarde) La nota junto al botón ya no dice «solo tu correo», porque el formulario pide nombre, correo y carrera, y «Qué incluye» suma la guía para quien empieza ([§10, P8](#p8)).
+    - **Queda abierto:** medir visitas, clics y pre-registros; los 10 registros de prueba (RF-07; la descarga de la demo ya funciona); reemplazar el video armado con capturas por una grabación real.
 
-**URL:** <https://jc3468.github.io/Proyecto_ing_4/gpio-genesis/> (funciona después del push). Para la demo, el QR lleva `?ref=qr`.
+**URL:** <https://jc3468.github.io/Proyecto_ing_4/gpio-genesis/>. Para la demo, el QR lleva `?ref=qr`.
 
 | # | Elemento | Qué tiene |
 |---|---|---|
@@ -730,7 +755,7 @@ Reglas del observador: no ayudar, no explicar, no defender el diseño; si se ato
 | 4 | Demo de ~30 s | Video armado con capturas reales (la página lo dice) |
 | 5 | Evidencia | «Como un pasatiempo… no como una clase formal»; 4 de 4 juegan simuladores; 3 de 4 pagarían $100–400 |
 | 6 | Precio visible | $249 MXN, pago único, PC con Windows; Pro como opcional |
-| 7 | Un solo CTA | «Apartar mi copia» → nombre, correo y carrera → hoja de Google Forms |
+| 7 | Un solo CTA | «Apartar mi copia» → nombre, correo y carrera → hoja de Google Forms → botón «Descargar la demo gratis» |
 
 **Metadatos:** `title`, `description`, `canonical`, Open Graph (imagen de 1200×630) y tarjeta de X. **Métricas:** visitas y clics en el CTA (GoatCounter, sin cookies) y pre-registros (filas de la hoja), con el origen de cada visita (`?ref=`).
 
@@ -747,22 +772,22 @@ Reglas del observador: no ayudar, no explicar, no defender el diseño; si se ato
 ## 20. Pitch y demo { #s20 }
 
 !!! abstract "v1 · 24-nov-2026"
-    - **Decisión:** pitch de 343 palabras que abre con una persona y un costo, y una demo de 7 min con plan B en cada tramo.
+    - **Decisión:** pitch de 352 palabras que abre con una persona y un costo, y una demo de 7 min con plan B en cada tramo.
     - **Evidencia:** cada cifra del pitch apunta a su sección.
-    - **Qué cambió:** primera versión.
+    - **Qué cambió:** (24-nov) primera versión. (25-nov) el problema ahora es un estudiante al que le toca Sistemas Embebidos, no aprende con apuntes ni videos largos, no repasa y reprueba o abandona; la tracción suma la prueba sin tutorial (P8).
     - **Queda abierto:** grabar el video del pitch y el video de respaldo de la demo; tres ensayos con cronómetro.
 
-??? note "Guion del pitch (3 min, 343 palabras)"
+??? note "Guion del pitch (3 min, 352 palabras)"
     | Parte | Tiempo | Palabras (tope) | Texto | Evidencia |
     |---|---|---|---|---|
-    | Impacto y problema | 0:00–0:35 | 65 (76) | Son las dos de la mañana y Diego, estudiante de mecatrónica, lleva tres horas con una práctica que no funciona. Su código compila, pero la banda no arranca y nadie le dice por qué. No es el único: entre 28 y 50% de los alumnos reprueba o abandona su primer curso de programación. Muchos, además, ya pagaron un kit de hasta 8,000 pesos para practicar. | Diego es una persona ilustrativa. 28–50% y kits de $600–8,270: [§2](#s2) |
+    | Impacto y problema | 0:00–0:35 | 75 (76) | Diego estudia mecatrónica y el próximo semestre le toca Sistemas Embebidos. Le gusta la electrónica, pero no aprende con apuntes ni con videos de dos horas: se aburre y no repasa. Llega la primera práctica, su código compila, la banda no arranca y no sabe por qué. Se atrasa y termina reprobando o dejando la materia. No es el único: entre 28 y 50% de los alumnos reprueba o abandona su primer curso de programación. | Diego es una persona ilustrativa. 28–50%: [§2](#s2) |
     | Solución y por qué nosotros | 0:35–1:10 | 68 (76) | GPIO Génesis es un juego para PC: arrancas una fábrica de drones escribiendo C/C++ de verdad para una Raspberry Pi Pico 2 virtual. Un tutorial de YouTube te da código para copiar; aquí, si tu código falla, la banda se detiene y el copiloto te pregunta qué ves. Somos dos estudiantes de mecatrónica, y uno de nosotros lleva Sistemas Embebidos: el juego enseña lo mismo que esa clase. | [§5](#s5), [§12](#s12); contraste con el sustituto: [§4](#s4); quién lleva Sistemas Embebidos: [§1](#s1) |
-    | Mercado y modelo | 1:10–1:45 | 66 (76) | Hay 219 mil estudiantes de ingeniería en México que juegan simuladores. Queremos llegar a 1,100 cada año. Cobramos 249 pesos, pago único, como un juego independiente, no como un curso; el copiloto Pro es opcional. Después de la tienda y de la inteligencia artificial, cada copia nos deja 173 pesos. Con 49 copias recuperamos el dinero que sale de nuestro bolsillo. Con 322, también nuestras horas. | SAM y SOM: [§4](#s4); $173.44, 49 y 322: [§14](#s14) |
-    | Tracción | 1:45–2:20 | 72 (76) | Hoy funcionan los nueve niveles del primer bloque del curso, con interrupciones y prioridades. Los cuidan 834 pruebas automáticas, y cada plantilla pasa la revisión del compilador con las cabeceras reales de la Pico. De cuatro estudiantes entrevistados, tres pagarían entre 100 y 400 pesos por un juego así. Lo que todavía no tenemos, y es lo siguiente: pruebas con usuarios del juego. La página de preventa va a contar cada registro. | [§17](#s17), [§3](#s3); la confesión honesta es la falta de pruebas con usuarios |
+    | Mercado y modelo | 1:10–1:45 | 66 (76) | Hay 219 mil estudiantes de ingeniería en México que juegan simuladores. Queremos llegar a 1,100 cada año. Cobramos 249 pesos, pago único, como un juego independiente, no como un curso; el copiloto Pro es opcional. Después de la tienda y de la inteligencia artificial, cada copia nos deja 173 pesos. Con 49 copias recuperamos el dinero que sale de nuestro bolsillo. Con 322, también nuestras horas. | SAM y SOM: [§4](#s4); $173.44, 49 y 322: [§14](#s14) (49 y 322 cuentan el margen de Pro) |
+    | Tracción | 1:45–2:20 | 71 (76) | Hoy funcionan los nueve niveles del primer bloque del curso, con interrupciones y prioridades, cuidados por 834 pruebas automáticas. De cuatro estudiantes entrevistados, tres pagarían entre 100 y 400 pesos por un juego así. En una primera prueba, cuatro de cinco personas terminaron el primer nivel en 4 a 12 minutos; la quinta se aburrió y lo dejó. Por eso agregamos una guía para quien empieza. Lo siguiente: probarla con usuarios. | [§17](#s17), [§3](#s3); prueba sin tutorial (cinco personas): [§10, P8](#p8); la confesión honesta es que uno abandonó y la guía todavía no se prueba con usuarios |
     | Equipo | 2:20–2:35 | 25 (32) | Somos José Carlos y Yael, de Ingeniería Mecatrónica. Usamos inteligencia artificial para construir, pero cada nivel lo revisamos contra el SDK real de la Pico. | [§1](#s1), [§7](#s7) (RI-04) |
     | Ask y cierre | 2:35–3:00 | 47 (54) | Buscamos veinte estudiantes para el piloto y un profesor que lo use con su grupo. En la demo van a ver la fábrica fallar y al copiloto negarse a darnos la solución. GPIO Génesis: si tu código falla, ves por qué; si funciona, va a tu portafolio. | [§15](#s15), [§5](#s5) |
 
-    **Total: 343 palabras** (rango del curso: 330–360). Es el mismo guion de la [semana 9](semana%209.md), sección 5.
+    **Total: 352 palabras** (rango del curso: 330–360). Es el mismo guion de la [semana 9](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-09/), sección 5.
 
     Reglas del curso que cumple: abre con una persona y un costo; habla en pesos y horas; una cifra por frase con origen; contrasta con YouTube; una sola confesión; anuncia la demo sin hacerla; cierra con la promesa. Sin «innovador», «plataforma», «solución integral» ni «revolucionario».
 
@@ -787,8 +812,8 @@ Reglas del observador: no ayudar, no explicar, no defender el diseño; si se ato
     |---|---|---|
     | ¿Cuánto cuesta "fabricar" una copia y cómo lo sabes? | $75.56 de costo variable (comisión de Steam $74.70 + IA $0.86); a 10 copias, $6,030 por el desarrollo repartido | [§11](#s11), [§14](#s14) |
     | ¿Por qué no lo hace Wokwi o Zachtronics? | Wokwi es una herramienta que no guía; Zachtronics usa lenguajes inventados. Ninguno enseña el SDK del curso jugando | [§4](#s4) |
-    | ¿Qué pasa si sube el precio de la API? | Con la API 10 veces más cara, LTV ÷ CAC baja de 4.2× a 3.8×; y el juego funciona sin IA con las 4 pistas locales | [§8](#s8), [§15](#s15) |
-    | ¿Cuántos clientes necesitas para no perder dinero? | 49 copias en efectivo; 322 si contamos nuestras horas | [§14](#s14) |
+    | ¿Qué pasa si sube el precio de la API? | Con la API 10 veces más cara, LTV ÷ inversión baja de 4.2× a 3.8×; y el juego funciona sin IA con las 4 pistas locales | [§8](#s8), [§15](#s15) |
+    | ¿Cuántos clientes necesitas para no perder dinero? | 49 copias en efectivo; 322 si contamos nuestras horas (con el margen de Pro; solo con el juego, 52 y 343) | [§14](#s14) |
     | ¿Qué necesitas para vender legalmente? | Aviso de privacidad, términos, declaración de IA en Steam, marca y alta fiscal | [§16](#s16) |
     | ¿Qué hace que no cancelen Pro? | No dependemos de Pro (~6% del LTV); el reto es dar algo nuevo cada mes | [§13](#s13), [§15](#s15) |
     | ¿No es lo mismo que YouTube y GitHub gratis? | Ahí copias código; aquí la fábrica te muestra por qué falla el tuyo y lo exportas a tu portafolio | [§4](#s4), [§5](#s5) |
@@ -800,18 +825,18 @@ Reglas del observador: no ayudar, no explicar, no defender el diseño; si se ato
 
 ## 21. Uso de IA { #s21 }
 
-!!! abstract "v1 · 24-nov-2026"
+!!! abstract "v2 · 25-nov-2026 (v1: 24-nov)"
     - **Decisión:** la IA nos ayudó a investigar, decidir y construir; las decisiones y las correcciones son nuestras, y aquí está cada una.
     - **Evidencia:** prompts y salidas en las páginas de las semanas 3–7 y el registro de desarrollo del juego, que no se publica: lo que importa de él está resumido en esta sección.
-    - **Qué cambió:** primera versión.
-    - **Queda abierto:** medir el costo real de la IA por jugador ([§14](#s14)).
+    - **Qué cambió:** (24-nov) primera versión. (25-nov) el costo de la IA ya está medido con 10 consultas.
+    - **Queda abierto:** repetir la medición en los niveles más grandes y con los jugadores del piloto ([§14](#s14)).
 
 **En el proceso: los cinco prompts que más cambiaron el proyecto**
 
 | # | Qué pedimos | Qué contestó la IA | Qué corregimos y por qué |
 |---|---|---|---|
 | 1 | Semana 2: validar la deseabilidad de GPIO Génesis (Paso 5) | Riesgo técnico alto si construíamos al mismo tiempo compilador, estación física, app y web | Priorizamos el simulador; en la semana 5 quitamos la estación por completo |
-| 2 | Semana 4: TAM, SAM y SOM con fuentes (Perplexity) | **Se equivocó:** calculó 229,000 personas y luego las "redondeó de forma conservadora" a 760,000, sin fórmula | Lo detectamos y lo dejamos marcado; el modelo financiero usa el SOM, no el TAM ([§4](#s4)) |
+| 2 | Semana 4: TAM, SAM y SOM con fuentes (Perplexity) | **Se equivocó:** calculó 229,000 personas y luego las "redondeó de forma conservadora" a 760,000, sin fórmula | No lo detectamos a la primera. Lo dejamos marcado en la semana 4; la tabla quedó en 380,000, que tampoco sale de la cadena de filtros. El modelo financiero usa el SOM, no el TAM ([§4](#s4)) |
 | 3 | Semana 5: arquitectura y costo por consulta (Claude) | Híbrido con la IA en la nube; con 300 consultas la IA se llevaba 15% de cada venta | Agregamos pistas locales y cuota; en la semana 7 pasamos a Haiku 5.5 (0.5%) |
 | 4 | Semana 6: criticar el boceto antes del greybox (Prompt 6) | 3 problemas críticos: etiquetas que no escalan, escalado que no cierra y un copiloto sin disparador | Los tres entraron en el boceto v2 y en el juego |
 | 5 | Noviembre: construir el juego con Claude Code (niveles, intérprete, copiloto) | Propuso un intérprete propio en lugar de clang → WebAssembly y lo hizo con pruebas | Lo aceptamos para la demo; pedimos el cambio a Pico SDK, la regla de no dar código y el botón único. **Un error que le corregimos:** en la landing escribió que solo el nivel 1 aceptaba C++, sin revisar el compilador. En realidad todos los niveles aceptan C y C++; el nivel 1 además acepta la API de Arduino |
@@ -823,7 +848,7 @@ Reglas del observador: no ayudar, no explicar, no defender el diseño; si se ato
 | ¿Qué hace el modelo? | Explica por qué el código del jugador no produce lo que espera la planta y qué cambiar, en 2–4 oraciones y en español, sin escribir la solución; en la demo, contesta preguntas libres sin escribir código |
 | ¿Dónde corre? | En la nube de Anthropic (Claude Haiku 5.5, `claude-haiku-5-5`). Todo lo demás (intérprete, MCU, diagnóstico y las 4 pistas) corre en la PC |
 | Entradas y salidas | Entra: reglas, turno, objetivos, máquinas, código, diagnóstico y pistas leídas. Sale: texto plano de máximo 400 tokens |
-| Costo medido por usuario | **No medido.** Estimado: $0.86 MXN por jugador en todo el MVP; $1.31 MXN al mes por usuario activo ([§14](#s14)) |
+| Costo medido por usuario | **Medido (25-nov, promedio de 10 consultas):** ≈ US$0.00032 por consulta → ≈ $0.83 MXN al mes por usuario activo y ≈ $1.21 MXN por jugador en todo el MVP si las 220 consultas fueran a la nube (≈ $0.61 con la mitad en pistas locales). El modelo financiero sigue usando las estimaciones más altas ($0.86 por jugador y $1.31 al mes) como cota conservadora ([§14](#s14)) |
 | Manejo de fallas | Sin clave: solo pistas locales. Sin internet o con error: mensaje y se queda la pista 4. Respuesta con código en la demo: no se muestra. Markdown: se convierte |
 | ¿Por qué sería peor sin IA? | Las 4 pistas locales cubren los errores que imaginamos; la IA responde al código y a la pregunta que de verdad tiene el jugador, con otro ángulo cuando las pistas no bastaron. Sin ella, el jugador atorado después de la pista 4 se queda solo. (El juego funciona sin IA a propósito, para que nunca se vuelva un ladrillo.) |
 
@@ -847,12 +872,12 @@ Reglas del observador: no ayudar, no explicar, no defender el diseño; si se ato
 | El copiloto que pregunta se siente como ayuda | Tarea 2 de las 5 sesiones ([§18](#s18)): éxito sin ayuda y SEQ |
 | Alguien paga $249 | Pre-registros y, en el piloto, compra anticipada con tarjeta |
 | 10% compra Pro | Ofrecer Pro a los 20 del piloto y contar quién paga el primer mes |
-| La IA cuesta lo estimado | 10 consultas reales y leer los tokens ([§14](#s14)) |
+| La IA cuesta lo estimado | **Hecho (25-nov):** 10 consultas reales, ≈ US$0.00032 por consulta en promedio; repetir en los niveles más grandes ([§14](#s14)) |
 | El código exportado corre en una Pico 2 real | Compilar un `main.c` exportado con el Pico SDK y cargarlo en una placa del curso |
 
 **Plan de 90 días (diciembre 2026 a febrero 2027):**
 
-1. **Semanas 1–2:** Release con el `.exe`, landing publicada con el formulario y las métricas, y las 5 sesiones de [§18](#s18).
+1. **Semanas 1–2:** las 5 sesiones de [§18](#s18) y medir la landing (visitas, clics y pre-registros).
 2. **Semanas 3–6:** piloto con 20 jugadores (un grupo de Sistemas Embebidos), medir tokens y corregir lo crítico.
 3. **Semanas 7–12:** si el piloto cumple RI-01, backend mínimo con cuota (nuestra clave, límite de gasto), firma de código y acceso anticipado en itch.io; ofrecer la licencia escolar a un profesor. Decidir Steam con datos.
 
@@ -869,7 +894,7 @@ En un producto digital el BOM son servicios y licencias: tabla de [§11](#s11), 
 ## Anexo B. Repositorio, README, commits y entregables { #anexo-b }
 
 - **Repositorio:** <https://github.com/JC3468/Proyecto_ing_4> (esta página, las semanas y la [landing](https://jc3468.github.io/Proyecto_ing_4/gpio-genesis/)).
-- **Código del juego:** no se publica (decisión del equipo). Se entrega el `GPIO_Genesis.exe` en un [Release](https://github.com/JC3468/Proyecto_ing_4/releases) (**PENDIENTE** subirlo; pesa ~110 MB y GitHub no acepta archivos de más de 100 MB en el repositorio). Lo que se cita del código en esta página va resumido aquí.
+- **Código del juego:** no se publica (decisión del equipo). El [Release](https://github.com/JC3468/Proyecto_ing_4/releases) trae solo la demo (`GPIO_Genesis_demo.exe`, ~110 MB); la versión completa no se publica y se muestra en la demo en vivo. Lo que se cita del código en esta página va resumido aquí.
 
 **Pruebas automáticas del juego** (corren sin ventana; 834 al 24-nov-2026):
 
@@ -893,7 +918,7 @@ Además, las 28 plantillas y soluciones de los niveles 1–9 pasan `gcc -Wall -f
 | 5 | [PDS y arquitectura](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-05/) | 25-sep | `cea1231` |
 | 6 | [Concepto de diseño](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-06/) | 1-oct | `531e39f` |
 | 7 | [Viabilidad técnica y económica](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-07/) | 22-oct | `ad988e6` |
-| 8–9 | [Prototipado y DFM](semana%208.md), [integración, go-to-market y pitch](semana%209.md), [landing](https://jc3468.github.io/Proyecto_ing_4/gpio-genesis/) y esta página | 5 a 24-nov | `baab519`, `bdf0d2f` |
+| 8–9 | [Prototipado y DFM](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-08/), [integración, go-to-market y pitch](https://jc3468.github.io/Proyecto_ing_4/semanas/semana-09/), [landing](https://jc3468.github.io/Proyecto_ing_4/gpio-genesis/) y esta página | 5 a 25-nov | `baab519`, `bdf0d2f`, `46543a1`, `9a5a127` |
 
 ## Anexo C. Archivos de diseño { #anexo-c }
 
@@ -931,4 +956,4 @@ Además, las 28 plantillas y soluciones de los niveles 1–9 pasan `gcc -Wall -f
 
 ---
 
-<small>**Historial de esta página:** 24-nov-2026 — primera versión completa (secciones 0–22 y anexos), con los Excel de la semana 7 conciliados. Antes era un marcador "En construcción".</small>
+<small>**Historial de esta página:** 24-nov-2026 — primera versión completa (secciones 0–22 y anexos), con los Excel de la semana 7 conciliados. Antes era un marcador "En construcción". 25-nov-2026 — demo publicada en un Release de GitHub, landing publicada y conectada, Claude probado con una clave real, roles del equipo y reflexión de Yael. 25-nov-2026 — P8 en §10 y nota en §18: lo que nos dijeron del juego sin tutorial y por qué se agregó la guía. 25-nov-2026 — P8: los tres eran estudiantes de Ingeniería Mecatrónica; landing: texto del pre-registro y guía en «Qué incluye». 25-nov-2026 — costo de la IA medido (10 consultas) reflejado en §0, §7 (RD-05 cumple), §8, §17 y §21; acuerdo de colaboración firmado (§1) y pruebas con usuarios a cargo de Yael (§1, §18). 25-nov-2026 — P8: fueron cinco personas (cuatro de Mecatrónica y un profesor), con su tiempo en el nivel 1; RI-01 pasa a parcial; las mejoras pendientes de P8 quedan como consideraciones futuras; RF-07: la descarga de la demo funciona. 25-nov-2026 — pitch: nuevo problema (no repasa porque no aprende con medios convencionales) y la prueba parcial en la tracción (352 palabras).</small>
